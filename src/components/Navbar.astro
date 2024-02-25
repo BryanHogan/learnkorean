@@ -1,0 +1,17 @@
+---
+import navItems from "../data/navItems";
+---
+
+<nav>
+    <div>
+        <ul>
+            {
+                navItems.map((item) => (
+                    <li>
+                        <a href={item.href}>{item.text}</a>
+                    </li>
+                ))
+            }
+        </ul>
+    </div>
+</nav>
