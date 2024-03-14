@@ -4,14 +4,37 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 <BaseLayout title="Welcome to Astro.">
 	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br
-			/>
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message
-			above.
-		</p>
+		<div class="example">
+			<h1>Welcome to ToLearnKorean.com!</h1>
+			<div class="imp"><p>Important message at the bottom about something really cool.</p></div>
+		</div>
 	</main>
 </BaseLayout>
 
-<style></style>
+<style>
+	.example {
+		height: 100svh;
+		background: linear-gradient(140deg, #af81cd, #767fd1, #8fb8cd);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		color: white;
+		text-align: center;
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
+	}
+	h1 {
+		margin-block: auto;
+
+	}
+	.imp {
+		height: 13%;
+		background-color: red;
+		width: 90%;
+		margin-top: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.3rem;
+	}
+</style>
