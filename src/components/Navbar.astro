@@ -8,15 +8,24 @@ import navItems from "../data/navItems";
             <li><a href="#">Home</a></li>
         </ul>
 
-        <ul class="dropdown-container">
-            {
-                navItems.map((item) => (
-                    <li>
-                        <a href={item.href}>{item.text}</a>
-                    </li>
-                ))
-            }
-        </ul>
+        <div class="dropdown-container">
+            <img
+                src="/icons/Menu-Icon.svg"
+                class="dropdown-menu-icon"
+                alt="Menu bar icon simple soft white color only"
+                width="18"
+                height="14"
+            />
+            <ul class="dropdown-menu">
+                {
+                    navItems.map((item) => (
+                        <li>
+                            <a href={item.href}>{item.text}</a>
+                        </li>
+                    ))
+                }
+            </ul>
+        </div>
     </div>
 </nav>
 <style>
@@ -31,12 +40,59 @@ import navItems from "../data/navItems";
         height: 50px;
         display: flex;
         flex-direction: row;
-    }
-    .nav-container ul {
-        display: flex;
-        flex-direction: row;
+        & ul,
+        .dropdown-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        & ul li {
+            padding: 2px;
+        }
     }
     .container-priority-items {
         margin-right: auto;
+    }
+    @media only screen and (max-width: 699px) {
+        .dropdown-container .dropdown-menu {
+            display: none;
+        }
+        div .dropdown-container:hover .dropdown-menu {
+            display: flex;
+        }
+    }
+    @media only screen and (min-width: 700px) {
+        .dropdown-menu-icon {
+            display: none;
+        }
+    }
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        25% {
+        }
+        75% {
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes fade-out {
+        0% {
+            opacity: 1;
+            display: flex;
+        }
+        25% {
+        }
+        75% {
+            display: flex;
+        }
+        100% {
+            display: none;
+            opacity: 0;
+        }
     }
 </style>
