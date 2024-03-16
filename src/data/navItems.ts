@@ -5,7 +5,7 @@ const navItems = [
         style: "ghost"
     },
     {
-        text: "Destinations",
+        text: "Guide",
         href: "#",
         style: "ghost"
     },

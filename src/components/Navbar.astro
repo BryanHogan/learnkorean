@@ -6,6 +6,7 @@ import navItems from "../data/navItems";
     <div class="nav-container">
         <ul class="container-priority-items">
             <li><a href="#">Home</a></li>
+            <li><a href="#">Thing</a></li>
         </ul>
 
         <div class="dropdown-container">
@@ -28,14 +29,17 @@ import navItems from "../data/navItems";
         </div>
     </div>
 </nav>
+
 <style>
     nav {
         width: 100%;
         height: 50px;
     }
+    a {
+        text-decoration: none;
+    }
     .nav-container {
         position: fixed;
-        background-color: grey;
         width: 100%;
         height: 50px;
         display: flex;
@@ -48,18 +52,47 @@ import navItems from "../data/navItems";
         }
 
         & ul li {
-            padding: 2px;
+            padding: 2px 9px;
         }
     }
     .container-priority-items {
         margin-right: auto;
     }
+    li {
+        color: var(--color-side-1);
+        filter: brightness(0) saturate(100%) invert(57%) sepia(6%)
+            saturate(183%) hue-rotate(169deg) brightness(92%) contrast(92%);
+        font-size: 1.125rem;
+        transition: all 300ms;
+        transform: scale(1.001);
+    }
+    li:hover {
+        transition: all 200ms;
+        filter: brightness(0) saturate(100%) invert(86%) sepia(2%)
+            saturate(892%) hue-rotate(187deg) brightness(114%) contrast(88%);
+        transform: scale(1.1) translate3d(0, 0, 0) perspective(1px);
+    }
+
     @media only screen and (max-width: 699px) {
         .dropdown-container .dropdown-menu {
             display: none;
         }
-        div .dropdown-container:hover .dropdown-menu {
+        .dropdown-container:hover .dropdown-menu {
             display: flex;
+            position: absolute;
+            flex-direction: column;
+            align-items: flex-start;
+            top: 0px;
+            right: 0px;
+            padding-top: 50px; /* This should equal the total Navbar height */
+            background-color: var(--color-main-1);
+            & li {
+                padding: 10px 10px;
+            }
+        }
+        .dropdown-menu-icon {
+            margin-right: 10px;
+            z-index: 2;
         }
     }
     @media only screen and (min-width: 700px) {
