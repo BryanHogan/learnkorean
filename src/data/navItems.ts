@@ -1,16 +1,26 @@
 const navItems = [
     {
-        text: "Destinations",
+        text: "Start Here",
         href: "#",
         style: "ghost"
     },
     {
-        text: "Guide",
+        text: "Guides",
         href: "#",
         style: "ghost"
     },
     {
-        text: "Destinations",
+        text: "News",
+        href: "#",
+        style: "ghost"
+    },
+    {
+        text: "Posts",
+        href: "#",
+        style: "ghost"
+    },
+    {
+        text: "About",
         href: "#",
         style: "ghost"
     }
