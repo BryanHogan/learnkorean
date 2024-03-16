@@ -59,12 +59,12 @@ import navItems from "../data/navItems";
         margin-right: auto;
     }
     li {
+        transition: all 300ms;
         color: var(--color-side-1);
         filter: brightness(0) saturate(100%) invert(57%) sepia(6%)
             saturate(183%) hue-rotate(169deg) brightness(92%) contrast(92%);
-        font-size: 1.125rem;
-        transition: all 300ms;
         transform: scale(1.001);
+        font-size: 1.125rem;
     }
     li:hover {
         transition: all 200ms;
@@ -76,19 +76,23 @@ import navItems from "../data/navItems";
     @media only screen and (max-width: 699px) {
         .dropdown-container .dropdown-menu {
             display: none;
-        }
-        .dropdown-container:hover .dropdown-menu {
-            display: flex;
-            position: absolute;
             flex-direction: column;
             align-items: flex-start;
             top: 0px;
             right: 0px;
+            position: absolute;
             padding-top: 50px; /* This should equal the total Navbar height */
             background-color: var(--color-main-1);
+            animation: fade-in 200ms 1;
             & li {
                 padding: 10px 10px;
             }
+        }
+        .dropdown-container:hover .dropdown-menu {
+            display: flex;
+        }
+        .dropdown-container:not(:hover) .dropdown-menu {
+            animation: fade-out 200ms 1 ease-out;
         }
         .dropdown-menu-icon {
             margin-right: 10px;
@@ -104,6 +108,7 @@ import navItems from "../data/navItems";
     @keyframes fade-in {
         0% {
             opacity: 0;
+            transform: translate(120px);
         }
         25% {
         }
@@ -121,11 +126,11 @@ import navItems from "../data/navItems";
         25% {
         }
         75% {
-            display: flex;
+
         }
         100% {
-            display: none;
             opacity: 0;
+            transform: translate(120px);
         }
     }
 </style>
