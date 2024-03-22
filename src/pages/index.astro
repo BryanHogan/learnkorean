@@ -55,7 +55,10 @@ import Card from "../components/Card.astro";
 		<article style="padding-inline: 1rem">
 			<CardGrid>
 				<Card title="Featured Post" icon="">
-					<p>We all started somewhere, this is your chance. Start with Chapter 1.</p>
+					<p>
+						We all started somewhere, this is your chance. Start
+						with Chapter 1.
+					</p>
 					<Button
 						buttonStyle="accent-color medium grow"
 						href="#"
@@ -63,11 +66,23 @@ import Card from "../components/Card.astro";
 					/>
 				</Card>
 				<Card title="Featured Post" icon="">
-					<p>GKS Graduate 2024 has opened its doors and it’s your time to get paid to study in Korea!</p>
+					<p>
+						GKS Graduate 2024 has opened its doors and it’s your
+						time to get paid to study in Korea!
+					</p>
 					<Button
+						slot="last-row"
 						buttonStyle="accent-color medium grow"
 						href="#"
-						text="Updates"
+						text="Update Updatess"
+					/>
+					<Image
+						slot="icon"
+						src={bookLogo}
+						alt="Menu bar icon simple soft white color only"
+						class="icon"
+						width={bookLogo.width}
+						height={bookLogo.height}
 					/>
 				</Card>
 				<Card title="Featured Post" icon="">

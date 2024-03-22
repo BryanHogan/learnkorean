@@ -11,6 +11,10 @@ const { title, icon } = Astro.props;
 <li class="link-card">
 	<h2>{title}</h2>
 	<slot />
+	<div class="last-row">
+		<slot name="last-row" />
+	</div>
+	<slot name="icon" />
 	<Image
 		src={menuIcon}
 		alt="Menu bar icon simple soft white color only"
@@ -33,9 +37,19 @@ const { title, icon } = Astro.props;
 		margin-top: 0.5rem;
 		margin-bottom: 0;
 	}
-	.icon {
+	li .last-row {
+		max-width: 65%;
+	}
+	
+	li .last-row :global(>*:last-child) {
+	}
+	li :global(.icon) {
 		position: absolute;
 		bottom: 1.5rem;
 		right: 2rem;
+		height: 20px;
+		width: auto;
+		max-width: 30px;
+		z-index: 1;
 	}
 </style>
