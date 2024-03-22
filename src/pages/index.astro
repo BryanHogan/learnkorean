@@ -8,19 +8,28 @@ import Button from "../components/Button.astro";
 <BaseLayout title="Welcome to Astro.">
 	<main>
 		<div class="landing-page-intro-container">
-			<Image
-				src={bookLogo}
-				alt="Menu bar icon simple soft white color only"
-				class="dropdown-menu-icon"
-				width={bookLogo.width}
-				height={bookLogo.height}
-			/>
-			<h1>Welcome! 안녕하세요!<br />Start learning Korean now.</h1>
-			<p>Your helper to learn Korean. Precise, reliant and simple.</p>
+			<div class="first-group-container">
+				<Image
+					src={bookLogo}
+					alt="Menu bar icon simple soft white color only"
+					class="logo-landing-page"
+					width={bookLogo.width}
+					height={bookLogo.height}
+				/>
+				<div class="text-group">
+					<h1>
+						Welcome! 안녕하세요!<br />Start learning Korean now.
+					</h1>
+					<p>
+						Your helper to learn Korean. Precise, reliant and
+						simple.
+					</p>
+				</div>
+			</div>
 			<ul class="button-group-layout">
 				<li>
 					<Button
-						buttonStyle="standard-color large grow"
+						buttonStyle="gradient large grow"
 						href="#"
 						text="Get Started Learning"
 					/>
@@ -45,10 +54,35 @@ import Button from "../components/Button.astro";
 </BaseLayout>
 
 <style>
+	.landing-page-intro-container {
+		min-height: calc(90svh - var(--navbar-height));
+		padding-top: 2em;
+		padding-inline: 1em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		& .first-group-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		& .text-group {
+			& > p {
+				padding-top: 1em;
+			}
+		}
+		& .logo-landing-page {
+			height: 130px;
+			width: auto;
+		}
+	}
 	.button-group-layout {
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
+		padding-top: 2em;
 	}
 	@media only screen and (max-width: 699px) {
 		.button-group-layout :first-child {
@@ -56,6 +90,29 @@ import Button from "../components/Button.astro";
 			align-self: center;
 			display: flex;
 			justify-content: center;
+		}
+		.landing-page-intro-container {
+			& .first-group-container {
+			}
+			& .text-group {
+				/* Might need to be put elsewhere */
+				word-break: keep-all;
+				line-break: strict;
+			}
+			& .logo-landing-page {
+				margin-bottom: 2em;
+			}
+		}
+	}
+	@media only screen and (min-width: 700px) {
+		.landing-page-intro-container {
+			& .first-group-container {
+				flex-direction: row-reverse;
+				align-items: flex-start;
+			}
+			& .logo-landing-page {
+				padding-left: 1em;
+			}
 		}
 	}
 </style>

@@ -6,7 +6,7 @@ interface Props {
     targetText?: string;
 }
 const { buttonStyle = "_self", href, text, targetText } = Astro.props;
-// Color styles: accent-main, standard-color
+// Color styles: standard-color, gradient
 // Size styles: large
 // | Optional Additions: fixed-medium-width
 // Animation styles: grow
@@ -26,15 +26,17 @@ const { buttonStyle = "_self", href, text, targetText } = Astro.props;
     }
 
     /* ################ Color Styles ################ */
-    .accent-main {
-        color: var(--color-side-1);
-        background-color: var(--color-accent-1);
-        border: 2px solid var(--color-side-1);
-    }
     .standard-color {
         color: var(--color-main-1);
         background-color: var(--color-side-1);
         text-shadow: var(--text-shadow);
+        box-shadow: var(--box-shadow);
+    }
+    .gradient {
+        color: var(--color-side-1);
+        background-image: var(--gradient);
+        text-shadow: var(--text-shadow);
+        box-shadow: var(--box-shadow);
     }
 
     /* ################ Size Styles ################ */
