@@ -3,11 +3,13 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
 import bookLogo from "/src/assets/logos/TLK-Landing-Logo.png";
 import Button from "../components/Button.astro";
+import CardGrid from "../components/CardGrid.astro";
+import Card from "../components/Card.astro";
 ---
 
 <BaseLayout title="Welcome to Astro.">
 	<main>
-		<div class="landing-page-intro-container">
+		<section class="landing-page-intro-container">
 			<div class="first-group-container">
 				<Image
 					src={bookLogo}
@@ -36,20 +38,56 @@ import Button from "../components/Button.astro";
 				</li>
 				<li>
 					<Button
-						buttonStyle="standard-color large fixed-medium-width grow"
+						buttonStyle="side-color large grow fixed-medium-width"
 						href="#"
 						text="Guides"
 					/>
 				</li>
 				<li>
 					<Button
-						buttonStyle="standard-color large fixed-medium-width grow"
+						buttonStyle="side-color large grow fixed-medium-width"
 						href="#"
 						text="Updates"
 					/>
 				</li>
 			</ul>
-		</div>
+		</section>
+		<article>
+			<CardGrid>
+				<Card title="Featured Post" icon="">
+					<p>Some text here for explanation</p>
+					<Button
+						buttonStyle="accent-color medium grow"
+						href="#"
+						text="Updates"
+					/>
+				</Card>
+				<Card title="Featured Post" icon="">
+					<p>Some text here for explanation</p>
+					<Button
+						buttonStyle="accent-color medium grow"
+						href="#"
+						text="Updates"
+					/>
+				</Card>
+				<Card title="Featured Post" icon="">
+					<p>Some text here for explanation</p>
+					<Button
+						buttonStyle="accent-color medium grow"
+						href="#"
+						text="Updates"
+					/>
+				</Card>
+				<Card title="Featured Post" icon="">
+					<p>Some text here for explanation</p>
+					<Button
+						buttonStyle="accent-color medium grow"
+						href="#"
+						text="Updates"
+					/>
+				</Card>
+			</CardGrid>
+		</article>
 	</main>
 </BaseLayout>
 
@@ -113,6 +151,9 @@ import Button from "../components/Button.astro";
 			& .logo-landing-page {
 				padding-left: 1em;
 			}
+		}
+		.button-group-layout {
+			gap: 1em;
 		}
 	}
 </style>

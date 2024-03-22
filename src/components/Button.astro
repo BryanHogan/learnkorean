@@ -6,10 +6,10 @@ interface Props {
     targetText?: string;
 }
 const { buttonStyle = "_self", href, text, targetText } = Astro.props;
-// Color styles: standard-color, gradient
+// Color styles: side-color, gradient, accent-color
 // Size styles: large
-// | Optional Additions: fixed-medium-width
 // Animation styles: grow
+// | Optional Additions: fixed-medium-width
 ---
 
 <a href={href} class={buttonStyle} target={targetText}>{text}</a>
@@ -26,7 +26,7 @@ const { buttonStyle = "_self", href, text, targetText } = Astro.props;
     }
 
     /* ################ Color Styles ################ */
-    .standard-color {
+    .side-color {
         color: var(--color-main-1);
         background-color: var(--color-side-1);
         text-shadow: var(--text-shadow);
@@ -38,16 +38,27 @@ const { buttonStyle = "_self", href, text, targetText } = Astro.props;
         text-shadow: var(--text-shadow);
         box-shadow: var(--box-shadow);
     }
+    .accent-color {
+        color: var(--color-accent-1);
+        background-image: var(--color-main-1);
+        text-shadow: var(--text-shadow);
+        box-shadow: var(--box-shadow);
+    }
 
     /* ################ Size Styles ################ */
     .large {
-        font-size: 1.4rem;
-        padding: 0.5em 0.4em;
+        font-size: 1.3rem;
+        padding: 0.5em 1em;
         margin: 0.5em 0.5em;
+        font-weight: bold;
     }
-    .fixed-medium-width {
-        width: 6em;
+    .medium {
+        font-size: 1.125rem;
+        padding: 0.5em 1em;
+        margin: 0.5em 0.5em;
+        font-weight: bold;
     }
+    
     /* ################ Animation Styles ################ */
     .grow {
         transition: transform 200ms linear;
@@ -56,5 +67,9 @@ const { buttonStyle = "_self", href, text, targetText } = Astro.props;
             transition: transform 100ms linear;
             transform: scale(1.1) translate3d(0, 0, 0) perspective(1px);
         }
+    }
+    /* ################ Additional ################ */
+    .fixed-medium-width {
+        width: 6em;
     }
 </style>
