@@ -1,20 +1,61 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import bookLogo from "/src/assets/logos/TLK-Landing-Logo.png";
+import Button from "../components/Button.astro";
 ---
 
 <BaseLayout title="Welcome to Astro.">
 	<main>
-		<div class="example">
-			<h1>Welcome to ToLearnKorean.com!</h1>
-			<div class="imp">
-				<p>
-					Important message at the bottom about something really cool.
-				</p>
-			</div>
+		<div class="landing-page-intro-container">
+			<Image
+				src={bookLogo}
+				alt="Menu bar icon simple soft white color only"
+				class="dropdown-menu-icon"
+				width={bookLogo.width}
+				height={bookLogo.height}
+			/>
+			<h1>Welcome! 안녕하세요!<br />Start learning Korean now.</h1>
+			<p>Your helper to learn Korean. Precise, reliant and simple.</p>
+			<ul class="button-group-layout">
+				<li>
+					<Button
+						buttonStyle="standard-color large grow"
+						href="#"
+						text="Get Started Learning"
+					/>
+				</li>
+				<li>
+					<Button
+						buttonStyle="standard-color large fixed-medium-width grow"
+						href="#"
+						text="Guides"
+					/>
+				</li>
+				<li>
+					<Button
+						buttonStyle="standard-color large fixed-medium-width grow"
+						href="#"
+						text="Updates"
+					/>
+				</li>
+			</ul>
 		</div>
 	</main>
 </BaseLayout>
 
 <style>
-
+	.button-group-layout {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	@media only screen and (max-width: 699px) {
+		.button-group-layout :first-child {
+			width: 100%;
+			align-self: center;
+			display: flex;
+			justify-content: center;
+		}
+	}
 </style>

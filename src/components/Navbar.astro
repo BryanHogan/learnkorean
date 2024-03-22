@@ -1,5 +1,7 @@
 ---
 import navItems from "../data/navItems";
+import { Image } from "astro:assets";
+import menuIcon from "/src/assets/icons/Menu-Icon.svg";
 ---
 
 <nav>
@@ -10,12 +12,12 @@ import navItems from "../data/navItems";
         </ul>
 
         <div class="dropdown-container">
-            <img
-                src="/icons/Menu-Icon.svg"
-                class="dropdown-menu-icon"
+            <Image
+                src={menuIcon}
                 alt="Menu bar icon simple soft white color only"
-                width="18"
-                height="14"
+                class="dropdown-menu-icon"
+                width={menuIcon.width}
+                height={menuIcon.height}
             />
             <ul class="dropdown-menu">
                 {
@@ -126,7 +128,6 @@ import navItems from "../data/navItems";
         25% {
         }
         75% {
-
         }
         100% {
             opacity: 0;

@@ -1,0 +1,58 @@
+---
+interface Props {
+    buttonStyle: string;
+    href: string;
+    text: string;
+    targetText?: string;
+}
+const { buttonStyle = "_self", href, text, targetText } = Astro.props;
+// Color styles: accent-main, standard-color
+// Size styles: large
+// | Optional Additions: fixed-medium-width
+// Animation styles: grow
+---
+
+<a href={href} class={buttonStyle} target={targetText}>{text}</a>
+
+<style>
+    a {
+        border-radius: 0.5rem;
+        text-decoration: none;
+        display: flex;
+        width: max-content;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ################ Color Styles ################ */
+    .accent-main {
+        color: var(--color-side-1);
+        background-color: var(--color-accent-1);
+        border: 2px solid var(--color-side-1);
+    }
+    .standard-color {
+        color: var(--color-main-1);
+        background-color: var(--color-side-1);
+        text-shadow: var(--text-shadow);
+    }
+
+    /* ################ Size Styles ################ */
+    .large {
+        font-size: 1.4rem;
+        padding: 0.5em 0.4em;
+        margin: 0.5em 0.5em;
+    }
+    .fixed-medium-width {
+        width: 6em;
+    }
+    /* ################ Animation Styles ################ */
+    .grow {
+        transition: transform 200ms linear;
+        &:hover {
+            opacity: 0.8;
+            transition: transform 100ms linear;
+            transform: scale(1.1) translate3d(0, 0, 0) perspective(1px);
+        }
+    }
+</style>
