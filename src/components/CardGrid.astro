@@ -3,13 +3,26 @@ import Button from "../components/Button.astro";
 ---
 
 <ul>
-
     <slot />
 </ul>
 
 <style>
-    strong {
-        font-size: 1.6rem;
-        font-weight: bold;
+    ul {
+        border: 1px solid red;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+        list-style: none;
+        max-width: 1350px;
+        gap: 1rem;
+        margin-inline: auto;
+    }
+    ul :global(li) {
+        max-width: 400px;
+        width: 100%;
+    }
+    @media only screen and (max-width: 699px) {
+        ul {grid-template-columns: 1fr;}
     }
 </style>
