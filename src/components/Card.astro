@@ -4,9 +4,10 @@ import { Icons } from "../components/Icons";
 interface Props {
 	title?: string;
 	icon?: keyof typeof Icons;
+	gridHeight?: string;
 }
 
-const { title, icon } = Astro.props;
+const { title, icon, gridHeight = "1" } = Astro.props;
 ---
 
 <li class="link-card">
@@ -25,13 +26,14 @@ const { title, icon } = Astro.props;
 	</div>
 </li>
 
-<style>
+<style define:vars={{ gridHeight }}>
 	li {
 		background-color: var(--color-main-2);
 		padding: 0.75rem 1rem;
 		display: flex;
 		flex-direction: column;
 		border-radius: 15px;
+		grid-row: span var(--gridHeight);
 	}
 	h2 {
 		font-size: 1.375rem;
