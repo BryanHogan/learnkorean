@@ -1,11 +1,12 @@
 ---
+import { Icons } from "../components/Icons";
+
 interface Props {
 	title: string;
-	icon?: string;
+	icon?: keyof typeof Icons;
 }
-import { Image } from "astro:assets";
-import menuIcon from "/src/assets/icons/Menu-Icon.svg";
-const { title, icon } = Astro.props;
+
+const { title } = Astro.props;
 ---
 
 <li class="link-card">
@@ -15,12 +16,13 @@ const { title, icon } = Astro.props;
 		<slot name="last-row" />
 	</div>
 	<slot name="icon" />
-	<Image
-		src={menuIcon}
-		alt="Menu bar icon simple soft white color only"
+	<svg
 		class="icon"
-		width={menuIcon.width}
-		height={menuIcon.height}
+		width="16"
+		height="16"
+		viewBox="0 0 24 24"
+		fill="currentColor"
+		set:html={Icons["upcaret"]}
 	/>
 </li>
 
@@ -40,8 +42,8 @@ const { title, icon } = Astro.props;
 	li .last-row {
 		max-width: 65%;
 	}
-	
-	li .last-row :global(>*:last-child) {
+
+	li .last-row :global(> *:last-child) {
 	}
 	li :global(.icon) {
 		position: absolute;
