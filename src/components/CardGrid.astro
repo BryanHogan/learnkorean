@@ -8,18 +8,17 @@ import Button from "../components/Button.astro";
 
 <style>
     ul {
-        border: 1px solid red;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
         justify-items: center;
         list-style: none;
-        max-width: 1300px;
+        max-width: 1500px;
         gap: 1.5rem 1rem;
         margin-inline: auto;
     }
     ul :global(li) {
-        max-width: 400px;
+        max-width: 450px;
         width: 100%;
     }
     @media only screen and (max-width: 699px) {
