@@ -54,7 +54,7 @@ import Card from "../components/Card.astro";
 		</section>
 		<article style="padding-inline: 1rem">
 			<CardGrid>
-				<Card title="Featured Post">
+				<Card title="Featured Post" icon="magnifier">
 					<p>
 						We all started somewhere, this is your chance. Start
 						with Chapter 1.
@@ -65,7 +65,7 @@ import Card from "../components/Card.astro";
 						text="Updates"
 					/>
 				</Card>
-				<Card title="Featured Post">
+				<Card title="Featured Post" icon="upcaret">
 					<p>
 						GKS Graduate 2024 has opened its doors and it’s your
 						time to get paid to study in Korea!
@@ -76,14 +76,6 @@ import Card from "../components/Card.astro";
 						href="#"
 						text="Update Updatess"
 					/>
-					<Image
-						slot="icon"
-						src={bookLogo}
-						alt="Menu bar icon simple soft white color only"
-						class="icon"
-						width={bookLogo.width}
-						height={bookLogo.height}
-					/>
 				</Card>
 				<Card title="Featured Post">
 					<p>Some text here for explanation</p>
@@ -93,7 +85,7 @@ import Card from "../components/Card.astro";
 						text="Updates"
 					/>
 				</Card>
-				<Card title="Featured Post">
+				<Card title="Featured Post" icon="upcaret">
 					<p>Some text here for explanation</p>
 					<Button
 						buttonStyle="accent-color medium grow"
