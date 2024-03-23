@@ -2,7 +2,7 @@
 import { Icons } from "../components/Icons";
 
 interface Props {
-	title: string;
+	title?: string;
 	icon?: keyof typeof Icons;
 }
 
@@ -10,7 +10,7 @@ const { title, icon } = Astro.props;
 ---
 
 <li class="link-card">
-	<h2>{title}</h2>
+	{title && <h2>{title}</h2>}
 	<slot />
 	<div class="last-row">
 		<slot name="last-row" />
