@@ -54,48 +54,46 @@ import Card from "../components/Card.astro";
 		</section>
 		<article style="padding-inline: 1rem">
 			<CardGrid>
-				<Card title="Featured Post" icon="lightbulb">
+				<Card title="Start From Zero" icon="book">
 					<p>
-						We all started somewhere, this is your chance. Start
-						with Chapter 1.
+						We all start somewhere, this is your chance. Start with
+						Unit 1.
 					</p>
 					<Button
 						slot="last-row"
 						buttonStyle="accent-color medium grow"
 						href="#"
-						text="Updates"
+						text="Unit 1"
 					/>
 				</Card>
-				<Card title="Featured Post" icon="puzzle">
+				<Card title="Featured Post" icon="megaphone" >
 					<p>
-						GKS Graduate 2024 has opened its doors and it’s your
-						time to get paid to study in Korea!
-						GKS Graduate 2024 has opened its doors and it’s your
-						time to get paid to study in Korea!
+						There could be something interesting here! This text
+						will be about a featured post.
 					</p>
 					<Button
 						slot="last-row"
 						buttonStyle="accent-color medium grow"
 						href="#"
-						text="Update Updatess"
+						text="Read More"
 					/>
 				</Card>
-				<Card title="Featured Post" icon="megaphone">
-					<p>Some text here for explanation</p>
+				<Card title="Detailed Guides" icon="megaphone">
+					<p>Find our overview of all detailed guides made.</p>
 					<Button
 						slot="last-row"
 						buttonStyle="accent-color medium grow"
 						href="#"
-						text="Updates"
+						text="Guide Overview"
 					/>
 				</Card>
-				<Card title="Featured Post" icon="book">
-					<p>Some text here for explanation</p>
+				<Card title="Latest News" icon="star">
+					<p>Text will consist of the description of the latest news post.</p>
 					<Button
 						slot="last-row"
 						buttonStyle="accent-color medium grow"
 						href="#"
-						text="Updates"
+						text="Read More"
 					/>
 				</Card>
 			</CardGrid>
@@ -105,9 +103,10 @@ import Card from "../components/Card.astro";
 
 <style>
 	.landing-page-intro-container {
-		min-height: calc(90svh - var(--navbar-height));
+		min-height: calc(80svh - var(--navbar-height));
 		padding-top: 2em;
 		padding-inline: 1em;
+		margin-bottom: 2rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;

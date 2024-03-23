@@ -18,10 +18,13 @@ import Button from "../components/Button.astro";
         margin-inline: auto;
     }
     ul :global(li) {
-        max-width: 450px;
+        max-width: 430px;
         width: 100%;
     }
     @media only screen and (max-width: 699px) {
         ul {grid-template-columns: 1fr;}
+    }
+    .many-columns {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
 </style>
