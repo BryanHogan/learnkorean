@@ -66,7 +66,7 @@ import Card from "../components/Card.astro";
 						text="Unit 1"
 					/>
 				</Card>
-				<Card title="Featured Post" icon="megaphone" gridHeight={"2"}>
+				<Card title="Featured Post" icon="megaphone">
 					<p>
 						There could be something interesting here! This text
 						will be about a featured post.
@@ -78,7 +78,17 @@ import Card from "../components/Card.astro";
 						text="Read More"
 					/>
 				</Card>
-				<Card title="Detailed Guides" icon="megaphone" >
+				<Card title="Latest Posts" icon="lightbulb" gridHeight={"2"}>
+					<ul class="list">
+						<li><a href="#">Item 1</a></li>
+						<li><a href="#">Item 2</a></li>
+						<li><a href="#">Item 3 - This description is going to be a bit longer than ususal.</a></li>
+						<li><a href="#">Item 4</a></li>
+						<li><a href="#">Item 5 - This description is going to be a bit longer than ususal.</a></li>
+						<li><a href="#">Item 6 - This description is going to be a bit longer than ususal.</a></li>
+					</ul>
+				</Card>
+				<Card title="Detailed Guides" icon="megaphone">
 					<p>Find our overview of all detailed guides made.</p>
 					<Button
 						slot="last-row"
@@ -88,7 +98,10 @@ import Card from "../components/Card.astro";
 					/>
 				</Card>
 				<Card title="Latest News" icon="star">
-					<p>Text will consist of the description of the latest news post.</p>
+					<p>
+						Text will consist of the description of the latest news
+						post.
+					</p>
 					<Button
 						slot="last-row"
 						buttonStyle="accent-color medium grow"
