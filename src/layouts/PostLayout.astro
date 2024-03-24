@@ -7,10 +7,18 @@ interface Props {
 const { post } = Astro.props;
 const { Content, headings } = await post.render();
 const { remarkPluginFrontmatter } = await post.render();
-
 ---
 
 <BaseLayout title={post.data.title}>
-	<p>{post.data.title} — {remarkPluginFrontmatter.minutesRead}</p>
-	<slot />
+	<section>
+		<p>
+			{post.data.title} — {remarkPluginFrontmatter.minutesRead} minutes reading
+			time.
+		</p>
+		<slot />
+	</section>
 </BaseLayout>
+
+<style>
+	
+</style>

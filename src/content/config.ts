@@ -34,5 +34,5 @@ const postCollection = defineCollection({
 
 export const collections = {
     'unit-1': unitCollection,
-    'posts': unitCollection,
+    'posts': postCollection,
   };
