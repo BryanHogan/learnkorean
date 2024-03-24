@@ -1,117 +1,124 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
-import landingImage from "../assets/images/TLK-Landing-Image.png"
+import landingImage from "../assets/images/TLK-Landing-Image.png";
 import Button from "../components/Button.astro";
 import CardGrid from "../components/CardGrid.astro";
 import Card from "../components/Card.astro";
 ---
 
 <BaseLayout title="Start Learning Korean">
-	<main>
-		<section class="landing-page-intro-container">
-			<div class="first-group-container">
-				<Image
-					src={landingImage}
-					alt="Menu bar icon simple soft white color only"
-					class="logo-landing-page"
-					width={landingImage.width}
-					height={landingImage.height}
-				/>
-				<div class="text-group">
-					<h1>
-						Welcome! 안녕하세요!<br />Start learning Korean now.
-					</h1>
-					<p>
-						Your helper to learn Korean. Precise, reliant and
-						simple.
-					</p>
-				</div>
+	<section class="landing-page-intro-container">
+		<div class="first-group-container">
+			<Image
+				src={landingImage}
+				alt="Menu bar icon simple soft white color only"
+				class="logo-landing-page"
+				width={landingImage.width}
+				height={landingImage.height}
+			/>
+			<div class="text-group">
+				<h1>
+					Welcome! 안녕하세요!<br />Start learning Korean now.
+				</h1>
+				<p>Your helper to learn Korean. Precise, reliant and simple.</p>
 			</div>
-			<ul class="button-group-layout">
-				<li>
-					<Button
-						buttonStyle="gradient large grow"
-						href="#"
-						text="Get Started Learning"
-					/>
-				</li>
-				<li>
-					<Button
-						buttonStyle="side-color large grow fixed-medium-width"
-						href="#"
-						text="Guides"
-					/>
-				</li>
-				<li>
-					<Button
-						buttonStyle="side-color large grow fixed-medium-width"
-						href="#"
-						text="Updates"
-					/>
-				</li>
-			</ul>
-		</section>
-		<article style="padding-inline: 1rem">
-			<CardGrid>
-				<Card title="Start From Zero" icon="book">
-					<p>
-						We all start somewhere, this is your chance. Start with
-						Unit 1.
-					</p>
-					<Button
-						slot="last-row"
-						buttonStyle="accent-color medium grow"
-						href="/overview"
-						text="Unit 1"
-					/>
-				</Card>
-				<Card title="Featured Post" icon="megaphone">
-					<p>
-						There could be something interesting here! This text
-						will be about a featured post.
-					</p>
-					<Button
-						slot="last-row"
-						buttonStyle="accent-color medium grow"
-						href="#"
-						text="Read More"
-					/>
-				</Card>
-				<Card title="Latest Posts" icon="lightbulb" gridHeight={"2"}>
-					<ul class="list">
-						<li><a href="#">Item 1</a></li>
-						<li><a href="#">Item 2</a></li>
-						<li><a href="#">Item 3 - This description is going to be a bit longer than ususal.</a></li>
-						<li><a href="#">Item 4</a></li>
-						<li><a href="#">Item 5 - This description is going to be a bit longer than ususal.</a></li>
-						<li><a href="#">Item 6 - This description is going to be a bit longer than ususal.</a></li>
-					</ul>
-				</Card>
-				<Card title="Detailed Guides" icon="megaphone">
-					<p>Find our overview of all detailed guides made.</p>
-					<Button
-						slot="last-row"
-						buttonStyle="accent-color medium grow"
-						href="#"
-						text="Guide Overview"
-					/>
-				</Card>
-				<Card title="Latest News" icon="star">
-					<p>
-						Text will consist of the description of the latest news
-						post.
-					</p>
-					<Button
-						slot="last-row"
-						buttonStyle="accent-color medium grow"
-						href="#"
-						text="Read More"
-					/>
-				</Card>
-			</CardGrid>
-		</article>
-	</main>
+		</div>
+		<ul class="button-group-layout">
+			<li>
+				<Button
+					buttonStyle="gradient large grow"
+					href="#"
+					text="Get Started Learning"
+				/>
+			</li>
+			<li>
+				<Button
+					buttonStyle="side-color large grow fixed-medium-width"
+					href="#"
+					text="Guides"
+				/>
+			</li>
+			<li>
+				<Button
+					buttonStyle="side-color large grow fixed-medium-width"
+					href="#"
+					text="Updates"
+				/>
+			</li>
+		</ul>
+	</section>
+	<article style="padding-inline: 1rem">
+		<CardGrid>
+			<Card title="Start From Zero" icon="book">
+				<p>
+					We all start somewhere, this is your chance. Start with Unit
+					1.
+				</p>
+				<Button
+					slot="last-row"
+					buttonStyle="accent-color medium grow"
+					href="/overview"
+					text="Unit 1"
+				/>
+			</Card>
+			<Card title="Featured Post" icon="megaphone">
+				<p>
+					There could be something interesting here! This text will be
+					about a featured post.
+				</p>
+				<Button
+					slot="last-row"
+					buttonStyle="accent-color medium grow"
+					href="#"
+					text="Read More"
+				/>
+			</Card>
+			<Card title="Latest Posts" icon="lightbulb" gridHeight={"2"}>
+				<ul class="list">
+					<li><a href="#">Item 1</a></li>
+					<li><a href="#">Item 2</a></li>
+					<li>
+						<a href="#"
+							>Item 3 - This description is going to be a bit
+							longer than ususal.</a>
+					</li>
+					<li><a href="#">Item 4</a></li>
+					<li>
+						<a href="#"
+							>Item 5 - This description is going to be a bit
+							longer than ususal.</a>
+					</li>
+					<li>
+						<a href="#"
+							>Item 6 - This description is going to be a bit
+							longer than ususal.</a>
+					</li>
+				</ul>
+			</Card>
+			<Card title="Detailed Guides" icon="megaphone">
+				<p>Find our overview of all detailed guides made.</p>
+				<Button
+					slot="last-row"
+					buttonStyle="accent-color medium grow"
+					href="#"
+					text="Guide Overview"
+				/>
+			</Card>
+			<Card title="Latest News" icon="star">
+				<p>
+					Text will consist of the description of the latest news
+					post.
+				</p>
+				<Button
+					slot="last-row"
+					buttonStyle="accent-color medium grow"
+					href="#"
+					text="Read More"
+				/>
+			</Card>
+		</CardGrid>
+	</article>
 </BaseLayout>
 
 <style>
