@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
 import type { CollectionEntry } from "astro:content";
+import { Image } from "astro:assets";
+
 interface Props {
 	post: CollectionEntry<"unit-1">;
 }
@@ -11,14 +13,52 @@ const { remarkPluginFrontmatter } = await post.render();
 
 <BaseLayout title={post.data.title}>
 	<section>
-		<p>
-			{post.data.title} — {remarkPluginFrontmatter.minutesRead} minutes reading
-			time.
-		</p>
-		<slot />
+		<div class="center-container">
+			<Image
+				src={post.data.cover.url}
+				alt={post.data.cover.alt}
+				class="cover-image"
+				width={1600}
+				height={900}
+			/>
+			<h1>{post.data.title}</h1>
+			<div class="text-section">
+				<p>
+					{post.data.title} — {remarkPluginFrontmatter.minutesRead} minutes
+					reading time.
+				</p>
+				<slot />
+			</div>
+		</div>
+		<aside>
+			<p><strong>Table of Contents</strong></p>
+
+		</aside>
 	</section>
 </BaseLayout>
 
 <style>
-	
+	section {
+		display: flex;
+		justify-content: center;
+		margin-inline: auto;
+		max-width: 1300px;
+	}
+	.center-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 750px;
+	}
+	.cover-image {
+		width: 100%;
+		max-width: 650px;
+		height: auto;
+		margin-top: 1rem;
+		margin-bottom: 4rem;
+		border-radius: 1rem;
+	}
+	aside {
+		position:static;
+	}
 </style>
