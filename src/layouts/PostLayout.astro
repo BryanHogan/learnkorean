@@ -3,6 +3,7 @@ import BaseLayout from "./BaseLayout.astro";
 import type { CollectionEntry } from "astro:content";
 import { Image } from "astro:assets";
 import TableOfContentsList from "../components/TableOfContents/TableOfContentsList.astro";
+import { generateToC } from "../components/TableOfContents/generateToC";
 
 interface Props {
 	post: CollectionEntry<"unit-1">;
@@ -10,6 +11,8 @@ interface Props {
 const { post } = Astro.props;
 const { Content, headings } = await post.render();
 const { remarkPluginFrontmatter } = await post.render();
+
+
 ---
 
 <BaseLayout title={post.data.title}>
@@ -33,7 +36,7 @@ const { remarkPluginFrontmatter } = await post.render();
 		</div>
 		<aside>
 			<div class="toc">
-				<TableOfContentsList />
+				<TableOfContentsList toc={generateToC(headings, { minHeadingLevel: 1, maxHeadingLevel: 6, title: "Table of Contents" })}/>
 			</div>
 		</aside>
 	</section>
