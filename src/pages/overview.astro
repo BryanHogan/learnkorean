@@ -1,0 +1,61 @@
+---
+import { Image } from "astro:assets";
+import PostLayout from "../layouts/PostLayout.astro";
+import previewImage from "../assets/images/Unit-1.png";
+---
+
+<PostLayout title="Unit Overview">
+	<title slot="head">TEST</title>
+	<Image
+		src={previewImage}
+		alt="gradient"
+		class="preview-image"
+		width={previewImage.width}
+		height={previewImage.height}
+	/>
+	<h1>Unit Overview</h1>
+	<ol>
+		<li>
+			<h2>Unit 1</h2>
+			<ol class="decimal-list">
+				<li>
+					<p>The Beginning</p>
+					<ol>
+						<li><p>The Korean Alphabet - Hangul</p></li>
+						<li><p>Introduction to Consonants & Vowels</p></li>
+						<li><p>All Consonants & Vowels</p></li>
+						<li><p>The First Words</p></li>
+					</ol>
+				</li>
+			</ol>
+		</li>
+	</ol>
+</PostLayout>
+
+<style>
+	.decimal-list ol {
+		list-style-type: none;
+		counter-reset: item;
+	}
+
+	.decimal-list > li,
+	.decimal-list ol > li {
+		display: table;
+		counter-increment: item;
+	}
+
+	.decimal-list > li:before,
+	.decimal-list ol > li:before {
+		content: counters(item, ".") ". ";
+		display: table-cell;
+		padding-right: 0.6rem;
+	}
+
+	.decimal-list ol > li {
+		margin: 0;
+	}
+
+	.decimal-list ol > li:before {
+		content: counters(item, ".") " ";
+	}
+</style>
