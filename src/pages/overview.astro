@@ -1,10 +1,13 @@
 ---
 import { Image } from "astro:assets";
-import PostLayout from "../layouts/PostLayout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 import previewImage from "../assets/images/Unit-1.png";
+import { getCollection } from "astro:content";
+const allEntriesUnit1 = await getCollection("unit-1");
+
 ---
 
-<PostLayout title="Unit Overview">
+<BaseLayout title="Unit Overview">
 	<title slot="head">TEST</title>
 	<Image
 		src={previewImage}
@@ -14,23 +17,22 @@ import previewImage from "../assets/images/Unit-1.png";
 		height={previewImage.height}
 	/>
 	<h1>Unit Overview</h1>
-	<ol>
+	<ol class="decimal-list">
 		<li>
-			<h2>Unit 1</h2>
-			<ol class="decimal-list">
-				<li>
-					<p>The Beginning</p>
-					<ol>
-						<li><p>The Korean Alphabet - Hangul</p></li>
-						<li><p>Introduction to Consonants & Vowels</p></li>
-						<li><p>All Consonants & Vowels</p></li>
-						<li><p>The First Words</p></li>
-					</ol>
-				</li>
+			<p>First Unit</p>
+			<ol>
+				{allEntriesUnit1.map(chapter => (
+					<li>
+					  <a href={`/unit-1/${chapter.slug}`}>{chapter.data.title}</a>
+					  <time datetime={chapter.data.pubDate.toISOString()}>
+						{chapter.data.pubDate.toLocaleDateString('en-GB')}
+					  </time>
+					</li>
+				  ))}
 			</ol>
 		</li>
 	</ol>
-</PostLayout>
+</BaseLayout>
 
 <style>
 	.decimal-list ol {

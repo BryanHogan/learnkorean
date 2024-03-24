@@ -1,9 +1,15 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
-
-const { title } = Astro.props;
+import type { CollectionEntry } from "astro:content";
+interface Props {
+	post: CollectionEntry<"unit-1">;
+}
+const { post } = Astro.props;
+const { Content, headings } = await post.render();
+const { remarkPluginFrontmatter } = await post.render();
 ---
 
-<BaseLayout title={title}>
+<BaseLayout title={post.data.title}>
+	<p>{post.data.title} — {remarkPluginFrontmatter.readingTime} time</p>
 	<slot />
 </BaseLayout>
