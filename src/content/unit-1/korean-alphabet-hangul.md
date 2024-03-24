@@ -8,5 +8,6 @@ coverImage:
 pubDate: 2024-03-24
 lastUpdate: 2024-03-24
 tags: ["hangul", "two"]
+sortOrder: 1
 ---
 Your blog post content here.
