@@ -10,11 +10,6 @@ const navItems = [
         style: "ghost"
     },
     {
-        text: "News",
-        href: "#",
-        style: "ghost"
-    },
-    {
         text: "Posts",
         href: "#",
         style: "ghost"

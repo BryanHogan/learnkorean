@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
-import bookLogo from "/src/assets/logos/TLK-Landing-Logo.png";
+import landingImage from "/src/assets/logos/TLK-Landing-Image.png";
 import Button from "../components/Button.astro";
 import CardGrid from "../components/CardGrid.astro";
 import Card from "../components/Card.astro";
@@ -12,11 +12,11 @@ import Card from "../components/Card.astro";
 		<section class="landing-page-intro-container">
 			<div class="first-group-container">
 				<Image
-					src={bookLogo}
+					src={landingImage}
 					alt="Menu bar icon simple soft white color only"
 					class="logo-landing-page"
-					width={bookLogo.width}
-					height={bookLogo.height}
+					width={landingImage.width}
+					height={landingImage.height}
 				/>
 				<div class="text-group">
 					<h1>
@@ -136,8 +136,9 @@ import Card from "../components/Card.astro";
 			}
 		}
 		& .logo-landing-page {
-			height: 130px;
+			height: 180px;
 			width: auto;
+			padding: 1rem;
 		}
 	}
 	.button-group-layout {
@@ -173,7 +174,7 @@ import Card from "../components/Card.astro";
 				align-items: flex-start;
 			}
 			& .logo-landing-page {
-				padding-left: 1em;
+				margin-left: 1rem;
 			}
 		}
 		.button-group-layout {
