@@ -15,23 +15,22 @@ Choosing a career is a complex process. What kind of work direction you go into 
 
 So how to choose something? There are 3 main building blocks that can help you find direction, the 3 P’s are: Purpose, Passion and Personality.
 
-## 2 Heading two
+## Two Two
 Blog post content here.
 Choosing a career is a complex process. What kind of work direction you go into has a major impact on your life. But most people never take a step back and think about it.
 
 So how to choose something? There are 3 main building blocks that can help you find direction, the 3 P’s are: Purpose, Passion and Personality.
-## 2 Heading two
+## THree
 Blog post content here.
 Choosing a career is a complex process. What kind of work direction you go into has a major impact on your life. But most people never take a step back and think about it.
 
 So how to choose something? There are 3 main building blocks that can help you find direction, the 3 P’s are: Purpose, Passion and Personality.
-## 2 Heading two
+## Four
 Blog post content here.
 Choosing a career is a complex process. What kind of work direction you go into has a major impact on your life. But most people never take a step back and think about it.
 
 So how to choose something? There are 3 main building blocks that can help you find direction, the 3 P’s are: Purpose, Passion and Personality.
-## 2 Heading two
-Blog post content here.
-Choosing a career is a complex process. What kind of work direction you go into has a major impact on your life. But most people never take a step back and think about it.
-
-So how to choose something? There are 3 main building blocks that can help you find direction, the 3 P’s are: Purpose, Passion and Personality.
+## Seven
+### Seven Seven
+blocks that can help you find direction, the 3 P’s are: Purpose, Passion and Personality.
+blocks that can help you find direction, the 3 P’s are: Purpose, Passion and Personality.

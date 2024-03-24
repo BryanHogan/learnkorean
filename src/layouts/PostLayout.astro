@@ -2,6 +2,7 @@
 import BaseLayout from "./BaseLayout.astro";
 import type { CollectionEntry } from "astro:content";
 import { Image } from "astro:assets";
+import TableOfContentsList from "../components/TableOfContents/TableOfContentsList.astro";
 
 interface Props {
 	post: CollectionEntry<"unit-1">;
@@ -32,7 +33,7 @@ const { remarkPluginFrontmatter } = await post.render();
 		</div>
 		<aside>
 			<div class="toc">
-				<p><strong>Table of Contents</strong></p>
+				<TableOfContentsList />
 			</div>
 		</aside>
 	</section>
@@ -63,7 +64,7 @@ const { remarkPluginFrontmatter } = await post.render();
 	}
 	aside {
 		flex-grow: 1;
-		
+		width: 200px;
 		max-width: 200px;
 	}
 	.toc {
