@@ -36,6 +36,7 @@ const { remarkPluginFrontmatter } = await post.render();
 		</div>
 		<aside>
 			<div class="toc">
+				<p><strong>Table Of Contents</strong></p>
 				<TableOfContentsList toc={generateToC(headings, { minHeadingLevel: 1, maxHeadingLevel: 6, title:post.data.title })}/>
 			</div>
 		</aside>

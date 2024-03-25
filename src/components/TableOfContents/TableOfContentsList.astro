@@ -4,13 +4,11 @@ import type { TocItem } from "./generateToC";
 interface Props {
 	toc: TocItem[];
 	depth?: number;
-	isMobile?: boolean;
 }
 
-const { toc, isMobile = false, depth = 0 } = Astro.props;
+const { toc, depth = 0 } = Astro.props;
 ---
-
-<ul class:list={{ isMobile }}>
+<ul>
 	{
 		toc.map((heading) => (
 			<li>
@@ -21,7 +19,6 @@ const { toc, isMobile = false, depth = 0 } = Astro.props;
 					<Astro.self
 						toc={heading.children}
 						depth={depth + 1}
-						isMobile={isMobile}
 					/>
 				)}
 			</li>
@@ -42,14 +39,13 @@ const { toc, isMobile = false, depth = 0 } = Astro.props;
 		padding-inline: calc(1rem * var(--depth) + var(--pad-inline))
 			var(--pad-inline);
 		line-height: 1.25;
-	}
-	a[aria-current="true"] {
-		color: red;
-		border: 1px solid red;
+		color: var(--color-side-1);
+		text-decoration: none;
+		filter: var(--grey-filter);
+		border: 1px solid var(--color-main-1);
 	}
 	.active {
-		color: red;
-		border: 1px solid red;
+		filter: var(--undo-grey-filter);
 	}
 </style>
 

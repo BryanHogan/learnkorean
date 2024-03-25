@@ -39,6 +39,8 @@ import menuIcon from "/src/assets/icons/Menu-Icon.svg";
     }
     a {
         text-decoration: none;
+        color: var(--color-main-3);
+        transition: all 200ms;
     }
     .nav-container {
         position: fixed;
@@ -52,7 +54,6 @@ import menuIcon from "/src/assets/icons/Menu-Icon.svg";
             flex-direction: row;
             align-items: center;
         }
-
         & ul li {
             padding: 2px 9px;
         }
@@ -62,17 +63,15 @@ import menuIcon from "/src/assets/icons/Menu-Icon.svg";
     }
     li {
         transition: all 300ms;
-        color: var(--color-side-1);
-        filter: brightness(0) saturate(100%) invert(57%) sepia(6%)
-            saturate(183%) hue-rotate(169deg) brightness(92%) contrast(92%);
         transform: scale(1.001);
         font-size: 1.125rem;
     }
     li:hover {
         transition: all 200ms;
-        filter: brightness(0) saturate(100%) invert(86%) sepia(2%)
-            saturate(892%) hue-rotate(187deg) brightness(114%) contrast(88%);
         transform: scale(1.1) translate3d(0, 0, 0) perspective(1px);
+        & a {
+            color: var(--color-side-1);
+        }
     }
 
     @media only screen and (max-width: 699px) {
