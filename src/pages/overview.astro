@@ -16,7 +16,7 @@ const allEntriesUnit1 = await getCollection("unit-1");
 			<h1>Unit Overview</h1>
 			<ol class="decimal-list">
 				<li>
-					<p>First Unit</p>
+					<p><strong>Unit 1 Introduction</strong></p>
 					<ol>
 						{
 							allEntriesUnit1.map((chapter) => (
@@ -47,24 +47,20 @@ const allEntriesUnit1 = await getCollection("unit-1");
 		list-style-type: none;
 		counter-reset: item;
 	}
-
 	.decimal-list > li,
 	.decimal-list ol > li {
 		display: table;
 		counter-increment: item;
 	}
-
 	.decimal-list > li:before,
 	.decimal-list ol > li:before {
 		content: counters(item, ".") ". ";
 		display: table-cell;
 		padding-right: 0.6rem;
 	}
-
 	.decimal-list ol > li {
 		margin: 0;
 	}
-
 	.decimal-list ol > li:before {
 		content: counters(item, ".") " ";
 	}
