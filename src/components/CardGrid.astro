@@ -1,15 +1,16 @@
 ---
-import Button from "../components/Button.astro";
+
+const {gtcolumns = "1fr 1fr 1fr"} = Astro.props;
 ---
 
 <ul>
     <slot />
 </ul>
 
-<style>
+<style define:vars={{ gtcolumns }}>
     ul {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: var(--gtcolumns);
         grid-template-rows: auto;
         justify-items: center;
         list-style: none;
