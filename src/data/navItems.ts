@@ -1,13 +1,13 @@
 const navItems = [
     {
         text: "Start Here",
-        href: "#",
-        style: "ghost"
+        href: "/",
+        style: ""
     },
     {
         text: "Guides",
         href: "#",
-        style: "ghost"
+        style: ""
     },
     {
         text: "Posts",
