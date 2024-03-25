@@ -59,7 +59,7 @@ const { toc, isMobile = false, depth = 0 } = Astro.props;
 		return (
 			bounding.bottom >= 0 &&
 			bounding.top <=
-				(window.innerHeight || document.documentElement.clientHeight) * 0.8
+				(window.innerHeight * 0.8 || document.documentElement.clientHeight) 
 		);
 		
 	};
