@@ -8,6 +8,7 @@ interface Props {
 
 const { toc, depth = 0 } = Astro.props;
 ---
+
 <ul>
 	{
 		toc.map((heading) => (
@@ -16,10 +17,7 @@ const { toc, depth = 0 } = Astro.props;
 					<span>{heading.text}</span>
 				</a>
 				{heading.children.length > 0 && (
-					<Astro.self
-						toc={heading.children}
-						depth={depth + 1}
-					/>
+					<Astro.self toc={heading.children} depth={depth + 1} />
 				)}
 			</li>
 		))
@@ -35,17 +33,20 @@ const { toc, depth = 0 } = Astro.props;
 		--pad-inline: 0.5rem;
 		display: block;
 		border-radius: 0.25rem;
-		padding-block: 0.25rem;
+		padding-block: 0.15rem;
 		padding-inline: calc(1rem * var(--depth) + var(--pad-inline))
 			var(--pad-inline);
 		line-height: 1.25;
-		color: var(--color-side-1);
+		color: var(--color-main-3);
 		text-decoration: none;
-		filter: var(--grey-filter);
-		border: 1px solid var(--color-main-1);
+		font-size: 1rem;
+		&:hover {
+			color: var(--color-accent-1);
+		}
 	}
 	.active {
-		filter: var(--undo-grey-filter);
+		color: var(--color-side-1);
+		text-shadow: var(--text-shadow);
 	}
 </style>
 
@@ -55,9 +56,9 @@ const { toc, depth = 0 } = Astro.props;
 		return (
 			bounding.bottom >= 0 &&
 			bounding.top <=
-				(window.innerHeight * 0.8 || document.documentElement.clientHeight) 
+				(window.innerHeight * 0.8 ||
+					document.documentElement.clientHeight)
 		);
-		
 	};
 
 	// Function to handle scroll event
