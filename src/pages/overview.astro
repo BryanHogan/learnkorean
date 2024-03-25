@@ -6,7 +6,7 @@ import { getCollection } from "astro:content";
 import CardGrid from "../components/CardGrid.astro";
 import Card from "../components/Card.astro";
 import Button from "../components/Button.astro";
-const allEntriesUnit1 = await getCollection("unit-1");
+const allEntriesUnit1 = await getCollection("chapters");
 ---
 
 <BaseLayout title="Unit Overview">
@@ -21,7 +21,7 @@ const allEntriesUnit1 = await getCollection("unit-1");
 						{
 							allEntriesUnit1.map((chapter) => (
 								<li>
-									<a href={`/unit-1/${chapter.slug}`}>
+									<a href={`/chapters/${chapter.slug}`}>
 										{chapter.data.title}
 									</a>
 								</li>

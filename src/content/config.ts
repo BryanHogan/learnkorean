@@ -1,6 +1,6 @@
 import { z, defineCollection } from 'astro:content';
 
-const unitCollection = defineCollection({
+const chapterCollection = defineCollection({
     type: 'content',
     schema: z.object({
         title: z.string().max(60, "Maximum of 60 characters in title required.").min(10, "Minimum of 10 characters in title required."),
@@ -12,6 +12,7 @@ const unitCollection = defineCollection({
         }),
         pubDate: z.date(),
         lastUpdate: z.date(),
+        unit: z.number(),
         sortOrder: z.number(),
         tags: z.array(z.string()),
     })
@@ -33,6 +34,6 @@ const postCollection = defineCollection({
 });
 
 export const collections = {
-    'unit-1': unitCollection,
+    'chapters': chapterCollection,
     'posts': postCollection,
   };

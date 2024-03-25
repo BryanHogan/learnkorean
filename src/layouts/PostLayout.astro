@@ -6,7 +6,7 @@ import TableOfContentsList from "../components/TableOfContents/TableOfContentsLi
 import { generateToC } from "../components/TableOfContents/generateToC";
 
 interface Props {
-	post: CollectionEntry<"unit-1">;
+	post: CollectionEntry<"chapters">;
 }
 const { post } = Astro.props;
 const { Content, headings } = await post.render();

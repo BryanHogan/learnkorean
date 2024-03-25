@@ -7,8 +7,9 @@ cover:
     alt: Cover image
 pubDate: 2024-03-24
 lastUpdate: 2024-03-24
-tags: ["hangul", "two"]
+unit: 1
 sortOrder: 1
+tags: ["hangul", "two"]
 ---
 Blog post content here.
 Choosing a career is a complex process. What kind of work direction you go into has a major impact on your life. But most people never take a step back and think about it.
