@@ -1,56 +1,94 @@
 ---
-
+import Icon from "./Icon.astro";
 ---
 
 <footer>
     <ul>
-        <li>
+        <li class="first-list-container">
             <p>
-                <small
-                    ><a href="tolearnkorean.com">ToLearnKorean.com</a> © {
-                        String(new Date().getFullYear().toString())
-                    }<br />Made by <a href="bryanhogan.com">Bryan Hogan</a><br
-                    /></small
-                >
+                <a href="tolearnkorean.com">ToLearnKorean.com</a> © {
+                    String(new Date().getFullYear().toString())
+                }<br />Made by <a href="https://bryanhogan.com" target="_blank">Bryan Hogan</a><br />
             </p>
         </li>
-        <li>
-            <p>
-                <small
-                    >RSS, Site<br />Threads, Mastodon, Github, Instagram</small
-                >
-            </p>
+        <li class="second-list-container">
+            <a href="/rss.xml" title="RSS"
+                ><Icon name="rss" size="1.5rem" label="RSS" /></a
+            >
+            <a href="https://www.threads.net/@bryanhoganme" title="Threads" target="_blank"
+                ><Icon name="threads" size="1.5rem" label="Threads" /></a
+            >
+            <a href="https://mastodon.social/@BryanHogan" title="Masotdon" target="_blank"
+                ><Icon name="mastodon" size="1.5rem" label="astodon" /></a
+            >
+            <a href="https://www.instagram.com/bryanhoganme/" title="Instagram" target="_blank"
+                ><Icon name="instagram" size="1.5rem" label="Instagram" /></a
+            >
+            <a href="https://bryanhogan.com/blog" title="Bryan's Blog" target="_blank"
+                ><Icon name="star" size="1.5rem" label="Bryan's Blog" /></a
+            >
         </li>
-        <li>
-            <p>
-                <small>Home, Unit Overview, Posts, About, Legal, Privacy</small>
-            </p>
+        <li class="third-list-container">
+            <ul style="width: 100%">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Unit Overview</a></li>
+                <li><a href="#">Posts</a></li>
+                <li><a href="#">About</a></li></ul><ul>
+                <li><a href="#">Legal & Privacy</a></li>
+                <li><a href="/sitemap-index.xml">Sitemap</a></li>
+            </ul>
         </li>
     </ul>
 </footer>
 
 <style>
     footer {
+        padding-inline: 0.5rem;
+        padding-top: 2rem;
     }
     footer,
-    a {
+    a,
+    p {
         color: var(--color-main-3);
+        font-size: 1rem;
+        transition: color 200ms;
     }
-    ul {
+    footer > ul {
         width: 100%;
+        max-width: 1800px;
+        margin-inline: auto;
         min-height: var(--footer-height);
-        padding-bottom: 2rem;
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
         align-items: flex-end;
     }
-    li {
+    footer > ul > li {
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-        flex-basis: 1;
-        width: 100%;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        min-width: 200px;
+        flex-basis: 0;
+        flex-grow: 1;
+        padding-bottom: 2rem;
+    }
+    a:hover, a:focus {
+        color: var(--color-side-1);
+    }
+    .second-list-container {
+        gap: 11px;
+    }
+    .third-list-container > ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0px 11px;
+        justify-content: center;
+        & li {
+            width: max-content;
+        }
     }
 </style>
