@@ -17,7 +17,7 @@ const { remarkPluginFrontmatter } = await post.render();
 	<section>
 		<div class="center-container">
 		<Image
-				src={post.data.cover}
+				src={post.data.cover as ImageMetadata}
 				alt={post.data.coverAlt}
 				class="cover-image"
 				width={1600}
