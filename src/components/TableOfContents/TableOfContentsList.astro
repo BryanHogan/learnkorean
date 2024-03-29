@@ -51,7 +51,7 @@ const { toc, depth = 0 } = Astro.props;
 </style>
 
 <script>
-	const isInViewport = (elem) => {
+	const isInViewport = (elem: Element) => {
 		const bounding = elem.getBoundingClientRect();
 		return (
 			bounding.bottom >= 0 &&

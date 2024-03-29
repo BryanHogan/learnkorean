@@ -9,7 +9,7 @@ interface Props {
 	post: CollectionEntry<"chapters">;
 }
 const { post } = Astro.props;
-const { Content, headings } = await post.render();
+const { headings } = await post.render();
 const { remarkPluginFrontmatter } = await post.render();
 
 
