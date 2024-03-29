@@ -11,20 +11,18 @@ interface Props {
 const { post } = Astro.props;
 const { headings } = await post.render();
 const { remarkPluginFrontmatter } = await post.render();
-
-
 ---
 
 <BaseLayout title={post.data.title}>
 	<section>
 		<div class="center-container">
-			<Image
-				src={post.data.cover.src}
+		<Image
+				src={post.data.cover}
 				alt={post.data.coverAlt}
 				class="cover-image"
 				width={1600}
 				height={900}
-			/>
+		/>
 			<h1 id="_top">{post.data.title}</h1>
 			<div class="text-section">
 				<p>

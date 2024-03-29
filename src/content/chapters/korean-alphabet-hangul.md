@@ -2,7 +2,7 @@
 title: The Korean Alphabet - Hangul
 author: Bryan Hogan
 description: I short description about trying to learn, make this a bbit longer
-cover: ../../assets/images/Unit-1.png
+cover: ./unit.png
 coverAlt: image
 pubDate: 2024-03-24
 lastUpdate: 2024-03-24
