@@ -1,11 +1,6 @@
 ---
-import { Image } from "astro:assets";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import previewImage from "../assets/images/Unit-1.png";
 import { getCollection } from "astro:content";
-import CardGrid from "../components/CardGrid.astro";
-import Card from "../components/Card.astro";
-import Button from "../components/Button.astro";
 const allEntriesUnit1 = await getCollection("chapters");
 ---
 
