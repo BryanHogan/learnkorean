@@ -1,0 +1,56 @@
+---
+
+---
+
+<footer>
+    <ul>
+        <li>
+            <p>
+                <small
+                    ><a href="tolearnkorean.com">ToLearnKorean.com</a> © {
+                        String(new Date().getFullYear().toString())
+                    }<br />Made by <a href="bryanhogan.com">Bryan Hogan</a><br
+                    /></small
+                >
+            </p>
+        </li>
+        <li>
+            <p>
+                <small
+                    >RSS, Site<br />Threads, Mastodon, Github, Instagram</small
+                >
+            </p>
+        </li>
+        <li>
+            <p>
+                <small>Home, Unit Overview, Posts, About, Legal, Privacy</small>
+            </p>
+        </li>
+    </ul>
+</footer>
+
+<style>
+    footer {
+    }
+    footer,
+    a {
+        color: var(--color-main-3);
+    }
+    ul {
+        width: 100%;
+        min-height: var(--footer-height);
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+    li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-basis: 1;
+        width: 100%;
+    }
+</style>
