@@ -7,6 +7,7 @@ export async function GET(context) {
         title: "ToLearnKorean",
         description: "Your helper to learn Korean.",
         site: context.site,
+        stylesheet: '/styles.xsl',
         items: chapters.map((post) => ({
             title: post.data.title,
             pubDate: post.data.pubDate,
