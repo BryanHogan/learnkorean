@@ -66,7 +66,7 @@ const { remarkPluginFrontmatter } = await post.render();
 	}
 	.cover-image {
 		width: 100%;
-		max-width: 650px;
+		max-width: 675px; /* same as media query down below */
 		height: auto;
 		margin-top: 1rem;
 		margin-bottom: 4rem;
@@ -80,5 +80,10 @@ const { remarkPluginFrontmatter } = await post.render();
 	.toc {
 		position: fixed;
 		height: 100vh;
+	}
+	@media only screen and (max-width: 675px) {
+		.cover-image {
+			border-radius: 0;
+		}
 	}
 </style>
