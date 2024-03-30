@@ -14,10 +14,9 @@
       <body class="bg-white">
         <nav class="container-md px-3 py-2 mt-2 mt-md-5 mb-5 markdown-body">
           <p class="bg-yellow-light ml-n1 px-1 py-1 mb-1">
-            <strong>This is a web feed,</strong> also known as an RSS feed. <strong>Subscribe</strong> by copying the URL from the address bar into your newsreader.
-          </p>
+            This is a RSS feed. You can receive updates from ToLearnKorean.com by adding this URL into your newsreader app.
           <p class="text-gray">
-            Visit <a href="https://aboutfeeds.com">About Feeds</a> to get started with newsreaders and subscribing. It’s free.
+            Any app such as Feedly, Inoreader, The Old Reader or any other RSS reader should work for this.
           </p>
         </nav>
         <div class="container-md px-3 py-3 markdown-body">
