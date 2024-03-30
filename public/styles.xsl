@@ -15,6 +15,7 @@
         <nav class="container-md px-3 py-2 mt-2 mt-md-5 mb-5 markdown-body">
           <p class="bg-yellow-light ml-n1 px-1 py-1 mb-1">
             This is a RSS feed. You can receive updates from ToLearnKorean.com by adding this URL into your newsreader app.
+          </p>
           <p class="text-gray">
             Any app such as Feedly, Inoreader, The Old Reader or any other RSS reader should work for this.
           </p>
