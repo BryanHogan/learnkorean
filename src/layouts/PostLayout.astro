@@ -13,7 +13,7 @@ const { headings } = await post.render();
 const { remarkPluginFrontmatter } = await post.render();
 ---
 
-<BaseLayout title={post.data.title}>
+<BaseLayout title={post.data.title} metaDescription={post.data.description}>
 	<section>
 		<div class="center-container">
 			<Image
