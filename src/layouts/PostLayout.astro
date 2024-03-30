@@ -14,6 +14,8 @@ const { remarkPluginFrontmatter } = await post.render();
 ---
 
 <BaseLayout title={post.data.title} metaDescription={post.data.description}>
+	<meta property="og:image" content={post.data.cover.src} slot="head" />
+	<meta property="og:image:alt" content={post.data.description} slot="head" />
 	<section>
 		<div class="center-container">
 			<Image
@@ -35,7 +37,13 @@ const { remarkPluginFrontmatter } = await post.render();
 		<aside>
 			<div class="toc">
 				<p><strong>Table Of Contents</strong></p>
-				<TableOfContentsList toc={generateToC(headings, { minHeadingLevel: 1, maxHeadingLevel: 6, title:post.data.title })}/>
+				<TableOfContentsList
+					toc={generateToC(headings, {
+						minHeadingLevel: 1,
+						maxHeadingLevel: 6,
+						title: post.data.title,
+					})}
+				/>
 			</div>
 		</aside>
 	</section>
