@@ -40,8 +40,8 @@ import { Icons } from "../components/Icons";
 			<div class="toc">
 				<svg
 					class="toc-dropdown-icon"
-					width="24"
-					height="24"
+					width="26"
+					height="26"
 					viewBox="0 0 24 24"
 					fill="currentColor"
 					set:html={Icons["magnifier"]}
@@ -100,6 +100,7 @@ import { Icons } from "../components/Icons";
 	.toc-dropdown-icon {
 		display: none;
 		margin-left: auto;
+		padding: 3px;
 	}
 	@media only screen and (max-width: 675px) {
 		.cover-image {
@@ -121,19 +122,18 @@ import { Icons } from "../components/Icons";
 			top: calc(var(--navbar-height) + 1rem);
 			right: 0;
 			padding-right: 0.5rem;
-			
-			border: 1px solid red;
-			background-color: red;
+			background-color: var(--color-main-1);
+			background-color: color-mix(in srgb, var(--color-main-1) 90%, transparent);
 			border-radius: 1rem 0 0 1rem;
+			
 		}
 		.toc-items {
 			padding-left: 0.5rem;
 			padding-bottom: 1rem;
+			min-width: 80vw;
 		}
-		.aside * {
-			background-color: red;
-			padding: 0.5rem;
-			border-radius: 1rem;
+		aside, .toc {
+			z-index: 1;
 		}
 	}
 </style>
