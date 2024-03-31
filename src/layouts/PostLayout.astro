@@ -61,6 +61,7 @@ const { remarkPluginFrontmatter } = await post.render();
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		flex-wrap: wrap;
 		max-width: 750px;
 		flex-grow: 1;
 	}
@@ -73,17 +74,21 @@ const { remarkPluginFrontmatter } = await post.render();
 		border-radius: 1rem;
 	}
 	aside {
-		flex-grow: 1;
-		width: 200px;
-		max-width: 200px;
+		min-width: 200px;
+		position: relative;
 	}
 	.toc {
 		position: fixed;
-		height: 100vh;
+		min-height: 200px;
+		height: 400px;
+		z-index: 10;
 	}
 	@media only screen and (max-width: 675px) {
 		.cover-image {
 			border-radius: 0;
+		}
+		.toc {
+			top: var(--navbar-height);
 		}
 	}
 </style>
