@@ -58,11 +58,11 @@ const { title, metaDescription } = Astro.props;
 		<Footer />
 		<style is:global>
 			/* ################ Navigation ################
-	1. Basic
-	2, Layout (add)
-	3. Typography
-	4. Utility
-	...
+		1. Basic
+		2. Layout (add)
+		3. Typography
+		4. Utility
+		...
 	*/
 			:root {
 				--color-main-1: #202124;
@@ -165,6 +165,10 @@ const { title, metaDescription } = Astro.props;
 				& > p {
 					max-width: 700px;
 				}
+			}
+			.main-section-style {
+				padding-top: 10svh;
+				padding-inline: 0.5rem;
 			}
 		</style>
 	</body>

@@ -5,7 +5,7 @@ const allEntriesUnit1 = await getCollection("chapters");
 ---
 
 <BaseLayout title="Unit Overview" metaDescription="Overview of all units available. Start with Unit 1 Chapter 1.">
-	<section>
+	<section class="main-section-style">
 		<div class="unit-overview-container">
 			<h1>Unit Overview</h1>
 			<ol class="decimal-list">
@@ -29,10 +29,6 @@ const allEntriesUnit1 = await getCollection("chapters");
 </BaseLayout>
 
 <style>
-	section {
-		padding-top: 10svh;
-		padding-inline: 0.5rem;
-	}
 	.unit-overview-container {
 		display: flex;
 		flex-direction: column;
