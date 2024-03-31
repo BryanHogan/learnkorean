@@ -12,6 +12,7 @@ const { post } = Astro.props;
 const { headings } = await post.render();
 const { remarkPluginFrontmatter } = await post.render();
 import menuIcon from "/src/assets/icons/Menu-Icon.svg";
+import { Icons } from "../components/Icons";
 ---
 
 <BaseLayout title={post.data.title} metaDescription={post.data.description}>
@@ -37,14 +38,15 @@ import menuIcon from "/src/assets/icons/Menu-Icon.svg";
 		</div>
 		<aside>
 			<div class="toc">
-				<Image
-					src={menuIcon}
-					alt="Menu bar icon simple soft white color only"
+				<svg
 					class="toc-dropdown-icon"
-					width={menuIcon.width}
-					height={menuIcon.height}
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="currentColor"
+					set:html={Icons["magnifier"]}
 				/>
-				<div class="mobile-hide">
+				<div class="toc-items">
 					<p><strong>Table Of Contents</strong></p>
 					<TableOfContentsList
 						toc={generateToC(headings, {
@@ -60,7 +62,9 @@ import menuIcon from "/src/assets/icons/Menu-Icon.svg";
 </BaseLayout>
 
 <style>
-	:global(h1), :global(h2), :global(h3) {
+	:global(h1),
+	:global(h2),
+	:global(h3) {
 		scroll-margin-top: var(--navbar-height);
 	}
 	section {
@@ -87,7 +91,6 @@ import menuIcon from "/src/assets/icons/Menu-Icon.svg";
 		border-radius: 1rem;
 	}
 	aside {
-		min-width: 200px;
 		position: relative;
 	}
 	.toc {
@@ -96,6 +99,7 @@ import menuIcon from "/src/assets/icons/Menu-Icon.svg";
 	}
 	.toc-dropdown-icon {
 		display: none;
+		margin-left: auto;
 	}
 	@media only screen and (max-width: 675px) {
 		.cover-image {
@@ -106,17 +110,30 @@ import menuIcon from "/src/assets/icons/Menu-Icon.svg";
 		.toc-dropdown-icon {
 			display: block;
 		}
-		.toc .mobile-hide {
+		.toc .toc-items {
 			display: none;
 		}
-		.toc:hover .mobile-hide {
+		.toc:hover .toc-items {
 			display: block;
 		}
-		aside {
+		.toc {
 			position: fixed;
 			top: calc(var(--navbar-height) + 1rem);
-			left: 1rem;
-
+			right: 0;
+			padding-right: 0.5rem;
+			
+			border: 1px solid red;
+			background-color: red;
+			border-radius: 1rem 0 0 1rem;
+		}
+		.toc-items {
+			padding-left: 0.5rem;
+			padding-bottom: 1rem;
+		}
+		.aside * {
+			background-color: red;
+			padding: 0.5rem;
+			border-radius: 1rem;
 		}
 	}
 </style>
