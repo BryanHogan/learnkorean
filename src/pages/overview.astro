@@ -5,7 +5,7 @@ const allEntriesUnit1 = await getCollection("chapters");
 ---
 
 <BaseLayout title="Unit Overview" metaDescription="Overview of all units available. Start with Unit 1 Chapter 1.">
-	<section class="main-section-style">
+	<section class="main-section-style modern-container">
 		<div class="unit-overview-container">
 			<h1>Unit Overview</h1>
 			<ol class="decimal-list">
@@ -33,27 +33,5 @@ const allEntriesUnit1 = await getCollection("chapters");
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-	}
-	/* For the numbered decimal list */
-	.decimal-list ol {
-		list-style-type: none;
-		counter-reset: item;
-	}
-	.decimal-list > li,
-	.decimal-list ol > li {
-		display: table;
-		counter-increment: item;
-	}
-	.decimal-list > li:before,
-	.decimal-list ol > li:before {
-		content: counters(item, ".") ". ";
-		display: table-cell;
-		padding-right: 0.6rem;
-	}
-	.decimal-list ol > li {
-		margin: 0;
-	}
-	.decimal-list ol > li:before {
-		content: counters(item, ".") " ";
 	}
 </style>
