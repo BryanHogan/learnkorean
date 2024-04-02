@@ -1,0 +1,70 @@
+---
+import Icon from './Icon.astro';
+import { Icons } from "../components/Icons";
+interface Props {
+    head?: String;
+}
+
+const { head } = Astro.props;
+---
+
+<div class="accordion">
+    <input type="checkbox" name="collapse-checkbox" id="x" />
+    <label for="x">
+        <span class="text">This is a nice text or title. {head}</span>
+        <svg
+			class="icon"
+			width="22"
+			height="22"
+			viewBox="0 0 24 24"
+			fill="currentColor"
+			set:html={Icons["rightcaret"]}
+		/>
+    </label>
+    <div class="collapsable text-section">
+        <p>This text can<p>
+    </div>
+</div>
+
+<style>
+    .accordion {
+        max-width: fit-content;
+    }
+    label > svg {
+        height: 1.5rem;
+        width: auto;
+        margin-left: auto;
+        background-color: var(--color-side-1);
+        color: var(--color-main-1);
+        border: 1px solid var(--color-accent-1);
+        border-radius: 0.5em;
+    }
+    .text {
+        margin-right: 1rem;
+    }
+
+    input[name="collapse-checkbox"] {
+        display: none;
+    }
+    label {
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .collapsable {
+        height: 0px;
+        overflow: hidden;
+    }
+    input[name="collapse-checkbox"]:checked ~ .collapsable {
+        height: auto;
+        max-height: 850px;
+        transition: all 1s;
+    }
+    input[name="collapse-checkbox"]:checked ~ label svg {
+        transform:rotate(90deg);
+    }
+    p::before {
+
+    }
+</style>
