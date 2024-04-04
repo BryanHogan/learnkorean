@@ -1,5 +1,5 @@
 ---
-import Accordion from "../components/accordion.astro";
+import Accordion from "../components/Accordion.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 const allEntriesUnit1 = await getCollection("chapters");
@@ -25,7 +25,6 @@ const allEntriesUnit1 = await getCollection("chapters");
 					</ol>
 				</li>
 			</ol>
-			<Accordion />
 		</div>
 	</section>
 </BaseLayout>

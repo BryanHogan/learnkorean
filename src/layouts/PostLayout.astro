@@ -13,7 +13,6 @@ const { headings } = await post.render();
 const { remarkPluginFrontmatter } = await post.render();
 import menuIcon from "/src/assets/icons/Menu-Icon.svg";
 import { Icons } from "../components/Icons";
-import Accordion from "../components/accordion.astro";
 ---
 
 <BaseLayout title={post.data.title} metaDescription={post.data.description}>
@@ -34,7 +33,6 @@ import Accordion from "../components/accordion.astro";
 					{post.data.title} — {remarkPluginFrontmatter.minutesRead} minutes
 					reading time.
 				</p>
-				<Accordion />
 				<slot />
 			</div>
 		</div>

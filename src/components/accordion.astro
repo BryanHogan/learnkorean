@@ -1,34 +1,43 @@
 ---
-import Icon from './Icon.astro';
-import { Icons } from "../components/Icons";
+import { Icons } from "./Icons";
 interface Props {
-    head?: String;
+    id: string;
 }
-
-const { head } = Astro.props;
+const { id } = Astro.props;
 ---
 
+<!-- Example Usage:
+    <Accordion id={"accordion_one"}>
+        <p slot="top">This part is always shown.</p>
+        <p>This part can be hidden.</p>
+    </Accordion>
+ -->
+
 <div class="accordion">
-    <input type="checkbox" name="collapse-checkbox" id="x" />
-    <label for="x">
-        <span class="text">This is a nice text or title. {head}</span>
+    <input type="checkbox" name="collapse-checkbox" id={id}> <!-- Each id must be unique -->
+    <label for={id}>
+        <span><slot name="top" /></span>
         <svg
-			class="icon"
-			width="22"
-			height="22"
-			viewBox="0 0 24 24"
-			fill="currentColor"
-			set:html={Icons["rightcaret"]}
-		/>
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            set:html={Icons["rightcaret"]}
+        />
     </label>
     <div class="collapsable text-section">
-        <p>This text can<p>
+        <div>
+            <slot />
+        </div>
     </div>
 </div>
 
 <style>
-    .accordion {
-        max-width: fit-content;
+    label {
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
     label > svg {
         height: 1.5rem;
@@ -38,33 +47,29 @@ const { head } = Astro.props;
         color: var(--color-main-1);
         border: 1px solid var(--color-accent-1);
         border-radius: 0.5em;
+        transition: all 100ms;
     }
-    .text {
-        margin-right: 1rem;
+
+    .collapsable {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 150ms;
+    }
+    .collapsable > * {
+        overflow: hidden;
     }
 
     input[name="collapse-checkbox"] {
         display: none;
     }
-    label {
-        cursor: pointer;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    .collapsable {
-        height: 0px;
-        overflow: hidden;
-    }
     input[name="collapse-checkbox"]:checked ~ .collapsable {
-        height: auto;
-        max-height: 850px;
-        transition: all 1s;
+        grid-template-rows: 1fr;
     }
     input[name="collapse-checkbox"]:checked ~ label svg {
-        transform:rotate(90deg);
+        transform: rotate(90deg);
     }
-    p::before {
 
+    span {
+        margin-right: 1rem;
     }
 </style>
