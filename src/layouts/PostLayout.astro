@@ -4,6 +4,8 @@ import type { CollectionEntry } from "astro:content";
 import { Image } from "astro:assets";
 import TableOfContentsList from "../components/TableOfContents/TableOfContentsList.astro";
 import { generateToC } from "../components/TableOfContents/generateToC";
+import { Icons } from "../components/Icons";
+import Accordion from "../components/Accordion.astro";
 
 interface Props {
 	post: CollectionEntry<"chapters">;
@@ -11,8 +13,6 @@ interface Props {
 const { post } = Astro.props;
 const { headings } = await post.render();
 const { remarkPluginFrontmatter } = await post.render();
-import menuIcon from "/src/assets/icons/Menu-Icon.svg";
-import { Icons } from "../components/Icons";
 ---
 
 <BaseLayout title={post.data.title} metaDescription={post.data.description}>
