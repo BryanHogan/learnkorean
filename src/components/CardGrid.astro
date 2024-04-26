@@ -15,12 +15,8 @@ const {gtcolumns = "1fr 1fr 1fr"} = Astro.props;
         justify-items: center;
         list-style: none;
         max-width: 1500px;
-        gap: 1.5rem 1rem;
+        gap: var(--space-l);
         margin-inline: auto;
-    }
-    ul :global(li) {
-        max-width: 430px;
-        width: 100%;
     }
     @media only screen and (max-width: 699px) {
         ul {grid-template-columns: 1fr;}
