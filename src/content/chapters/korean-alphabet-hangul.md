@@ -10,27 +10,20 @@ unit: 1
 sortOrder: 1
 tags: ["hangul", "two"]
 ---
-Blog post content here.
-Choosing a career is a complex process. What kind of work direction you go into has a major impact on your life. But most people never take a step back and think about it.
 
-So how to choose something? There are 3 main building blocks that can help you find direction, the 3 P’s are: Purpose, Passion and Personality.
+Welcome to tolearnkorean.com, glad to see you here.
 
-## Two Two
-Blog post content here.
-Choosing a career is a complex process. What kind of work direction you go into has a major impact on your life. But most people never take a step back and think about it.
+If you already know how to read Hangul (한글) then you can skip this chapter.
 
-So how to choose something? There are 3 main building blocks that can help you find direction, the 3 P’s are: Purpose, Passion and Personality.
-## THree
-Blog post content here.
-Choosing a career is a complex process. What kind of work direction you go into has a major impact on your life. But most people never take a step back and think about it.
+A great introduction into the Hangul, the Korean alphabet, is [Billy Go's Video](#).  
+Being able to read Hangul doesn't take long. There's only about as many different "letters" as in the English language. It is not possible to represent Korean words with letters of another language. Understanding Hangul is the fundamental first step to mastering Korean.
 
-So how to choose something? There are 3 main building blocks that can help you find direction, the 3 P’s are: Purpose, Passion and Personality.
-## Four
-Blog post content here.
-Choosing a career is a complex process. What kind of work direction you go into has a major impact on your life. But most people never take a step back and think about it.
+Here is a simple footnote[^1]. With some additional text after it.
 
-So how to choose something? There are 3 main building blocks that can help you find direction, the 3 P’s are: Purpose, Passion and Personality.
-## Seven
-### Seven Seven
-blocks that can help you find direction, the 3 P’s are: Purpose, Passion and Personality.
-blocks that can help you find direction, the 3 P’s are: Purpose, Passion and Personality.
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/s5aobqyEaMQ?si=v2z84oFmXKmteCgr" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" referrerpolicy="no-referrer" allowfullscreen sandbox></iframe>
+
+Alternatives to this video: [Korean word structure on howtostudykorean]
+
+
+[^1]: None of these sources are associated with our page tolearnkorean.com or me the author, Bryan Hogan.
+
