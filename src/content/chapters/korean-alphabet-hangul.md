@@ -27,3 +27,5 @@ Alternatives to this video: [Korean word structure on howtostudykorean]
 
 [^1]: None of these sources are associated with our page tolearnkorean.com or me the author, Bryan Hogan.
 
+- image of alphabet
+- anki flashcards for hangul
