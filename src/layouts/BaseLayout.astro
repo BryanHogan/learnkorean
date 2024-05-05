@@ -121,8 +121,9 @@ const { title, metaDescription } = Astro.props;
 			100svh - var(--navbar-height) - var(--footer-height) - 2rem
 		);
 	}
-	ul,
-	ol {
+
+	ul[class],
+	ol[class] {
 		list-style: none;
 	}
 	html:focus-within {

@@ -26,7 +26,7 @@ const { remarkPluginFrontmatter } = await post.render();
 				width={1600}
 				height={900}
 			/>
-			<div class="text-section modern-container">
+			<div class="text-section modern-container post-content-container">
 				<h1 id="_top" class="text-align-center">{post.data.title}</h1>
 				<p>
 					{post.data.title} — {remarkPluginFrontmatter.minutesRead} minutes
@@ -83,6 +83,67 @@ const { remarkPluginFrontmatter } = await post.render();
 		max-width: 750px;
 		flex-grow: 1;
 	}
+
+	.post-content-container {
+        & :global(h1) {
+            text-wrap: balance;
+        }
+        & :global(h2) {
+            word-break: break-word;
+			text-decoration: underline;
+			text-decoration-color: var(--color-accent-1);
+        }
+        & :global(h3) {
+            word-break: break-word;
+        }
+        & :global(img) {
+            object-fit: scale-down;
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.25rem;
+			margin-inline: auto;
+        }
+        & :global(ol), & :global(ul){
+            word-break: break-word;
+			padding-inline-start: 1.5rem;
+        }
+        & :global(blockquote) {
+            border-left: 2px solid var(--color-accent-1);
+            padding: 0.75em 1em 0.75em 1.25em;
+            border-radius: 0 0.5rem 0.5rem 0;
+            background-color: var(--color-main-2);
+            & :global(footer) {
+                margin-top: 0.5em;
+            }
+        }
+        & :global(table) {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: fit-content;
+            border: 2px solid var(--color-side-1);
+            display: block;
+            margin-inline: auto;
+            overflow-x: auto;
+            & :global(td) {
+                border: 1px solid var(--color-side-1);
+                padding-block: 12px;
+                padding-inline: 8px;
+            }
+            & :global(th) {
+                border: 1px solid var(--color-side-1);
+                padding: 12px;
+            }
+            & :global(tbody) :global(tr:nth-child(odd)) {
+                background-color: var(--color-main-2);
+                background-color: color-mix(
+                    in srgb,
+                    var(--color-accent-1) 20%,
+                    transparent
+                );
+            }
+        }
+    }
+
 	.cover-image {
 		width: 100%;
 		max-width: 675px; /* same as media query down below */
