@@ -1,0 +1,37 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+const allEntriesPosts = await getCollection("posts");
+---
+
+<BaseLayout title="Unit Overview" metaDescription="Overview of all units available. Start with Unit 1 Chapter 1.">
+	<section class="main-section-style modern-container">
+		<div class="unit-overview-container">
+			<h1>Unit Overview</h1>
+			<ol class="decimal-list">
+				<li>
+					<p><strong>Unit 1 Introduction</strong></p>
+					<ol>
+						{
+							allEntriesPosts.map((post) => (
+								<li>
+									<a href={`/post/${post.slug}`}>
+										{post.data.title}
+									</a>
+								</li>
+							))
+						}
+					</ol>
+				</li>
+			</ol>
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.unit-overview-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+</style>

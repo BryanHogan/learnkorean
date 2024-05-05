@@ -7,7 +7,7 @@ import { generateToC } from "../components/TableOfContents/generateToC";
 import { Icons } from "../components/Icons";
 
 interface Props {
-	post: CollectionEntry<"chapters">;
+	post: CollectionEntry<"chapters"> | CollectionEntry<"posts">;
 }
 const { post } = Astro.props;
 const { headings } = await post.render();
