@@ -1,5 +1,5 @@
 ---
-title: First post
+title: Getting Started
 author: Bryan Hogan
 description: I short description about trying to learn, make this a bit longer
 cover: ../../assets/images/ToLearnKorean.com-Unit-1-Chapter-1-Korean-Alphabet-Cover.png
@@ -11,4 +11,6 @@ tags: ["test", "two"]
 
 Welcome to ToLearnKorean.com, glad to see you here.
 
-Learning Korean can be hard and intimidating at times.
+This page is currently being built.
+
+Check out the first chapter of unit 1 to get started on learning Korean 👉 [Learn Hangul](/unit-1/korean-alphabet-hangul)

@@ -2,33 +2,46 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 const allEntriesPosts = await getCollection("posts");
+import CardGrid from "../components/CardGrid.astro";
+import { Image } from "astro:assets";
 ---
 
-<BaseLayout title="Unit Overview" metaDescription="Overview of all units available. Start with Unit 1 Chapter 1.">
+<BaseLayout title="All posts" metaDescription="All posts on ToLearnKorean.com">
 	<section class="main-section-style modern-container">
 		<div class="unit-overview-container">
-			<h1>Unit Overview</h1>
-			<ol class="decimal-list">
-				<li>
-					<p><strong>Unit 1 Introduction</strong></p>
-					<ol>
-						{
-							allEntriesPosts.map((post) => (
-								<li>
-									<a href={`/post/${post.slug}`}>
-										{post.data.title}
-									</a>
-								</li>
-							))
-						}
-					</ol>
-				</li>
-			</ol>
+			<h1>All Posts</h1>
+			<CardGrid gtcolumns="1fr 1fr">
+				{
+					allEntriesPosts.map((post) => (
+						<li class="post-item">
+							<Image src={post.data.cover as ImageMetadata} alt="Text"></Image>
+							<a href={`/post/${post.slug}`}>
+								{post.data.title}
+							</a>
+						</li>
+					))
+				}
+			</CardGrid>
 		</div>
 	</section>
 </BaseLayout>
 
 <style>
+	.post-item {
+		min-width: none;
+		border: 2px solid var(--color-side-1);
+		border-radius: 1rem;
+		overflow: hidden;
+		& a {
+			padding-left: 1rem;
+			margin-bottom: 10rem;
+		}
+	}
+	.post-item img {
+		width: 100%;
+		height: auto;
+		object-fit: contain;
+	}
 	.unit-overview-container {
 		display: flex;
 		flex-direction: column;
