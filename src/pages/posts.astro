@@ -14,8 +14,11 @@ import { Image } from "astro:assets";
 				{
 					allEntriesPosts.map((post) => (
 						<li class="post-item">
-							<Image src={post.data.cover as ImageMetadata} alt="Text"></Image>
 							<a href={`/post/${post.slug}`}>
+								<Image
+									src={post.data.cover as ImageMetadata}
+									alt="Text"
+								/>
 								{post.data.title}
 							</a>
 						</li>
@@ -32,10 +35,6 @@ import { Image } from "astro:assets";
 		border: 2px solid var(--color-side-1);
 		border-radius: 1rem;
 		overflow: hidden;
-		& a {
-			padding-left: 1rem;
-			margin-bottom: 10rem;
-		}
 	}
 	.post-item img {
 		width: 100%;
