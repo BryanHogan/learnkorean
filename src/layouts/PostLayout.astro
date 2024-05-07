@@ -143,6 +143,9 @@ const { remarkPluginFrontmatter } = await post.render();
                     transparent
                 );
             }
+			& :global(tr td:first-of-type) {
+				padding-inline: 1em;
+			}
         }
 		& :global(#footnote-label) {
 			font-size: 1.4em;
@@ -176,7 +179,7 @@ const { remarkPluginFrontmatter } = await post.render();
 			border-radius: 0;
 		}
 	}
-	@media only screen and (max-width: 699px) {
+	@media only screen and (max-width: 1200px) {
 		.toc-dropdown-icon {
 			display: block;
 		}
