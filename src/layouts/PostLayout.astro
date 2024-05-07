@@ -82,6 +82,7 @@ const { remarkPluginFrontmatter } = await post.render();
 		flex-wrap: wrap;
 		max-width: 750px;
 		flex-grow: 1;
+   		overflow-x: hidden;
 	}
 
 	.post-content-container {
@@ -106,6 +107,7 @@ const { remarkPluginFrontmatter } = await post.render();
         & :global(ol), & :global(ul){
             word-break: break-word;
 			padding-inline-start: 1.5rem;
+			max-width: 100%;
         }
         & :global(blockquote) {
             border-left: 2px solid var(--color-accent-1);
@@ -118,11 +120,11 @@ const { remarkPluginFrontmatter } = await post.render();
         }
         & :global(table) {
             border-collapse: collapse;
-            width: 100%;
-            max-width: fit-content;
+            width: fit-content;
+			max-width: 100%;
             border: 2px solid var(--color-side-1);
             display: block;
-            margin-inline: auto;
+			margin-inline: auto;
             overflow-x: auto;
             & :global(td) {
                 border: 1px solid var(--color-side-1);
