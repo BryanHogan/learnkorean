@@ -27,7 +27,7 @@ Or for "mu": 무
 Don't try to represent Korean words in romanized letters (the English alphabet). It is not possible to accurately represent Korean words with letters this way. Understanding Hangul is the fundamental first step to mastering Korean.
 
 A great introduction into Hangul, the Korean alphabet, is [Billy Go's Video](#).  
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/s5aobqyEaMQ?si=v2z84oFmXKmteCgr" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" referrerpolicy="no-referrer" allowfullscreen loading="lazy" sandbox="allow-same-origin allow-forms allow-popups allow-scripts allow-top-navigation-by-user-activation"></iframe>
+<iframe style="height: auto; width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube-nocookie.com/embed/s5aobqyEaMQ?si=v2z84oFmXKmteCgr" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" referrerpolicy="no-referrer" allowfullscreen loading="lazy" sandbox="allow-same-origin allow-forms allow-popups allow-scripts allow-top-navigation-by-user-activation"></iframe>
 
 
 Alternatives to this video: [Learn how to read Hangul by howtostudykorean](https://www.howtostudykorean.com/unit0/); [Learn Hangul 한글 (Korean Alphabet) by Miss Vicky](https://youtu.be/85qJXvyFrIc) [^1].
