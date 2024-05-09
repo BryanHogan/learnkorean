@@ -25,22 +25,25 @@ const allChaptersUnit2 = await (async () =>
 			/>
 			<ol class="decimal-list">
 				<li>
-					<p><strong>Unit 1</strong></p>
-					<ol>
+					<h2><strong>Unit 1</strong></h2>
+					<ol class="chapter-list">
 						{
 							allChaptersUnit1.map((chapter) => (
 								<li>
-									<a href={`/unit-1/${chapter.slug}`}>
-										{chapter.data.title}
-									</a>
+									<p>
+										<a href={`/unit-1/${chapter.slug}`}>
+											{chapter.data.title}
+										</a>
+										- {chapter.data.description}
+									</p>
 								</li>
 							))
 						}
 					</ol>
 				</li>
 				<li>
-					<p><strong>Unit 2</strong></p>
-					<ol>
+					<h2><strong>Unit 2</strong></h2>
+					<ol class="chapter-list">
 						{
 							allChaptersUnit2.map((chapter) => (
 								<li>
@@ -58,6 +61,9 @@ const allChaptersUnit2 = await (async () =>
 </BaseLayout>
 
 <style>
+	.chapter-list {
+		margin-bottom: var(--space-l);
+	}
 	.unit-overview-container {
 		display: flex;
 		flex-direction: column;
