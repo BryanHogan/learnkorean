@@ -1,5 +1,5 @@
 ---
-title: The Korean Alphabet - Hangul
+title: Unit 1 Introduction
 author: Bryan Hogan
 description: I short description about trying to learn, make this a bit longer
 cover: ../../assets/images/ToLearnKorean.com-Unit-1-Chapter-1-Korean-Alphabet-Cover.png

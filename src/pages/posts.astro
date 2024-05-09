@@ -10,7 +10,7 @@ import Hero from "../components/Hero.astro";
 <BaseLayout title="All posts" metaDescription="All posts on ToLearnKorean.com">
 	<section class="modern-container">
 		<div class="unit-overview-container">
-			<Hero title="All Posts" subText="Find all our posts here."/>
+			<Hero title="All Posts" subText="Find all our posts here." />
 			<CardGrid gtcolumns="1fr 1fr">
 				{
 					allEntriesPosts.map((post) => (
@@ -18,9 +18,10 @@ import Hero from "../components/Hero.astro";
 							<a href={`/post/${post.slug}`}>
 								<Image
 									src={post.data.cover as ImageMetadata}
-									alt="Text"
+									alt={post.data.coverAlt}
 								/>
-								{post.data.title}
+								<p class="post-title-text">{post.data.title}</p>
+								<p>{post.data.description}</p>
 							</a>
 						</li>
 					))
@@ -41,6 +42,18 @@ import Hero from "../components/Hero.astro";
 		width: 100%;
 		height: auto;
 		object-fit: contain;
+		border-bottom: 1px solid var(--color-side-1);
+	}
+	.post-item a {
+		text-decoration: none;
+	}
+	.post-item p {
+		color: var(--color-side-1);
+		padding-inline: var(--space-s);
+		padding-block-end: var(--space-xss);
+	}
+	.post-title-text {
+		font-size: 1.125em;
 	}
 	.unit-overview-container {
 		display: flex;

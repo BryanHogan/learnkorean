@@ -3,21 +3,48 @@ import Accordion from "../components/Accordion.astro";
 import Hero from "../components/Hero.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
-const allEntriesUnit1 = await getCollection("chapters");
+const allChaptersUnit1 = await (async () =>
+	(await getCollection("chapters", ({ data }) => data.unit == 1)).sort(
+		(a, b) => a.data.sortOrder - b.data.sortOrder,
+	))();
+const allChaptersUnit2 = await (async () =>
+	(await getCollection("chapters", ({ data }) => data.unit == 2)).sort(
+		(a, b) => a.data.sortOrder - b.data.sortOrder,
+	))();
 ---
 
-<BaseLayout title="Unit Overview" metaDescription="Overview of all units available. Start with Unit 1 Chapter 1.">
+<BaseLayout
+	title="Unit Overview"
+	metaDescription="Overview of all units available. Start with Unit 1 Chapter 1."
+>
 	<section class="modern-container">
 		<div class="unit-overview-container">
-			<Hero title="Unit Overview" subText="Overview of all units and their chapters."/>
+			<Hero
+				title="Unit Overview"
+				subText="Overview of all units and their chapters."
+			/>
 			<ol class="decimal-list">
 				<li>
-					<p><strong>Unit 1 Introduction</strong></p>
+					<p><strong>Unit 1</strong></p>
 					<ol>
 						{
-							allEntriesUnit1.map((chapter) => (
+							allChaptersUnit1.map((chapter) => (
 								<li>
 									<a href={`/unit-1/${chapter.slug}`}>
+										{chapter.data.title}
+									</a>
+								</li>
+							))
+						}
+					</ol>
+				</li>
+				<li>
+					<p><strong>Unit 2</strong></p>
+					<ol>
+						{
+							allChaptersUnit2.map((chapter) => (
+								<li>
+									<a href={`/unit-2/${chapter.slug}`}>
 										{chapter.data.title}
 									</a>
 								</li>
