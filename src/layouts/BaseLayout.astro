@@ -8,6 +8,10 @@ interface Props {
 	metaDescription: string;
 }
 
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+if (canonicalURL.pathname.endsWith('/')) {
+    canonicalURL.pathname = canonicalURL.pathname.slice(0, -1);
+}
 const { title, metaDescription } = Astro.props;
 ---
 
@@ -20,6 +24,7 @@ const { title, metaDescription } = Astro.props;
 		<link rel="sitemap" href="/sitemap-index.xml" />
 		<meta name="robots" content="index, follow" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="canonical" href={canonicalURL}>
 		<link
 			rel="alternate"
 			type="application/rss+xml"
@@ -46,6 +51,7 @@ const { title, metaDescription } = Astro.props;
 				", with various small icons and a gradient background surrounding it"}
 		/>
 		<meta property="og:site_name" content="ToLearnKorean" />
+		<meta property="og:url" content={canonicalURL} />
 		<ViewTransitions />
 		<slot name="head" />
 	</head>
