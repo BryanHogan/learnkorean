@@ -28,10 +28,6 @@ const { remarkPluginFrontmatter } = await post.render();
 			/>
 			<div class="text-section modern-container post-content-container">
 				<h1 id="_top" class="text-align-center">{post.data.title}</h1>
-				<p>
-					{post.data.title} — {remarkPluginFrontmatter.minutesRead} minutes
-					reading time.
-				</p>
 				<slot />
 			</div>
 		</div>
