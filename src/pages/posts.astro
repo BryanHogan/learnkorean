@@ -4,12 +4,13 @@ import { getCollection } from "astro:content";
 const allEntriesPosts = await getCollection("posts");
 import CardGrid from "../components/CardGrid.astro";
 import { Image } from "astro:assets";
+import Hero from "../components/Hero.astro";
 ---
 
 <BaseLayout title="All posts" metaDescription="All posts on ToLearnKorean.com">
-	<section class="main-section-style modern-container">
+	<section class="modern-container">
 		<div class="unit-overview-container">
-			<h1>All Posts</h1>
+			<Hero title="All Posts" subText="Find all our posts here."/>
 			<CardGrid gtcolumns="1fr 1fr">
 				{
 					allEntriesPosts.map((post) => (

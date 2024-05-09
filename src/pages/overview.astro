@@ -1,14 +1,15 @@
 ---
 import Accordion from "../components/Accordion.astro";
+import Hero from "../components/Hero.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 const allEntriesUnit1 = await getCollection("chapters");
 ---
 
 <BaseLayout title="Unit Overview" metaDescription="Overview of all units available. Start with Unit 1 Chapter 1.">
-	<section class="main-section-style modern-container">
+	<section class="modern-container">
 		<div class="unit-overview-container">
-			<h1>Unit Overview</h1>
+			<Hero title="Unit Overview" subText="Overview of all units and their chapters."/>
 			<ol class="decimal-list">
 				<li>
 					<p><strong>Unit 1 Introduction</strong></p>
