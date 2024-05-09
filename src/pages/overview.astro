@@ -31,10 +31,7 @@ const allChaptersUnit2 = await (async () =>
 							allChaptersUnit1.map((chapter) => (
 								<li>
 									<p>
-										<a href={`/unit-1/${chapter.slug}`}>
-											{chapter.data.title}
-										</a>
-										- {chapter.data.description}
+										<a href={`/unit-1/${chapter.slug}`}>{chapter.data.title}</a> - {chapter.data.description}
 									</p>
 								</li>
 							))
