@@ -1,5 +1,5 @@
 ---
-title: All letters - Hangul
+title: All Consonants - Hangul
 author: Bryan Hogan
 description: I short description about trying to learn, make this a bit longer
 cover: ../../assets/images/ToLearnKorean.com-Unit-1-Chapter-1-Korean-Alphabet-Cover.png
@@ -30,8 +30,3 @@ Double Consonants:
 - ㅉ
 
 So these are all consonants in Hangul: ㄱ, ㄲ,ㄴ, ㄷ, ㄸ, ㄹ, ㅁ, ㅂ, ㅃ, ㅅ, ㅆ, ㅇ, ㅈ, ㅉ, ㅊ, ㅋ, ㅌ, ㅍ, ㅎ
-## All Vowels
-- not mentioned yet vowels
-
-All vowels in Hangul: ㅏ, ㅐ, ㅑ, ㅒ, ㅓ, ㅔ, ㅕ, ㅖ, ㅗ, ㅘ, ㅙ, ㅚ, ㅛ, ㅜ, ㅝ, ㅞ, ㅟ, ㅠ, ㅡ, ㅢ, ㅣ
-
