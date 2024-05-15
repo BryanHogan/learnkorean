@@ -6,6 +6,7 @@ import { Image } from "astro:assets";
 import TableOfContentsList from "../components/TableOfContents/TableOfContentsList.astro";
 import { generateToC } from "../components/TableOfContents/generateToC";
 import { Icons } from "../components/Icons";
+import Icon from "../components/Icon.astro";
 
 interface Props {
 	post: CollectionEntry<"chapters"> | CollectionEntry<"posts">;
@@ -71,6 +72,46 @@ const indexOfChapter = allChaptersOfUnit.findIndex(
 							title: post.data.title,
 						})}
 					/>
+					<div class="toc-next-prev-container">
+						{
+							allChaptersOfUnit[indexOfChapter - 1] &&
+							isChapterEntry(post) ? (
+								<a
+									href={
+										"/unit-" +
+										post.data.unit +
+										`/${allChaptersOfUnit[indexOfChapter - 1].slug}`
+									}
+								>
+									<Icon
+										class="icon"
+										name="leftarrow"
+										size="1.6em"
+										color="var(--color-main-3)"
+									/>
+								</a>
+							) : null
+						}
+						{
+							allChaptersOfUnit[indexOfChapter + 1] &&
+							isChapterEntry(post) ? (
+								<a
+									href={
+										"/unit-" +
+										post.data.unit +
+										`/${allChaptersOfUnit[indexOfChapter + 1].slug}`
+									}
+								>
+									<Icon
+										class="icon"
+										name="rightarrow"
+										size="1.6em"
+										color="var(--color-main-3)"
+									/>
+								</a>
+							) : null
+						}
+					</div>
 				</div>
 			</div>
 		</aside>
@@ -243,6 +284,26 @@ const indexOfChapter = allChaptersOfUnit.findIndex(
 		margin-left: auto;
 		padding: 3px;
 	}
+	.toc-next-prev-container {
+		width: max-content;
+		margin-inline-start: 0.5rem;
+		margin-block-start: var(--space-xs);
+		transition: all 2000ms ease-in;
+		& :global(> *) {
+			display: inline-block;
+		}
+		& :global(.icon) {
+			border-radius: 5px;
+			transition: all 200ms ease-in;
+			vertical-align: middle;
+			border: 1px solid var(--color-main-1);
+			&:hover {
+				border: 1px solid var(--color-accent-1);
+				color: var(--color-accent-1);
+			}
+		}
+	}
+
 	@media only screen and (max-width: 675px) {
 		.cover-image {
 			border-radius: 0;
