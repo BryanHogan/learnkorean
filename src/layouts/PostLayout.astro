@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
 import type { CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
 import { Image } from "astro:assets";
 import TableOfContentsList from "../components/TableOfContents/TableOfContentsList.astro";
 import { generateToC } from "../components/TableOfContents/generateToC";
@@ -11,7 +12,27 @@ interface Props {
 }
 const { post } = Astro.props;
 const { headings } = await post.render();
-const { remarkPluginFrontmatter } = await post.render();
+
+function isChapterEntry(
+	post: CollectionEntry<"chapters"> | CollectionEntry<"posts">,
+): post is CollectionEntry<"chapters"> {
+	return (post as CollectionEntry<"chapters">).data.unit !== undefined;
+}
+
+const allChaptersOfUnit = await (async () => {
+	if (isChapterEntry(post)) {
+		return (
+			await getCollection(
+				"chapters",
+				({ data }) => data.unit == post.data.unit,
+			)
+		).sort((a, b) => a.data.sortOrder - b.data.sortOrder);
+	}
+	return [];
+})();
+const indexOfChapter = allChaptersOfUnit.findIndex(
+	(posts) => post.data.title === posts.data.title,
+);
 ---
 
 <BaseLayout title={post.data.title} metaDescription={post.data.description}>
@@ -54,6 +75,28 @@ const { remarkPluginFrontmatter } = await post.render();
 			</div>
 		</aside>
 	</section>
+	<div class="next-prev-post-section">
+			{
+				allChaptersOfUnit[indexOfChapter - 1] && isChapterEntry(post) ? (
+					<div style="margin-inline: auto;">
+						<p>Previous Chapter:</p>
+						<a href={"/unit-"+ post.data.unit + `/${allChaptersOfUnit[indexOfChapter - 1].slug}`}>
+							{allChaptersOfUnit[indexOfChapter - 1].data.title}
+						</a>
+					</div>
+				) : null
+			}
+			{
+				allChaptersOfUnit[indexOfChapter + 1] && isChapterEntry(post) ? (
+					<div style="margin-inline: auto;">
+						<p>Next Chapter:</p>
+						<a href={"/unit-"+ post.data.unit + `/${allChaptersOfUnit[indexOfChapter + 1].slug}`}>
+							{allChaptersOfUnit[indexOfChapter + 1].data.title}
+						</a>
+					</div>
+				) : null
+			}
+	</div>
 </BaseLayout>
 <style>
 	:global(h1),
@@ -78,78 +121,95 @@ const { remarkPluginFrontmatter } = await post.render();
 		flex-wrap: wrap;
 		max-width: 750px;
 		flex-grow: 1;
-   		overflow-x: hidden;
+		overflow-x: hidden;
 	}
 
 	.post-content-container {
-        & :global(h1) {
-            text-wrap: balance;
-        }
-        & :global(h2) {
-            word-break: break-word;
+		& :global(h1) {
+			text-wrap: balance;
+		}
+		& :global(h2) {
+			word-break: break-word;
 			text-decoration: underline;
 			text-decoration-color: var(--color-accent-1);
-        }
-        & :global(h3) {
-            word-break: break-word;
-        }
-        & :global(img) {
-            object-fit: scale-down;
-            max-width: 100%;
-            height: auto;
-            border-radius: 0.25rem;
+		}
+		& :global(h3) {
+			word-break: break-word;
+		}
+		& :global(img) {
+			object-fit: scale-down;
+			max-width: 100%;
+			height: auto;
+			border-radius: 0.25rem;
 			margin-inline: auto;
-        }
-        & :global(ol), & :global(ul){
-            word-break: break-word;
+		}
+		& :global(ol),
+		& :global(ul) {
+			word-break: break-word;
 			padding-inline-start: 1.5rem;
 			max-width: 100%;
-        }
-        & :global(blockquote) {
-            border-left: 2px solid var(--color-accent-1);
-            padding: 0.75em 1em 0.75em 1.25em;
-            border-radius: 0 0.5rem 0.5rem 0;
-            background-color: var(--color-main-2);
-            & :global(footer) {
-                margin-top: 0.5em;
-            }
-        }
-        & :global(table) {
-            border-collapse: collapse;
-            width: fit-content;
+		}
+		& :global(blockquote) {
+			border-left: 2px solid var(--color-accent-1);
+			padding: 0.75em 1em 0.75em 1.25em;
+			border-radius: 0 0.5rem 0.5rem 0;
+			background-color: var(--color-main-2);
+			& :global(footer) {
+				margin-top: 0.5em;
+			}
+		}
+		& :global(table) {
+			border-collapse: collapse;
+			width: fit-content;
 			max-width: 100%;
-            border: 2px solid var(--color-side-1);
-            display: block;
+			border: 2px solid var(--color-side-1);
+			display: block;
 			margin-inline: auto;
-            overflow-x: auto;
-            & :global(td) {
-                border: 1px solid var(--color-side-1);
-                padding-block: 12px;
-                padding-inline: 8px;
-            }
-            & :global(th) {
-                border: 1px solid var(--color-side-1);
-                padding: 12px;
-            }
-            & :global(tbody) :global(tr:nth-child(odd)) {
-                background-color: var(--color-main-2);
-                background-color: color-mix(
-                    in srgb,
-                    var(--color-accent-1) 20%,
-                    transparent
-                );
-            }
+			overflow-x: auto;
+			& :global(td) {
+				border: 1px solid var(--color-side-1);
+				padding-block: 12px;
+				padding-inline: 8px;
+			}
+			& :global(th) {
+				border: 1px solid var(--color-side-1);
+				padding: 12px;
+			}
+			& :global(tbody) :global(tr:nth-child(odd)) {
+				background-color: var(--color-main-2);
+				background-color: color-mix(
+					in srgb,
+					var(--color-accent-1) 20%,
+					transparent
+				);
+			}
 			& :global(tr td:first-of-type) {
 				padding-inline: 1em;
 			}
-        }
+		}
 		& :global(#footnote-label) {
 			font-size: 1.4em;
 			text-decoration: none;
 			padding-bottom: 0.4em;
 		}
+	}
+	.next-prev-post-section {
+        width: 90%;
+		max-width: 900px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-inline: auto;
+        margin-top: var(--space-xxl);
+        & > * {
+            max-width: 45%;
+            flex: 1;
+            padding: 1em;
+            border: 1px solid var(--color-side-1);
+            border-radius: 1em;
+        }
     }
-
 	.cover-image {
 		width: 100%;
 		max-width: 675px; /* same as media query down below */
@@ -191,17 +251,21 @@ const { remarkPluginFrontmatter } = await post.render();
 			right: 0;
 			padding-right: 0.5rem;
 			background-color: var(--color-main-1);
-			background-color: color-mix(in srgb, var(--color-main-1) 90%, transparent);
+			background-color: color-mix(
+				in srgb,
+				var(--color-main-1) 90%,
+				transparent
+			);
 			backdrop-filter: blur(0.15rem);
 			border-radius: 1rem 0 0 1rem;
-			
 		}
 		.toc-items {
 			padding-left: 0.5rem;
 			padding-bottom: 1rem;
 			min-width: 80vw;
 		}
-		aside, .toc {
+		aside,
+		.toc {
 			z-index: 1;
 		}
 	}
