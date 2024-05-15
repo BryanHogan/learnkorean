@@ -76,26 +76,38 @@ const indexOfChapter = allChaptersOfUnit.findIndex(
 		</aside>
 	</section>
 	<div class="next-prev-post-section">
-			{
-				allChaptersOfUnit[indexOfChapter - 1] && isChapterEntry(post) ? (
-					<div style="margin-inline: auto;">
-						<p>Previous Chapter:</p>
-						<a href={"/unit-"+ post.data.unit + `/${allChaptersOfUnit[indexOfChapter - 1].slug}`}>
-							{allChaptersOfUnit[indexOfChapter - 1].data.title}
-						</a>
-					</div>
-				) : null
-			}
-			{
-				allChaptersOfUnit[indexOfChapter + 1] && isChapterEntry(post) ? (
-					<div style="margin-inline: auto;">
-						<p>Next Chapter:</p>
-						<a href={"/unit-"+ post.data.unit + `/${allChaptersOfUnit[indexOfChapter + 1].slug}`}>
-							{allChaptersOfUnit[indexOfChapter + 1].data.title}
-						</a>
-					</div>
-				) : null
-			}
+		{
+			allChaptersOfUnit[indexOfChapter - 1] && isChapterEntry(post) ? (
+				<div style="margin-inline: auto;">
+					<p>Previous Chapter:</p>
+					<a
+						href={
+							"/unit-" +
+							post.data.unit +
+							`/${allChaptersOfUnit[indexOfChapter - 1].slug}`
+						}
+					>
+						{allChaptersOfUnit[indexOfChapter - 1].data.title}
+					</a>
+				</div>
+			) : null
+		}
+		{
+			allChaptersOfUnit[indexOfChapter + 1] && isChapterEntry(post) ? (
+				<div style="margin-inline: auto;">
+					<p>Next Chapter:</p>
+					<a
+						href={
+							"/unit-" +
+							post.data.unit +
+							`/${allChaptersOfUnit[indexOfChapter + 1].slug}`
+						}
+					>
+						{allChaptersOfUnit[indexOfChapter + 1].data.title}
+					</a>
+				</div>
+			) : null
+		}
 	</div>
 </BaseLayout>
 <style>
@@ -104,7 +116,8 @@ const indexOfChapter = allChaptersOfUnit.findIndex(
 	:global(h3),
 	:global(h4),
 	:global(h5),
-	:global(h6) {
+	:global(h6),
+	:global(a) {
 		scroll-margin-top: var(--navbar-height);
 	}
 	section {
@@ -194,22 +207,22 @@ const indexOfChapter = allChaptersOfUnit.findIndex(
 		}
 	}
 	.next-prev-post-section {
-        width: 90%;
+		width: 90%;
 		max-width: 900px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin-inline: auto;
-        margin-top: var(--space-xxl);
-        & > * {
-            max-width: 45%;
-            flex: 1;
-            padding: 1em;
-            border: 1px solid var(--color-side-1);
-            border-radius: 1em;
-        }
-    }
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-inline: auto;
+		margin-top: var(--space-xxl);
+		& > * {
+			max-width: 45%;
+			flex: 1;
+			padding: 1em;
+			border: 1px solid var(--color-side-1);
+			border-radius: 1em;
+		}
+	}
 	.cover-image {
 		width: 100%;
 		max-width: 675px; /* same as media query down below */
