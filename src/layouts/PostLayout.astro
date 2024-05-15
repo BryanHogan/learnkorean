@@ -78,7 +78,7 @@ const indexOfChapter = allChaptersOfUnit.findIndex(
 	<div class="next-prev-post-section">
 		{
 			allChaptersOfUnit[indexOfChapter - 1] && isChapterEntry(post) ? (
-				<div style="margin-inline: auto;">
+				<div>
 					<p>Previous Chapter:</p>
 					<a
 						href={
@@ -94,7 +94,7 @@ const indexOfChapter = allChaptersOfUnit.findIndex(
 		}
 		{
 			allChaptersOfUnit[indexOfChapter + 1] && isChapterEntry(post) ? (
-				<div style="margin-inline: auto;">
+				<div style="margin-left: auto;">
 					<p>Next Chapter:</p>
 					<a
 						href={
