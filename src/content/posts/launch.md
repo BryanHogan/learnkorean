@@ -1,16 +1,16 @@
 ---
-title: Getting Started
+title: Almost ready!
 author: Bryan Hogan
-description: I short description about trying to learn, make this a bit longer
+description: Getting ready to launch. Unit 1 is close to being finished.
 cover: ../../assets/images/ToLearnKorean.com-Unit-1-Chapter-1-Korean-Alphabet-Cover.png
 coverAlt: image
-pubDate: 2024-03-24
-lastUpdate: 2024-03-24
-tags: ["test", "two"]
+pubDate: 2024-05-17T15:47:46Z
+lastUpdate: 2024-05-17T15:47:46Z
+tags: ["announcement"]
 ---
 
 Welcome to ToLearnKorean.com, glad to see you here.
 
-This page is currently being built.
+Unit 1 is almost ready and all basic functions of this website are closed to finished as well.
 
 Check out the first chapter of unit 1 to get started on learning Korean 👉 [Learn Hangul](/unit-1/korean-alphabet-hangul)
