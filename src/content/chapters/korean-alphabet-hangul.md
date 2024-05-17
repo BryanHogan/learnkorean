@@ -1,7 +1,7 @@
 ---
-title: The Korean Alphabet - Hangul
+title: The Korean Alphabet Introduction - Hangul
 author: Bryan Hogan
-description: I short description about trying to learn, make this a bbit longer
+description: The basic letters of the Korean alphabet Hangul. Reading Korean is simpler than you think.
 cover: ../../assets/images/ToLearnKorean.com-Unit-1-Chapter-1-Korean-Alphabet-Cover.png
 coverAlt: image
 pubDate: 2024-03-24
@@ -25,12 +25,6 @@ Or for "ma": 마
 Or for "mu": 무  
 
 Don't try to represent Korean words in romanized letters (the English alphabet). It is not possible to accurately represent Korean words with letters this way. Understanding Hangul is the fundamental first step to mastering Korean.
-
-A great introduction into Hangul, the Korean alphabet, is [Billy Go's Video](#).  
-<iframe style="height: auto; width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube-nocookie.com/embed/s5aobqyEaMQ?si=v2z84oFmXKmteCgr" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" referrerpolicy="no-referrer" allowfullscreen loading="lazy" sandbox="allow-same-origin allow-forms allow-popups allow-scripts allow-top-navigation-by-user-activation"></iframe>
-
-
-Alternatives to this video: [Learn how to read Hangul by howtostudykorean](https://www.howtostudykorean.com/unit0/); [Learn Hangul 한글 (Korean Alphabet) by Miss Vicky](https://youtu.be/85qJXvyFrIc) [^1].
 
 ## Basic Consonants
 The basic consonants of Hangul are: ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, ㅅ, ㅇ, ㅈ, ㅊ, ㅋ, ㅌ, ㅍ, ㅎ
@@ -111,13 +105,20 @@ That is almost all when it comes to building these blocks. There are some cases 
 
 In the next lesson we will cover the remaining consonants and vowels. Luckily these are quite similar to the ones we already know now.
 
-Sources / References:
-- https://www.reddit.com/r/language/comments/13qadza/periodic_table_of_hangul_korean_alphabet/
-
 ---
-Planned improvements to this page:
+
+<details><summary>Sources & References</summary>
+
+- https://www.reddit.com/r/language/comments/13qadza/periodic_table_of_hangul_korean_alphabet/
+- [Learn Hangul in 90 Minutes by BillyGo](https://youtu.be/s5aobqyEaMQ) (youtube video)
+- [Learn how to read Hangul by howtostudykorean](https://www.howtostudykorean.com/unit0/) (website text)
+- [Learn Hangul 한글 (Korean Alphabet) by Miss Vicky](https://youtu.be/85qJXvyFrIc) (youtube video)
+
+</details>
+
+<details><summary>Planned improvements to this page</summary>
+
 - Short note on how to remember more easily (create fun images / references / stories)
 - Audio
 
-
-[^1]: None of these sources are associated with our page tolearnkorean.com or me the author, Bryan Hogan.
+</details>

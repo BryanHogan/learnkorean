@@ -1,7 +1,7 @@
 ---
 title: Unit 1 Introduction
 author: Bryan Hogan
-description: I short description about trying to learn, make this a bit longer
+description: Get started on learning Korean with unit 1. These lessons are focussed on Hangul and its letters.
 cover: ../../assets/images/ToLearnKorean.com-Unit-1-Chapter-1-Korean-Alphabet-Cover.png
 coverAlt: image
 pubDate: 2024-03-24
