@@ -34,14 +34,9 @@ These strong consonants are pronounced with more force and a higher pitch. They 
 ㅌ sounds more like a "t", compared to "ㄷ" which is more of a mix of between "d/t".  
 ㅍ sounds more like a "p", compared to "ㅂ" which is more of a mix of between "b/p".  
 
-<audio id="audio" src="/audio/wave.wav"></audio>
-
-<button onclick="document.getElementById('audio').play()">Start</button>
-<button onclick="document.getElementById('audio').pause()">Stop</button>
-
-|     | ㅈ   | ㅊ   | ㄱ   | ㅋ   | ㄷ   | ㅌ   | ㅂ   | ㅍ   |     |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ㅏ   | 자   | 차   | 가   | 카   | 다   | 타   | 바   | 파   | 며야ㅐ |
-| ㅓ   | 저   | 처   | 거   | 커   | 더   | 터   | 버   | 퍼   |   <audio controls src="/audio/wave.wav"></audio>  |
-| ㅗ   | 조   | 초   | 고   | 코   | 도   | 토   | 보   | 포   |     |
-| ㅜ   | 주   | 추   | 구   | 쿠   | 두   | 투   | 부   | 푸   |     |
+|     | ㅈ   | ㅊ   | ㄱ   | ㅋ   | ㄷ   | ㅌ   | ㅂ   | ㅍ   |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| ㅏ   | 자   | 차   | 가   | 카   | 다   | 타   | 바   | 파   |
+| ㅓ   | 저   | 처   | 거   | 커   | 더   | 터   | 버   | 퍼   |
+| ㅗ   | 조   | 초   | 고   | 코   | 도   | 토   | 보   | 포   |
+| ㅜ   | 주   | 추   | 구   | 쿠   | 두   | 투   | 부   | 푸   |
