@@ -17,7 +17,7 @@ There are only a few vowels remaining to know all characters of the Korean alpha
 
 Dipthongs are two vowels in one. They are just a combination of the vowels we already know.
 
-You should remember these simpler vowels from our [earlier lesson](./korean-alphabet-hangul):
+You should remember these simpler vowels from our [earlier lesson](/unit-1/korean-alphabet-hangul):
 - ㅏ = a
 - ㅓ = eo
 - ㅗ = o
@@ -60,7 +60,9 @@ These vowels are all a combination of vowels we already know:
 - ㅟ: ㅜ + ㅣ = "wi"
 - ㅢ: ㅡ + ㅣ = "ui"*
 
-Aside from 외 and 의 they all sound mostly like you would expect from combining them. 의 has some special pronunciation rules I will go into in a later chapter.
+Aside from 외 and 의 they all sound mostly like you would expect from combining them.  
+의 has some special pronunciation rules I will go into in a later chapter.  
+외 is pronounced just like 왜 and 웨.
 
 So these are all vowels in Hangul: ㅏ, ㅐ, ㅑ, ㅒ, ㅓ, ㅔ, ㅕ, ㅖ, ㅗ, ㅘ, ㅙ, ㅚ, ㅛ, ㅜ, ㅝ, ㅞ, ㅟ, ㅠ, ㅡ, ㅢ, ㅣ
 

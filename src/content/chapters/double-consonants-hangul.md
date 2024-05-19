@@ -27,13 +27,11 @@ So these might already seem familiar. They look like their regular forms but dou
 
 Double consonants are made with the same sound as regular consonants but by slightly tensing your mouth before pronouncing them. Hence they are also often called the tense consonants.
 
-ㄲ sounds more like a "g", compared to "ㄱ" which is more of a mix of between "k/g".  
-ㄸ sounds more like a "d", compared to "ㄷ" which is more of a mix of between "d/t".  
-ㅃ sounds more like a "b", compared to "ㅂ" which is more of a mix of between "b/p".  
-ㅆ sounds more like a sharp "s/z" sound, compared to "ㅅ" which is more like a regular "s".  
-ㅉ is harder to described in romanized sounds. The official romanization for ㅈ is "j" and for ㅉ it is "jj". Like described earlier, for ㅉ pronounce ㅈ but with more force at the beginning of the pronunciation.
-
-(*Audio example of how these sound will be added in the future!*)
+- ㄲ sounds more like a "g", compared to "ㄱ" which is more of a mix of between "k/g".  
+- ㄸ sounds more like a "d", compared to "ㄷ" which is more of a mix of between "d/t".  
+- ㅃ sounds more like a "b", compared to "ㅂ" which is more of a mix of between "b/p".  
+- ㅆ sounds more like a sharp "s/z" sound, compared to "ㅅ" which is more like a regular "s".  
+- ㅉ is harder to describe in romanized sounds. The official romanization for ㅈ is "j" and for ㅉ it is "jj". Like described earlier, for ㅉ pronounce ㅈ but with more force at the beginning of the pronunciation.
 
 For a Korean learner these letters might be hard to differentiate in the beginning:
 - ㄱ, ㄲ, ㅋ

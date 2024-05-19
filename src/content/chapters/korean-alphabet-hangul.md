@@ -54,7 +54,7 @@ These you will have to memorize. I made a Anki deck for you that contains all th
 
 Writing and memorizing these at the beginning is hard. It's normal to only be able to read very slowly and feel like an elementary school kid. But with practise you will get better.
 
-Korean learners often struggle with "ㄹ" as it can be a bit harder to pronounce. It's also the reason why many Koreans struggle to differentiate the sounds of "r" and "l". To make this sound move your tongue to the position as if you were going to pronounce "d" (like "da") but instead say "la". [This video explains it well](https://youtu.be/2-4ShB33Eu4), but when you are starting out don't stress too much about sounding perfectly.
+Korean learners often struggle with "ㄹ" as it can be a bit harder to pronounce. It's also the reason why many Koreans struggle to differentiate the sounds of "r" and "l", since it is a single letter that can sound like both of these. To make this sound move your tongue to the position as if you were going to pronounce "d" (like "da") but instead say "la". [This video explains it well](https://youtu.be/2-4ShB33Eu4), but when you are starting out don't stress too much about sounding perfectly.
 
 ## Basic Vowels
 Next let's focus on the following vowels:ㅏ, ㅓ, ㅗ, ㅜ, ㅡ, ㅣ
@@ -71,14 +71,16 @@ Combined with the consonant "ㄷ" they sound like this: 다("da"), 더("deo"), �
 ## Building Blocks
 To make a sound in Korean you need at least 1 consonant and 1 vowel.
 
-|     | **ㄱ**   | **ㄴ**   | **ㄷ**   | **ㄹ**   | **ㅁ**   | **ㅂ**   | **ㅅ**   | **ㅇ**   | **ㅈ**   | **ㅎ**   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **ㅏ**   | 가   | 나   | 다   | 라   | 마   | 바   | 사   | 아   | 자   | 하   |
-| **ㅓ**   | 거   | 너   | 더   | 러   | 머   | 버   | 서   | 어   | 저   | 허   |
-| **ㅗ**   | 고   | 노   | 도   | 로   | 모   | 보   | 소   | 오   | 조   | 호   |
-| **ㅜ**   | 구   | 누   | 두   | 루   | 무   | 부   | 수   | 우   | 주   | 후   |
-| **ㅡ**   | 그   | 느   | 드   | 르   | 므   | 브   | 스   | 으   | 즈   | 흐   |
-| **ㅣ**   | 기   | 니   | 디   | 리   | 미   | 비   | 시   | 이   | 지   | 히   |
+|       | **ㄱ** | **ㄴ** | **ㄷ** | **ㄹ** | **ㅁ** | **ㅂ** | **ㅅ** | **ㅇ** | **ㅈ** | **ㅎ** |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| **ㅏ** | 가     | 나     | 다     | 라     | 마     | 바     | 사     | 아     | 자     | 하     |
+| **ㅓ** | 거     | 너     | 더     | 러     | 머     | 버     | 서     | 어     | 저     | 허     |
+| **ㅗ** | 고     | 노     | 도     | 로     | 모     | 보     | 소     | 오     | 조     | 호     |
+| **ㅜ** | 구     | 누     | 두     | 루     | 무     | 부     | 수     | 우     | 주     | 후     |
+| **ㅡ** | 그     | 느     | 드     | 르     | 므     | 브     | 스     | 으     | 즈     | 흐     |
+| **ㅣ** | 기     | 니     | 디     | 리     | 미     | 비     | 시*    | 이     | 지     | 히     |
+
+**special pronunciation case*
 
 There are two ways blocks that contain 1 consonant and 1 vowel are built, either horizontally or vertically.
 

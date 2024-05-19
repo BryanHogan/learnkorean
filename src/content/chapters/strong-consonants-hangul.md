@@ -16,7 +16,7 @@ About the four strong consonants of Hangul.
 ## Strong consonants
 There are more consonants in Hangul. Luckily they are similar to characters we have already learned. Korean has the following strong consonants: ㅊ, ㅋ, ㅌ, ㅍ
 
-These strong consonants might seem familiar to you. They are all made by adding one stroke to their plain version, except for ㅂ.
+These strong consonants might seem familiar to you. They are all made by adding one stroke to their plain version, except for ㅂ/ㅍ.
 - ㅈ: ㅊ
 - ㄱ: ㅋ
 - ㄷ: ㅌ
@@ -40,3 +40,16 @@ These strong consonants are pronounced with more force and a higher pitch. They 
 | ㅓ   | 저   | 처   | 거   | 커   | 더   | 터   | 버   | 퍼   |
 | ㅗ   | 조   | 초   | 고   | 코   | 도   | 토   | 보   | 포   |
 | ㅜ   | 주   | 추   | 구   | 쿠   | 두   | 투   | 부   | 푸   |
+
+### Word Examples
+ For example these words use strong consonants:  
+ 차 = car, tea  
+ 코 = nose  
+ 팔 = arm  
+ 타다 = to ride  
+
+ <details><summary>Sources & References</summary>
+
+- [Korean Consonants – Letters of the Alphabet (Hangul 한글) by 90daykorean](https://www.90daykorean.com/korean-consonants/)
+
+</details>
