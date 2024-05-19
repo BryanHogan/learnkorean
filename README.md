@@ -5,13 +5,18 @@ Before launch:
 - wording index, about, legal & privacy
 - sound examples
 - unit chapter position at bottom of postlayout
-
+- images
+- anki flashcards
+=> test
 
 Additional smaller To Do's:
 - color adjustments: logo & gradient
 - button looks: currently look to fat / dirty -> reduce shadow (index page first element & cardgrid style of buttons doesn't fit)
 - color of button on index -> chose main color & gradient
 - change star icon in footer with bryanhogan turlte icon
+
+Future:
+- practice
 
 Using
 - AstroJS
