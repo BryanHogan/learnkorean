@@ -20,7 +20,7 @@ These are all letters of the Korean alphabet in order:
 ## Unit 2
 In Unit 2 we will be going into building simple sentences, all the basics you need to have a simple conversation.
 
-[Get started with unit 2 here.](../unit-2/unit-2-introduction)
+[Get started with unit 2 here.](/unit-2/unit-2-introduction)
 
 ##  Further resources
 Further resources that will be helpful to you now:
