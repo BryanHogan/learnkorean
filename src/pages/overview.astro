@@ -33,7 +33,7 @@ const allChaptersUnit2 = await (async () =>
 								<li>
 									<a href={`/unit-1/${chapter.slug}`}>
 										<div class="chapter-card-container">
-											<h2 class="title-line">
+											<h2 class="title-line" transition:name={chapter.data.title}>
 												{chapter.data.title}
 											</h2>
 											<p style="text-decoration: none;">
@@ -74,11 +74,12 @@ const allChaptersUnit2 = await (async () =>
 		margin: var(--space-xs);
 		margin-left: 0;
 		width: 100%;
-		& .title-line {
+		& h2 {
 			font-size: 1.125em;
 			font-weight: normal;
 			text-decoration: underline;
 			text-decoration-color: var(--color-accent-1);
+			display: inline-block;
 		}
 	}
 	.chapter-list a {

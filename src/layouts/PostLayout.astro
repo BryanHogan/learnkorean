@@ -49,7 +49,7 @@ const indexOfChapter = allChaptersOfUnit.findIndex(
 				height={900}
 			/>
 			<div class="text-section modern-container post-content-container">
-				<h1 id="_top" class="text-align-center">{post.data.title}</h1>
+				<h1 id="_top" class="text-align-center" transition:name={post.data.title}>{post.data.title}</h1>
 				<slot />
 			</div>
 		</div>
@@ -180,6 +180,9 @@ const indexOfChapter = allChaptersOfUnit.findIndex(
 
 	.post-content-container {
 		& :global(h1) {
+			display: block;
+			width: fit-content;
+			margin-inline: auto;
 			text-wrap: balance;
 		}
 		& :global(h2) {
