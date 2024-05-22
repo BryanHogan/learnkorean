@@ -2,8 +2,14 @@
 import { Icons } from "./Icons";
 interface Props {
     id: string;
+    iconMarginLeft?: String;
+    startChecked?: boolean;
 }
-const { id } = Astro.props;
+const {
+    id,
+    iconMarginLeft = "var(--space-xs)",
+    startChecked = false,
+} = Astro.props;
 ---
 
 <!-- Example Usage:
@@ -12,9 +18,14 @@ const { id } = Astro.props;
         <p>This part can be hidden.</p>
     </Accordion>
  -->
-
 <div class="accordion">
-    <input type="checkbox" name="collapse-checkbox" id={id}> <!-- Each id must be unique -->
+    <input
+        type="checkbox"
+        name="collapse-checkbox"
+        id={id}
+        checked={startChecked}
+    />
+
     <label for={id}>
         <span><slot name="top" /></span>
         <svg
@@ -32,7 +43,7 @@ const { id } = Astro.props;
     </div>
 </div>
 
-<style>
+<style define:vars={{ iconMarginLeft }}>
     label {
         cursor: pointer;
         display: flex;
@@ -42,7 +53,7 @@ const { id } = Astro.props;
     label > svg {
         height: 1.5rem;
         width: auto;
-        margin-left: auto;
+        margin-left: var(--depth);
         background-color: var(--color-side-1);
         color: var(--color-main-1);
         border: 1px solid var(--color-accent-1);

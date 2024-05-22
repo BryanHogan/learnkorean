@@ -1,4 +1,5 @@
 ---
+import Accordion from "../components/Accordion.astro";
 import Hero from "../components/Hero.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
@@ -24,7 +25,8 @@ const allChaptersUnit2 = await (async () =>
 			/>
 			<ol class="decimal-list">
 				<li>
-					<h2><strong>Unit 1</strong></h2>
+					<Accordion id={"accordion_one"} startChecked={true}>
+					<h2 slot="top"><strong>Unit 1</strong></h2>
 					<ol class="chapter-list">
 						{
 							allChaptersUnit1.map((chapter) => (
@@ -43,6 +45,7 @@ const allChaptersUnit2 = await (async () =>
 							))
 						}
 					</ol>
+				</Accordion>
 				</li>
 				<li>
 					<h2><strong>Unit 2</strong></h2>
@@ -69,6 +72,7 @@ const allChaptersUnit2 = await (async () =>
 		border-radius: 1rem;
 		padding: var(--space-s);
 		margin: var(--space-xs);
+		margin-left: 0;
 		width: 100%;
 		& .title-line {
 			font-size: 1.125em;
