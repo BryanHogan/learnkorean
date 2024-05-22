@@ -4,7 +4,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 <BaseLayout title="Not found - 404" metaDescription="Page does not exist.">
     <section class="main-section-style modern-container text-section">
-        <h1 class="text-align-center">Page Not Found - Error 404</h1>
-        <p style="text-align: center;">The page you requested does not exist.</p>
+        <h1>Page Not Found - Error 404</h1>
+        <p>The page you requested does not exist.</p>
+        <p>I'm sorry for the inconvenience.<br/>Maybe you want to visit our <a href="/">starting page</a> or <a href="/overview">unit overview</a>.</p>
     </section>
 </BaseLayout>
+
+<style>
+    h1, p {
+        text-align: center;
+    }
+</style>

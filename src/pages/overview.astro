@@ -29,9 +29,16 @@ const allChaptersUnit2 = await (async () =>
 						{
 							allChaptersUnit1.map((chapter) => (
 								<li>
-									<p>
-										<a href={`/unit-1/${chapter.slug}`}>{chapter.data.title}</a> - {chapter.data.description}
-									</p>
+									<a href={`/unit-1/${chapter.slug}`}>
+										<div class="chapter-card-container">
+											<h2 class="title-line">
+												{chapter.data.title}
+											</h2>
+											<p style="text-decoration: none;">
+												{chapter.data.description}
+											</p>
+										</div>
+									</a>
 								</li>
 							))
 						}
@@ -57,6 +64,23 @@ const allChaptersUnit2 = await (async () =>
 </BaseLayout>
 
 <style>
+	.chapter-card-container {
+		border: 1px solid var(--color-main-3);
+		border-radius: 1rem;
+		padding: var(--space-s);
+		margin: var(--space-xs);
+		width: 100%;
+		& .title-line {
+			font-size: 1.125em;
+			font-weight: normal;
+			text-decoration: underline;
+			text-decoration-color: var(--color-accent-1);
+		}
+	}
+	.chapter-list a {
+		color: var(--color-side-1);
+		text-decoration: none;
+	}
 	.chapter-list {
 		margin-bottom: var(--space-l);
 	}

@@ -15,7 +15,11 @@ Additional smaller To Do's:
 - color of button on index -> chose main color & gradient
 - change star icon in footer with bryanhogan turlte icon
 
+Last steps:
+- add site to google
+
 Future:
+- overflowing toc needs to be scrollable
 - practice
 
 Using

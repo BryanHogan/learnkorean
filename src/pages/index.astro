@@ -7,7 +7,10 @@ import CardGrid from "../components/CardGrid.astro";
 import Card from "../components/Card.astro";
 ---
 
-<BaseLayout title="Start Learning Korean - ToLearnKorean.com" metaDescription="Get started on how to learn Korean. Your guide to help you understand.">
+<BaseLayout
+	title="Start Learning Korean - ToLearnKorean.com"
+	metaDescription="Get started on how to learn Korean. Your guide to help you understand."
+>
 	<section class="landing-page-intro-container">
 		<div class="first-group-container">
 			<Image
@@ -17,11 +20,14 @@ import Card from "../components/Card.astro";
 				width={landingImage.width}
 				height={landingImage.height}
 			/>
-			<div class="text-group" style="max-width: 600px;">
+			<div class="text-group" style="max-width: 500px;">
 				<h1>
 					Learn Korean now<br /> with ToLearnKorean.
 				</h1>
-				<p>Your helper to learn Korean. Precise, reliant and simple.<br /> Explaining how to read, write, understand and speak Korean.</p>
+				<p>
+					Your reliable helper to learn Korean.<br />Master reading,
+					writing, understanding, and speaking Korean.
+				</p>
 			</div>
 		</div>
 		<ul class="button-group-layout">
@@ -64,7 +70,8 @@ import Card from "../components/Card.astro";
 			</Card>
 			<Card title="Learn Hangul" icon="megaphone">
 				<p>
-					Get started with the first chapter of unit 1 and learn to read Korean.
+					Get started with the first chapter of unit 1 and learn to
+					read Korean.
 				</p>
 				<Button
 					slot="last-row"
@@ -75,7 +82,11 @@ import Card from "../components/Card.astro";
 			</Card>
 			<Card title="Latest Updates" icon="lightbulb" gridHeight={"2"}>
 				<ul class="list">
-					<li><a href="/unit-1/korean-alphabet-hangul">The Korean Alphabet - Hangul</a></li>
+					<li>
+						<a href="/unit-1/korean-alphabet-hangul"
+							>The Korean Alphabet - Hangul</a
+						>
+					</li>
 				</ul>
 			</Card>
 			<Card title="What is this page About?" icon="megaphone">
@@ -88,9 +99,7 @@ import Card from "../components/Card.astro";
 				/>
 			</Card>
 			<Card title="Notice" icon="star">
-				<p>
-					This page is still in the middle of being built.
-				</p>
+				<p>This page is still in the middle of being built.</p>
 			</Card>
 		</CardGrid>
 	</article>
