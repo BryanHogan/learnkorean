@@ -191,7 +191,8 @@ if (isChapterEntry(post)) {
 	</div>
 	{
 		isChapterEntry(post) ? (
-			<article class="unit-overview-position-container modern-container">
+			<article class="unit-overview-position-container modern-container modern-container">
+				<p>All chapters of this unit.</p>
 				<ol>
 					{allChaptersThisUnit.map((chapter) => (
 						<li>
@@ -202,9 +203,17 @@ if (isChapterEntry(post)) {
 										post.data.unit +
 										`/${chapter.slug}`
 									}
+									class={
+										chapter.data.title == post.data.title
+											? "selected"
+											: ""
+									}
 								>
-									{chapter.data.title}</a>{chapter.data.title == post.data.title ? (<> 👈</>) : null
-								}
+									{chapter.data.title}
+								</a>
+								{chapter.data.title == post.data.title ? (
+									<span> 👈</span>
+								) : null}
 							</p>
 						</li>
 					))}
@@ -320,9 +329,18 @@ if (isChapterEntry(post)) {
 		margin-top: var(--space-xxl);
 		margin-inline: auto;
 		width: max-content;
-		& a, ol {
+		color: var(--color-main-3);
+		max-width: 100%;
+		& ol {
+			margin-left: 1.5rem;
+		}
+		& a,
+		ol {
 			color: var(--color-main-3);
 			font-size: 1rem;
+		}
+		& .selected {
+			color: var(--color-side-1);
 		}
 	}
 
