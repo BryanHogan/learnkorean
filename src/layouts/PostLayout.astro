@@ -191,7 +191,7 @@ if (isChapterEntry(post)) {
 	</div>
 	{
 		isChapterEntry(post) ? (
-			<article class="unit-overview-position-container modern-container modern-container">
+			<nav class="unit-overview-position-container modern-container modern-container">
 				<p>All chapters of this unit.</p>
 				<ol>
 					{allChaptersThisUnit.map((chapter) => (
@@ -218,7 +218,7 @@ if (isChapterEntry(post)) {
 						</li>
 					))}
 				</ol>
-			</article>
+			</nav>
 		) : null
 	}
 </BaseLayout>
