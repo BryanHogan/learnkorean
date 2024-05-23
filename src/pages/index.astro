@@ -5,6 +5,21 @@ import landingImage from "../assets/images/TLK-Landing-Image.png";
 import Button from "../components/Button.astro";
 import CardGrid from "../components/CardGrid.astro";
 import Card from "../components/Card.astro";
+import { getCollection, getEntry, type CollectionEntry } from "astro:content";
+
+const [blogPosts, chapterPosts] = await Promise.all([
+	getCollection("posts"),
+	getCollection("chapters"),
+]);
+const allPosts = [...blogPosts, ...chapterPosts].sort(
+	(a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime(),
+);
+
+function isChapterEntry(
+	post: CollectionEntry<"chapters"> | CollectionEntry<"posts">,
+): post is CollectionEntry<"chapters"> {
+	return (post as CollectionEntry<"chapters">).data.unit !== undefined;
+}
 ---
 
 <BaseLayout
@@ -70,7 +85,8 @@ import Card from "../components/Card.astro";
 			</Card>
 			<Card title="A basic conversation" icon="megaphone">
 				<p>
-					In chapter 2 your learn the basics required to have a simple conversation.
+					In chapter 2 your learn the basics required to have a simple
+					conversation.
 				</p>
 				<Button
 					slot="last-row"
@@ -81,15 +97,30 @@ import Card from "../components/Card.astro";
 			</Card>
 			<Card title="Latest Updates" icon="lightbulb" gridHeight={"2"}>
 				<ul class="list">
-					<li>
-						<a href="/unit-1/korean-alphabet-hangul"
-							>The Korean Alphabet - Hangul</a
-						>
-					</li>
+					{
+						allPosts.slice(0, 15).map((post) => (
+							<li>
+								{isChapterEntry(post) ? (
+									<a
+										href={`/unit-${post.data.unit}/${post.slug}`}
+									>
+										{post.data.title}
+									</a>
+								) : (
+									<a href={"post/" + post.slug}>
+										{post.data.title}
+									</a>
+								)}
+							</li>
+						))
+					}
 				</ul>
 			</Card>
 			<Card title="Blog" icon="megaphone">
-				<p>Beyond the units, our blog posts. About living in Korea, using flashcards, best restaurants in Seoul and more.</p>
+				<p>
+					Beyond the units, our blog posts. About living in Korea,
+					using flashcards, best restaurants in Seoul and more.
+				</p>
 				<Button
 					slot="last-row"
 					buttonStyle="accent-color medium grow"
@@ -98,7 +129,10 @@ import Card from "../components/Card.astro";
 				/>
 			</Card>
 			<Card title="FAQ" icon="star">
-				<p>In the recent future there will be a link to a FAQ page right here. :)</p>
+				<p>
+					In the recent future there will be a link to a FAQ page
+					right here. :)
+				</p>
 			</Card>
 		</CardGrid>
 	</article>
