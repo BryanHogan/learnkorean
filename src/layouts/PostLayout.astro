@@ -7,6 +7,9 @@ import TableOfContentsList from "../components/TableOfContents/TableOfContentsLi
 import { generateToC } from "../components/TableOfContents/generateToC";
 import { Icons } from "../components/Icons";
 import Icon from "../components/Icon.astro";
+import CardGrid from "../components/CardGrid.astro";
+import Button from "../components/Button.astro";
+import Card from "../components/Card.astro";
 
 interface Props {
 	post: CollectionEntry<"chapters"> | CollectionEntry<"posts">;
@@ -34,12 +37,27 @@ const allChaptersOfUnit = await (async () => {
 const indexOfChapter = allChaptersOfUnit.findIndex(
 	(posts) => post.data.title === posts.data.title,
 );
+let allChaptersThisUnit = [];
+if (isChapterEntry(post)) {
+	allChaptersThisUnit = await (async () =>
+		(
+			await getCollection(
+				"chapters",
+				({ data }) => data.unit == post.data.unit,
+			)
+		).sort((a, b) => a.data.sortOrder - b.data.sortOrder))();
+}
 
 let tocInfoString = "";
 if (isChapterEntry(post)) {
-    tocInfoString = "Unit " + post.data.unit + ": " + (indexOfChapter + 1) + "/" + allChaptersOfUnit.length;
+	tocInfoString =
+		"Unit " +
+		post.data.unit +
+		": " +
+		(indexOfChapter + 1) +
+		"/" +
+		allChaptersOfUnit.length;
 }
-
 ---
 
 <BaseLayout title={post.data.title} metaDescription={post.data.description}>
@@ -128,9 +146,7 @@ if (isChapterEntry(post)) {
 						{
 							isChapterEntry(post) ? (
 								<div class="chapter-position-info">
-									<p>
-										{tocInfoString}
-									</p>
+									<p>{tocInfoString}</p>
 								</div>
 							) : null
 						}
@@ -173,6 +189,29 @@ if (isChapterEntry(post)) {
 			) : null
 		}
 	</div>
+	{
+		isChapterEntry(post) ? (
+			<article class="unit-overview-position-container modern-container">
+				<ol>
+					{allChaptersThisUnit.map((chapter) => (
+						<li>
+							<p>
+								<a
+									href={
+										"/unit-" +
+										post.data.unit +
+										`/${chapter.slug}`
+									}
+								>
+									{chapter.data.title}</a>{chapter.data.title == post.data.title ? (<> 👈</>) : null
+								}
+							</p>
+						</li>
+					))}
+				</ol>
+			</article>
+		) : null
+	}
 </BaseLayout>
 <style>
 	:global(h1),
@@ -276,6 +315,17 @@ if (isChapterEntry(post)) {
 			padding-block-end: var(--space-xs);
 		}
 	}
+	.unit-overview-position-container {
+		padding-inline: 1rem;
+		margin-top: var(--space-xxl);
+		margin-inline: auto;
+		width: max-content;
+		& a, ol {
+			color: var(--color-main-3);
+			font-size: 1rem;
+		}
+	}
+
 	.next-prev-post-section {
 		width: 90%;
 		max-width: 900px;
@@ -286,7 +336,7 @@ if (isChapterEntry(post)) {
 		margin-inline: auto;
 		margin-top: var(--space-xxl);
 		& > * {
-			max-width: 45%;
+			max-width: 48%;
 			flex: 1;
 			padding: 1em;
 			border: 1px solid var(--color-side-1);
