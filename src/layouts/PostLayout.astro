@@ -198,20 +198,14 @@ if (isChapterEntry(post)) {
 						<li>
 							<p>
 								<a
-									href={
-										"/unit-" +
-										post.data.unit +
-										`/${chapter.slug}`
-									}
+									href={`/unit-${post.data.unit}/${chapter.slug}`}
 									class={
-										chapter.data.title == post.data.title
+										chapter.data.title === post.data.title
 											? "selected"
 											: ""
 									}
-								>
-									{chapter.data.title}
-								</a>
-								{chapter.data.title == post.data.title ? (
+								>{`${chapter.data.title}`}</a>
+								{chapter.data.title === post.data.title ? (
 									<span> 👈</span>
 								) : null}
 							</p>
