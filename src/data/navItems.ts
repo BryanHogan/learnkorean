@@ -5,8 +5,8 @@ const navItems = [
         style: ""
     },
     {
-        text: "Posts",
-        href: "/posts",
+        text: "Blog",
+        href: "/blog",
         style: ""
     },
     {

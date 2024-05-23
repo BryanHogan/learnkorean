@@ -7,10 +7,10 @@ import { Image } from "astro:assets";
 import Hero from "../components/Hero.astro";
 ---
 
-<BaseLayout title="All posts" metaDescription="All posts on ToLearnKorean.com">
+<BaseLayout title="Blog - ToLearnKorean" metaDescription="All blog posts on ToLearnKorean.com">
 	<section class="modern-container">
 		<div class="unit-overview-container">
-			<Hero title="All Posts" subText="Find all our posts here." />
+			<Hero title="All Posts" subText="Find all our blog posts here." />
 			<CardGrid gtcolumns="1fr 1fr">
 				{
 					allEntriesPosts.map((post) => (
