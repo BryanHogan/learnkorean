@@ -3,17 +3,14 @@ See it live on: [tolearnkorean.com](https://tolearnkorean.com/)
 
 Before launch:
 - wording index, about, legal & privacy
+- white space problem: implement discord suggestion
+- index: last updates
+- footer links not implemented yet
 - sound examples
-- unit chapter position at bottom of postlayout
 - images
 - anki flashcards
 => test
 
-Additional smaller To Do's:
-- color adjustments: logo & gradient
-- button looks: currently look to fat / dirty -> reduce shadow (index page first element & cardgrid style of buttons doesn't fit)
-- color of button on index -> chose main color & gradient
-- change star icon in footer with bryanhogan turlte icon
 
 Last steps:
 - add site to google
@@ -21,8 +18,9 @@ Last steps:
 Future:
 - overflowing toc needs to be scrollable
 - practice
+- change star icon in footer with bryanhogan turlte icon
+- content for postlayout sides
 
-Using
+Built with (expand)
 - AstroJS
 - PostCSS
-

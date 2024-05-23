@@ -25,7 +25,8 @@ import Card from "../components/Card.astro";
 					Learn Korean now<br /> with ToLearnKorean.
 				</h1>
 				<p>
-					Your reliable helper to learn Korean.<br />How to read, write, understand and speak Korean.
+					Your reliable helper to learn Korean.<br />How to read,
+					write, understand and speak Korean.
 				</p>
 			</div>
 		</div>
@@ -55,10 +56,10 @@ import Card from "../components/Card.astro";
 	</section>
 	<article style="padding-inline: 1rem">
 		<CardGrid>
-			<Card title="Start From Zero" icon="book">
+			<Card title="For beginners" icon="book">
 				<p>
-					We all start somewhere, this is your chance. Start with Unit
-					1.
+					We all start somewhere, unit 1 starts with Hangul. Begin at
+					the very beginning.
 				</p>
 				<Button
 					slot="last-row"
@@ -67,16 +68,15 @@ import Card from "../components/Card.astro";
 					text="Unit Overview"
 				/>
 			</Card>
-			<Card title="Learn Hangul" icon="megaphone">
+			<Card title="A basic conversation" icon="megaphone">
 				<p>
-					Get started with the first chapter of unit 1 and learn to
-					read Korean.
+					In chapter 2 your learn the basics required to have a simple conversation.
 				</p>
 				<Button
 					slot="last-row"
 					buttonStyle="accent-color medium grow"
-					href="/unit-1/korean-alphabet-hangul"
-					text="Yes!"
+					href="/overview#unit-2"
+					text="To unit 2!"
 				/>
 			</Card>
 			<Card title="Latest Updates" icon="lightbulb" gridHeight={"2"}>
@@ -88,17 +88,17 @@ import Card from "../components/Card.astro";
 					</li>
 				</ul>
 			</Card>
-			<Card title="What is this page About?" icon="megaphone">
-				<p>Read more about ToLearnKorean.com. (Page not made yet)</p>
+			<Card title="More posts" icon="megaphone">
+				<p>Beyond the units, our extra posts. About living in Korea, using flashcards, best restaurants in Seoul and more.</p>
 				<Button
 					slot="last-row"
 					buttonStyle="accent-color medium grow"
-					href="#"
-					text="See About"
+					href="/posts"
+					text="See posts"
 				/>
 			</Card>
-			<Card title="Notice" icon="star">
-				<p>This page is still in the middle of being built.</p>
+			<Card title="FAQ" icon="star">
+				<p>In the recent future there will be a link to a FAQ page right here. :)</p>
 			</Card>
 		</CardGrid>
 	</article>
