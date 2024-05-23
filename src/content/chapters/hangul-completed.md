@@ -7,15 +7,9 @@ coverAlt: image
 pubDate: 2024-05-17T08:00:37Z
 lastUpdate: 2024-05-17T08:00:37Z
 unit: 1
-sortOrder: 6
+sortOrder: 7
 tags: ["hangul"]
 ---
-
-You can now read Hangul!
-
-These are all letters of the Korean alphabet in order:
-ㄱ,ㄲ, ㄴ, ㄷ, ㄸ, ㄹ, ㅁ, ㅂ, ㅃ, ㅅ, ㅆ, ㅇ, ㅈ, ㅉ, ㅊ, ㅋ, ㅌ, ㅍ, ㅎ,
-ㅏ, ㅐ, ㅑ, ㅒ, ㅓ, ㅔ, ㅕ, ㅖ, ㅗ, ㅘ, ㅙ, ㅚ, ㅛ, ㅜ, ㅝ, ㅞ, ㅟ, ㅠ, ㅡ, ㅢ, ㅣ
 
 ## Unit 2
 In Unit 2 we will be going into building simple sentences, all the basics you need to have a simple conversation.
