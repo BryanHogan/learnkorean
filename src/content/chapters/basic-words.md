@@ -2,8 +2,8 @@
 title: "Basic Korean Words"
 author: Bryan Hogan
 description: Covering the most important words to know in Korean.
-cover: ../../assets/images/ToLearnKorean.com-Unit-1-Chapter-1-Korean-Alphabet-Cover.png
-coverAlt: image
+cover: ../../assets/images/covers/ToLearnKorean.com-Unit-1-Basic-Words.png
+coverAlt: Simple illustration with a gradient background, book icon, and various small icons surrounding the title which is placed prominently in the center.
 pubDate: 2024-05-23T20:26:59Z
 lastUpdate: 2024-05-23T20:26:59Z
 unit: 1
@@ -13,7 +13,7 @@ tags: ["beginner", "simple"]
 
 Congratulation! You can now read Hangul!
 
-These are all letters of the Korean alphabet in order:
+These are all letters of the Korean alphabet in order:  
 ㄱ,ㄲ, ㄴ, ㄷ, ㄸ, ㄹ, ㅁ, ㅂ, ㅃ, ㅅ, ㅆ, ㅇ, ㅈ, ㅉ, ㅊ, ㅋ, ㅌ, ㅍ, ㅎ,
 ㅏ, ㅐ, ㅑ, ㅒ, ㅓ, ㅔ, ㅕ, ㅖ, ㅗ, ㅘ, ㅙ, ㅚ, ㅛ, ㅜ, ㅝ, ㅞ, ㅟ, ㅠ, ㅡ, ㅢ, ㅣ
 

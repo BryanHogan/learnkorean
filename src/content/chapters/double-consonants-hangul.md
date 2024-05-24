@@ -2,8 +2,8 @@
 title: Double Consonants - Hangul
 author: Bryan Hogan
 description: "The double consonants Hangul guide: ㄲ, ㄸ, ㅃ, ㅆ, ㅉ explanation and pronunciation"
-cover: ../../assets/images/ToLearnKorean.com-Unit-1-Chapter-1-Korean-Alphabet-Cover.png
-coverAlt: image
+cover: ../../assets/images/covers/ToLearnKorean.com-Unit-1-Double-Consonants.png
+coverAlt: Simple illustration with a gradient background, book icon, and various small icons surrounding the title which is placed prominently in the center.
 pubDate: 2024-05-17T08:00:37Z
 lastUpdate: 2024-05-17T08:00:37Z
 unit: 1
@@ -19,7 +19,7 @@ The last few consonants we need to learn to know all consonants of Hangul are th
 The following double consonants exist in Korean: ㄲ, ㄸ, ㅃ, ㅆ, ㅉ
 
 So these might already seem familiar. They look like their regular forms but doubled, written twice but still within the same space.
-- ㄱ: ㄲ 
+- ㄱ: ㄲ
 - ㄷ: ㄸ
 - ㅂ: ㅃ
 - ㅅ: ㅆ
@@ -27,10 +27,10 @@ So these might already seem familiar. They look like their regular forms but dou
 
 Double consonants are made with the same sound as regular consonants but by slightly tensing your mouth before pronouncing them. Hence they are also often called the tense consonants.
 
-- ㄲ sounds more like a "g", compared to "ㄱ" which is more of a mix of between "k/g".  
-- ㄸ sounds more like a "d", compared to "ㄷ" which is more of a mix of between "d/t".  
-- ㅃ sounds more like a "b", compared to "ㅂ" which is more of a mix of between "b/p".  
-- ㅆ sounds more like a sharp "s/z" sound, compared to "ㅅ" which is more like a regular "s".  
+- ㄲ sounds more like a "g", compared to "ㄱ" which is more of a mix of between "k/g".
+- ㄸ sounds more like a "d", compared to "ㄷ" which is more of a mix of between "d/t".
+- ㅃ sounds more like a "b", compared to "ㅂ" which is more of a mix of between "b/p".
+- ㅆ sounds more like a sharp "s/z" sound, compared to "ㅅ" which is more like a regular "s".
 - ㅉ is harder to describe in romanized sounds. The official romanization for ㅈ is "j" and for ㅉ it is "jj". Like described earlier, for ㅉ pronounce ㅈ but with more force at the beginning of the pronunciation.
 
 For a Korean learner these letters might be hard to differentiate in the beginning:

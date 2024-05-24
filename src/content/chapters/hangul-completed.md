@@ -2,8 +2,8 @@
 title: "Further reading, pronunciation and practice"
 author: Bryan Hogan
 description: If you completed all previous chapters you now know all letters of Hangul. What's next?
-cover: ../../assets/images/ToLearnKorean.com-Unit-1-Chapter-1-Korean-Alphabet-Cover.png
-coverAlt: image
+cover: ../../assets/images/covers/ToLearnKorean.com-Unit-1-Further-Reading.png
+coverAlt: Simple illustration with a gradient background, book icon, and various small icons surrounding the title which is placed prominently in the center.
 pubDate: 2024-05-17T08:00:37Z
 lastUpdate: 2024-05-17T08:00:37Z
 unit: 1

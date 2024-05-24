@@ -2,7 +2,7 @@
 title: Almost ready!
 author: Bryan Hogan
 description: Getting ready to launch. Unit 1 is close to being finished.
-cover: ../../assets/images/ToLearnKorean.com-Unit-1-Chapter-1-Korean-Alphabet-Cover.png
+cover: ../../assets/images/blog-covers/ToLearnKorean.com-Blog-Post-Launch.png
 coverAlt: image
 pubDate: 2024-05-17T15:47:46Z
 lastUpdate: 2024-05-17T15:47:46Z

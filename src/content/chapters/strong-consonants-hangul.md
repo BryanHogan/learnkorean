@@ -2,8 +2,8 @@
 title: Strong Consonants - Hangul
 author: Bryan Hogan
 description: "The strong consonants of Hangul guide: ㅊ, ㅋ, ㅌ, ㅍ explanation and pronunciation"
-cover: ../../assets/images/ToLearnKorean.com-Unit-1-Chapter-1-Korean-Alphabet-Cover.png
-coverAlt: image
+cover: ../../assets/images/covers/ToLearnKorean.com-Unit-1-Strong-Consonants.png
+coverAlt: Simple illustration with a gradient background, book icon, and various small icons surrounding the title which is placed prominently in the center.
 pubDate: 2024-05-17T08:00:37Z
 lastUpdate: 2024-05-17T08:00:37Z
 unit: 1
@@ -46,7 +46,7 @@ These strong consonants are pronounced with more force and a higher pitch. They 
  차 = car, tea  
  코 = nose  
  팔 = arm  
- 타다 = to ride  
+ 타다 = to ride
 
  <details><summary>Sources & References</summary>
 

@@ -2,8 +2,8 @@
 title: The Korean Alphabet Introduction - Hangul
 author: Bryan Hogan
 description: The basic letters of the Korean alphabet Hangul. Reading Korean is simpler than you think.
-cover: ../../assets/images/ToLearnKorean.com-Unit-1-Chapter-1-Korean-Alphabet-Cover.png
-coverAlt: image
+cover: ../../assets/images/covers/ToLearnKorean.com-Unit-1-Korean-Alphabet-Hangul.png
+coverAlt: Simple illustration with a gradient background, book icon, and various small icons surrounding the title which is placed prominently in the center.
 pubDate: 2024-03-24
 lastUpdate: 2024-03-24
 unit: 1
@@ -50,7 +50,7 @@ These you will have to memorize. I made a Anki deck for you that contains all th
 **ㅂ** is a mix between "b" and "p".  
 **ㅅ** is a "s" sound.  
 **ㅇ** is a special case. At the beginning of a syllable / block is has no sound, at the end it sounds like "ng". More on what this means down below.  
-ㅈ is a mix between "j" and "ch". Like the "ch" sound from the word "chair".
+**ㅈ** is a mix between "j" and "ch". Like the "ch" sound from the word "chair".
 
 Writing and memorizing these at the beginning is hard. It's normal to only be able to read very slowly and feel like an elementary school kid. But with practise you will get better.
 
@@ -111,7 +111,6 @@ In the next lesson we will cover the remaining consonants and vowels. Luckily th
 
 <details><summary>Sources & References</summary>
 
-- https://www.reddit.com/r/language/comments/13qadza/periodic_table_of_hangul_korean_alphabet/
 - [Learn Hangul in 90 Minutes by BillyGo](https://youtu.be/s5aobqyEaMQ) (youtube video)
 - [Learn how to read Hangul by howtostudykorean](https://www.howtostudykorean.com/unit0/) (website text)
 - [Learn Hangul 한글 (Korean Alphabet) by Miss Vicky](https://youtu.be/85qJXvyFrIc) (youtube video)

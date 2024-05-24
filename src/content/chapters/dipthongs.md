@@ -2,8 +2,8 @@
 title: "Dipthongs: Complex Vowels - Hangul"
 author: Bryan Hogan
 description: Covering dipthongs. Dipthongs are complex vowels that look like a combination of two vowels.
-cover: ../../assets/images/ToLearnKorean.com-Unit-1-Chapter-1-Korean-Alphabet-Cover.png
-coverAlt: image
+cover: ../../assets/images/covers/ToLearnKorean.com-Unit-1-Dipthongs.png
+coverAlt: Simple illustration with a gradient background, book icon, and various small icons surrounding the title which is placed prominently in the center.
 pubDate: 2024-05-17T08:00:37Z
 lastUpdate: 2024-05-17T08:00:37Z
 unit: 1
@@ -65,4 +65,3 @@ Aside from 외 and 의 they all sound mostly like you would expect from combinin
 외 is pronounced just like 왜 and 웨.
 
 So these are all vowels in Hangul: ㅏ, ㅐ, ㅑ, ㅒ, ㅓ, ㅔ, ㅕ, ㅖ, ㅗ, ㅘ, ㅙ, ㅚ, ㅛ, ㅜ, ㅝ, ㅞ, ㅟ, ㅠ, ㅡ, ㅢ, ㅣ
-
