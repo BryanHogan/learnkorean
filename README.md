@@ -4,18 +4,10 @@
 
 Welcome to the official repository of [tolearnkorean.com](https://tolearnkorean.com/), a website dedicated to helping learners of all levels to learn Korean. This site offers various resources and tools to aid in the learning process, including lessons, quizzes, and interactive content.
 
-## Table of Contents
-
-- [A Webpage For Korean Learners - ToLearnKorean.com](#a-webpage-for-korean-learners---tolearnkoreancom)
-  - [Table of Contents](#table-of-contents)
-  - [Features](#features)
-  - [Technologies Used](#technologies-used)
-  - [Contact](#contact)
-
 ## Features
 
-- **Interactive Lessons:** Engage with lessons designed for all levels of Korean learners.
-- **Quizzes:** Test your knowledge with quizzes and track your progress.
+- **Lessons:** Engage with lessons designed for all levels of Korean learners.
+- **Quizzes:** Test your knowledge with quizzes.
 - **Resource Library:** Access a variety of learning materials, including vocabulary lists, grammar guides, and more.
 - **Responsive Design:** Optimized for both desktop and mobile devices.
 
