@@ -213,6 +213,7 @@ const { title, metaDescription } = Astro.props;
 		content: counters(item, ".") ". ";
 		display: table-cell;
 		padding-right: 0.6rem;
+		width: 10px; /* This might need to be changed in the future, quick fix for aligning item in the overview */
 	}
 	.decimal-list ol > li {
 		margin: 0;
