@@ -2,7 +2,8 @@
 
 [![Live Site](https://img.shields.io/badge/Live%20Site-tolearnkorean.com-blue)](https://tolearnkorean.com/)
 
-Welcome to the official repository of [tolearnkorean.com](https://tolearnkorean.com/), a website dedicated to helping learners of all levels to learn Korean. This site offers various resources and tools to aid in the learning process, including lessons, quizzes, and interactive content.
+Welcome to the official repository of [tolearnkorean.com](https://tolearnkorean.com/)!  
+A website dedicated to helping learners of all levels to learn Korean.
 
 ## Features
 
