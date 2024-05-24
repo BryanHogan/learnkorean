@@ -11,9 +11,7 @@ sortOrder: 2
 tags: ["hangul", "two"]
 ---
 
-Welcome to tolearnkorean.com, glad to see you here.
-
-If you already know how to read Hangul (한글) you can skip this chapter.
+Introduction on reading Hangul, understand the letters of the Korean alphabet.
 
 ## Introduction
 
@@ -40,7 +38,7 @@ The basic consonants of Hangul are: ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, ㅅ, ㅇ, ㅈ,
 - ㅈ = j/ch
 - ㅎ = h
 
-These you will have to memorize. I made a Anki deck for you that contains all the flashcards you need to know to memorize Hangul.
+These you will have to memorize. I made a [pre-made Anki deck](/files/ToLearnKoreanHangul.apkg) for you with which you can practice that contains all the flashcards you need to know to memorize Hangul.
 
 **ㄱ** sounds like a mix between "k" and "g".  
 **ㄴ** is a "n" sound.  
@@ -52,7 +50,7 @@ These you will have to memorize. I made a Anki deck for you that contains all th
 **ㅇ** is a special case. At the beginning of a syllable / block is has no sound, at the end it sounds like "ng". More on what this means down below.  
 **ㅈ** is a mix between "j" and "ch". Like the "ch" sound from the word "chair".
 
-Writing and memorizing these at the beginning is hard. It's normal to only be able to read very slowly and feel like an elementary school kid. But with practise you will get better.
+Writing and memorizing these at the beginning is hard. It's normal to only be able to read very slowly and feel like an elementary school kid. But with practice you will get better.
 
 Korean learners often struggle with "ㄹ" as it can be a bit harder to pronounce. It's also the reason why many Koreans struggle to differentiate the sounds of "r" and "l", since it is a single letter that can sound like both of these. To make this sound move your tongue to the position as if you were going to pronounce "d" (like "da") but instead say "la". [This video explains it well](https://youtu.be/2-4ShB33Eu4), but when you are starting out don't stress too much about sounding perfectly.
 
@@ -92,18 +90,24 @@ How the block is built depends on the vowel, vertically with (ㅏ, ㅓ, ㅣ) or 
 
 Words in Korean can look like this:  
 아기(agi): Baby  
+고기(go-gi): Meat  
 가방 (ga-bang): Backpack  
 사람(sa-ram): Person  
 물(mul): Water  
-손(son): Hand
+손(son): Hand  
 
 As you can see there are more ways to build blocks, like when you have 2 consonants.
 
 ![How to build syllable blocks with 2 vowels](../../assets/images/BlockBuilding2-ToLearnKorean.com.png)
 
-The numbers in the corner indicate in which order you read them. You read them left to right and then top to bottom, as would feel natural for the English language as well, so there shouldn't be any suprises.
+The numbers in the corner indicate in which order you read them. You read them left to right and then top to bottom, as would feel natural for the English language as well, so there shouldn't be any surprises.
 
-That is almost all when it comes to building these blocks. There are some cases where you have blocks with 4 symbols, these often follow some special pronunciation rule so I will go into them in a later lesson.
+We can also see here how the character "ㅇ" works. At the beginning of a word such as "아기" it has no sound. It's only there as a filler to make the sound "a", since the vowel "ㅏ" can't be used alone without any consonant.  
+At the end of a block "ㅇ" becomes a "ng" sound, like in "가방".  
+Or like in 응급 ("eunggeup" which means emergency), the first "ㅇ" has no sound but the second "ㅇ" sounds like "ng".
+
+
+That is almost all when it comes to building these blocks and their pronunciation. There are some cases where you have blocks with 4 symbols, these often follow some special pronunciation rule for their last two characters so I will go into them in a later lesson.
 
 In the next lesson we will cover the remaining consonants and vowels. Luckily these are quite similar to the ones we already know now.
 

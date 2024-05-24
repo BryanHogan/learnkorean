@@ -62,6 +62,6 @@ These vowels are all a combination of vowels we already know:
 
 Aside from 외 and 의 they all sound mostly like you would expect from combining them.  
 의 has some special pronunciation rules I will go into in a later chapter.  
-외 is pronounced just like 왜 and 웨.
+외 is pronounced just like 왜 and 웨, yes they are all pronounced the same.
 
 So these are all vowels in Hangul: ㅏ, ㅐ, ㅑ, ㅒ, ㅓ, ㅔ, ㅕ, ㅖ, ㅗ, ㅘ, ㅙ, ㅚ, ㅛ, ㅜ, ㅝ, ㅞ, ㅟ, ㅠ, ㅡ, ㅢ, ㅣ

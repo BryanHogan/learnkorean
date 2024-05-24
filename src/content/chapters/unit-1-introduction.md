@@ -13,6 +13,12 @@ tags: ["hangul", "two"]
 
 Welcome to ToLearnKorean.com, glad to see you here.
 
-Learning Korean can be hard and intimidating at times.
+On this website I want to teach you the Korean language.  
 
-After finishing the chapters about the letters of Korean you might be interested in using our [pre-made Anki deck containing flashcards for all characters of Hangul](/files/ToLearnKoreanHangul.apkg) (or the <a href="/files/ToLearnKoreanHangul.txt" download>.txt file</a>).
+Each unit is divided into multiple chapters. Each chapter focusses on one topic. I aim to make each chapter precise, high in quality and as easy as it can be.  
+Learning Korean can sometimes get hard or intimidating. But it can also be fun and rewarding. My goal is to aim for the later!
+
+This unit introduces you to the whole Korean alphabet, also called Hangul. Hangul is easier to learn than you might expect.  
+If you already know how to read Hangul you might be interested in starting with [Unit 2](/overview#unit-2), which is all about creating your first complete sentences.
+
+To get started on learning the Korean alphabet click the *Next Chapter* button down below, this will take you to the next chapter.

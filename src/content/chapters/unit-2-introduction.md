@@ -11,4 +11,4 @@ sortOrder: 1
 tags: ["korean", "sentences", "introduction"]
 ---
 
-Unit 2 will be on learning how to form sentences in Korean.
+In unit 2 you will learn how to form sentences in Korean.
