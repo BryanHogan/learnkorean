@@ -14,3 +14,5 @@ tags: ["hangul", "two"]
 Welcome to ToLearnKorean.com, glad to see you here.
 
 Learning Korean can be hard and intimidating at times.
+
+After finishing the chapters about the letters of Korean you might be interested in using our [pre-made Anki deck containing flashcards for all characters of Hangul](/files/ToLearnKoreanHangul.apkg) (or the <a href="/files/ToLearnKoreanHangul.txt" download>.txt file</a>).

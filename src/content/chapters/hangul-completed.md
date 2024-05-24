@@ -11,13 +11,14 @@ sortOrder: 7
 tags: ["hangul"]
 ---
 
+##  Further resources
+Further resources that will be helpful to you now:
+- You can use our pre-made Anki deck to practice: [Anki deck containing flashcards for all characters of Hangul](/files/ToLearnKoreanHangul.apkg) (or the <a href="/files/ToLearnKoreanHangul.txt" download>.txt file</a>).
+- There are some sound change rules which are really helpful to know. I would suggest watching [this video by BillyGo](https://youtu.be/s5aobqyEaMQ?t=3690) on the Korean sound change rules. I wouldn't suggest adding these into a flashcard deck yet as you will come across these naturally on your learning journey, so just hearing about them once for now should be enough.
+- [How to pronunce 의](https://youtu.be/2bLlrXDZ478) by BillyGo.
+- Get this Anki deck: [TTMIK's First 500 Korean Words by Retro](https://ankiweb.net/shared/info/1551455917). It includes mostly relevant Korean words with pictures and audio for their pronunciation.
+
 ## Unit 2
 In Unit 2 we will be going into building simple sentences, all the basics you need to have a simple conversation.
 
 [Get started with unit 2 here.](/unit-2/unit-2-introduction)
-
-##  Further resources
-Further resources that will be helpful to you now:
-- There are some sound change rules which are really helpful to know. I would suggest watching [this video by BillyGo](https://youtu.be/s5aobqyEaMQ?t=3690) on the Korean sound change rules. I wouldn't suggest adding these into a flashcard deck yet as you will come across these naturally on your learning journey, so just hearing about them once for now should be enough.
-- [How to pronunce 의](https://youtu.be/2bLlrXDZ478) by BillyGo.
-- Get this Anki deck: [TTMIK's First 500 Korean Words by Retro](https://ankiweb.net/shared/info/1551455917). It includes mostly relevant Korean words with pictures and audio for their pronunciation.

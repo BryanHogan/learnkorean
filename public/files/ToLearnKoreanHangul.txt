@@ -1,0 +1,43 @@
+#separator:tab
+#html:true
+#tags column:3
+ㄱ	g/k	
+ㄲ	g/kk (tense)	
+ㄴ	n	
+ㄷ	d/t	
+ㄸ	d / tt (tense)	
+ㄹ	r/l	
+ㅁ	m	
+ㅂ	b/p	
+ㅃ	b / pp (tense)	
+ㅅ	s	
+ㅆ	ss (tense)	
+ㅇ	silent; ng	
+ㅈ	ch/j	
+ㅉ	ch/jj (tense)	
+ㅊ	ch (aspirated)	
+ㅋ	k (aspirated)	
+ㅍ	p (aspirated)	
+ㅎ	h	
+ㅏ	a	
+ㅐ	eh/ae	
+ㅒ	yeh/yae	
+ㅓ	eoh/eo	
+ㅔ	eh	
+ㅕ	yeoh/yeo	
+ㅖ	yeh/ye	
+ㅗ	o	
+ㅘ	wa	
+ㅙ	wae/weh	
+ㅚ	weh/wae	
+ㅛ	yo	
+ㅜ	u	
+ㅝ	wuo	
+ㅞ	weh/wae	
+ㅟ	wi	
+ㅠ	yu	
+ㅡ	eu	
+ㅢ	ui; i	
+ㅣ	i	
+ㅌ	t (aspirated)	
+ㅑ	ya	
