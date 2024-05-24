@@ -368,6 +368,10 @@ if (isChapterEntry(post)) {
 		position: fixed;
 		z-index: 10;
 	}
+	.toc-items {
+		max-height: calc(100svh - var(--navbar-height) - 100px);
+		overflow: scroll;
+	}
 	.toc-dropdown-icon {
 		display: none;
 		margin-left: auto;
