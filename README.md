@@ -1,11 +1,29 @@
 # A Webpage For Korean Learners - ToLearnKorean.com
-See it live on: [tolearnkorean.com](https://tolearnkorean.com/)
 
-Future:
-- overflowing toc needs to be scrollable
-- practice
-- change star icon in footer with bryanhogan turlte icon
+[![Live Site](https://img.shields.io/badge/Live%20Site-tolearnkorean.com-blue)](https://tolearnkorean.com/)
 
-Built with (expand)
-- AstroJS
-- PostCSS
+Welcome to the official repository of [tolearnkorean.com](https://tolearnkorean.com/), a website dedicated to helping learners of all levels to learn Korean. This site offers various resources and tools to aid in the learning process, including lessons, quizzes, and interactive content.
+
+## Table of Contents
+
+- [A Webpage For Korean Learners - ToLearnKorean.com](#a-webpage-for-korean-learners---tolearnkoreancom)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Technologies Used](#technologies-used)
+  - [Contact](#contact)
+
+## Features
+
+- **Interactive Lessons:** Engage with lessons designed for all levels of Korean learners.
+- **Quizzes:** Test your knowledge with quizzes and track your progress.
+- **Resource Library:** Access a variety of learning materials, including vocabulary lists, grammar guides, and more.
+- **Responsive Design:** Optimized for both desktop and mobile devices.
+
+## Technologies Used
+
+This project is built using the following technologies:
+
+- **[AstroJS](https://astro.build/):** A modern static site builder.
+- **[PostCSS](https://postcss.org/):** A tool for transforming CSS with JavaScript.
+
+## Contact
