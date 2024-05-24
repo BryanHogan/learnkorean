@@ -48,6 +48,8 @@ These strong consonants are pronounced with more force and a higher pitch. They 
  팔 = arm  
  타다 = to ride
 
+ 
+
  <details><summary>Sources & References</summary>
 
 - [Korean Consonants – Letters of the Alphabet (Hangul 한글) by 90daykorean](https://www.90daykorean.com/korean-consonants/)
