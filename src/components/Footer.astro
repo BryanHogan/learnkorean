@@ -1,5 +1,6 @@
 ---
 import Icon from "./Icon.astro";
+import { Icons } from "./Icons";
 ---
 
 <footer>
@@ -8,24 +9,46 @@ import Icon from "./Icon.astro";
             <p>
                 <a href="tolearnkorean.com">ToLearnKorean.com</a> © {
                     String(new Date().getFullYear().toString())
-                }<br />Made by <a href="https://bryanhogan.com" target="_blank">Bryan Hogan</a><br />
+                }<br />Made by <a href="https://bryanhogan.com" target="_blank"
+                    >Bryan Hogan</a
+                ><br />
             </p>
         </li>
         <li class="second-list-container">
             <a href="/rss.xml" title="RSS"
                 ><Icon name="rss" size="1.5rem" label="RSS" /></a
             >
-            <a href="https://www.threads.net/@bryanhoganme" title="Threads" target="_blank"
+            <a
+                href="https://www.threads.net/@bryanhoganme"
+                title="Threads"
+                target="_blank"
                 ><Icon name="threads" size="1.5rem" label="Threads" /></a
             >
-            <a href="https://mastodon.social/@BryanHogan" title="Masotdon" target="_blank"
+            <a
+                href="https://mastodon.social/@BryanHogan"
+                title="Masotdon"
+                target="_blank"
                 ><Icon name="mastodon" size="1.5rem" label="astodon" /></a
             >
-            <a href="https://www.instagram.com/bryanhoganme/" title="Instagram" target="_blank"
+            <a
+                href="https://www.instagram.com/bryanhoganme/"
+                title="Instagram"
+                target="_blank"
                 ><Icon name="instagram" size="1.5rem" label="Instagram" /></a
             >
-            <a href="https://bryanhogan.com/blog" title="Bryan's Blog" target="_blank"
-                ><Icon name="star" size="1.5rem" label="Bryan's Blog" /></a
+            <a
+                href="https://bryanhogan.com/blog"
+                title="Bryan's Blog"
+                target="_blank"
+            >
+                <svg
+                    class="logo-icon"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    set:html={Icons["logobryanhogan"]}
+                /></a
             >
         </li>
         <li class="third-list-container">
@@ -33,7 +56,8 @@ import Icon from "./Icon.astro";
                 <li><a href="/">Home</a></li>
                 <li><a href="/overview">Unit Overview</a></li>
                 <li><a href="/blog">Blog</a></li>
-                <li><a href="/about">About</a></li></ul><ul>
+                <li><a href="/about">About</a></li>
+            </ul><ul>
                 <li><a href="/legal-privacy">Legal & Privacy</a></li>
                 <li><a href="/sitemap-index.xml">Sitemap</a></li>
             </ul>
@@ -42,7 +66,10 @@ import Icon from "./Icon.astro";
 </footer>
 
 <style>
-    li, ul {list-style: none;}
+    li,
+    ul {
+        list-style: none;
+    }
     footer {
         padding-inline: 0.5rem;
         padding-top: 2rem; /* this sets small pages over 100% */
@@ -77,13 +104,14 @@ import Icon from "./Icon.astro";
         flex-grow: 1;
         padding-bottom: 2rem;
     }
-    a:hover, a:focus {
+    a:hover,
+    a:focus {
         color: var(--color-side-1);
     }
     .second-list-container {
         gap: 11px;
     }
-    .third-list-container > ul{
+    .third-list-container > ul {
         display: flex;
         flex-wrap: wrap;
         gap: 0px 11px;
