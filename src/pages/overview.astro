@@ -73,7 +73,6 @@ const allChaptersUnit2 = await (async () =>
 		padding: var(--space-s);
 		margin: var(--space-xs);
 		margin-left: 0;
-		width: 100%;
 		& h2 {
 			font-size: 1.125em;
 			font-weight: normal;
@@ -81,6 +80,9 @@ const allChaptersUnit2 = await (async () =>
 			text-decoration-color: var(--color-accent-1);
 			display: inline-block;
 		}
+	}
+	.chapter-list li {
+		width: 100%;
 	}
 	.chapter-list a {
 		color: var(--color-side-1);
