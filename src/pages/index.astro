@@ -5,7 +5,7 @@ import landingImage from "../assets/images/TLK-Landing-Image.png";
 import Button from "../components/Button.astro";
 import CardGrid from "../components/CardGrid.astro";
 import Card from "../components/Card.astro";
-import { getCollection, getEntry, type CollectionEntry } from "astro:content";
+import { getCollection, type CollectionEntry } from "astro:content";
 
 const [blogPosts, chapterPosts] = await Promise.all([
 	getCollection("posts"),

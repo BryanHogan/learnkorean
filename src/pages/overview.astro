@@ -11,6 +11,10 @@ const allChaptersUnit2 = await (async () =>
 	(await getCollection("chapters", ({ data }) => data.unit == 2)).sort(
 		(a, b) => a.data.sortOrder - b.data.sortOrder,
 	))();
+const allChaptersUnit3 = await (async () =>
+	(await getCollection("chapters", ({ data }) => data.unit == 3)).sort(
+		(a, b) => a.data.sortOrder - b.data.sortOrder,
+	))();
 ---
 
 <BaseLayout
@@ -26,40 +30,87 @@ const allChaptersUnit2 = await (async () =>
 			<ol class="decimal-list">
 				<li>
 					<Accordion id={"accordion_one"} startChecked={true}>
-					<h2 slot="top"><strong>Unit 1</strong></h2>
-					<ol class="chapter-list">
-						{
-							allChaptersUnit1.map((chapter) => (
-								<li>
-									<a href={`/unit-1/${chapter.slug}`}>
-										<div class="chapter-card-container">
-											<h2 class="title-line" transition:name={chapter.data.title}>
-												{chapter.data.title}
-											</h2>
-											<p style="text-decoration: none;">
-												{chapter.data.description}
-											</p>
-										</div>
-									</a>
-								</li>
-							))
-						}
-					</ol>
-				</Accordion>
+						<h2 slot="top"><strong>Unit 1</strong></h2>
+						<ol class="chapter-list">
+							{
+								allChaptersUnit1.map((chapter) => (
+									<li>
+										<a href={`/unit-1/${chapter.slug}`}>
+											<div class="chapter-card-container">
+												<h2
+													class="title-line"
+													transition:name={
+														chapter.data.title
+													}
+												>
+													{chapter.data.title}
+												</h2>
+												<p style="text-decoration: none;">
+													{chapter.data.description}
+												</p>
+											</div>
+										</a>
+									</li>
+								))
+							}
+						</ol>
+					</Accordion>
 				</li>
 				<li>
-					<h2 id="unit-2"<strong>Unit 2</strong></h2>
-					<ol class="chapter-list">
-						{
-							allChaptersUnit2.map((chapter) => (
-								<li>
-									<a href={`/unit-2/${chapter.slug}`}>
-										{chapter.data.title}
-									</a>
-								</li>
-							))
-						}
-					</ol>
+					<Accordion id={"accordion_two"} startChecked={true}>
+						<h2 slot="top"><strong>Unit 2</strong></h2>
+						<ol class="chapter-list">
+							{
+								allChaptersUnit2.map((chapter) => (
+									<li>
+										<a href={`/unit-2/${chapter.slug}`}>
+											<div class="chapter-card-container">
+												<h2
+													class="title-line"
+													transition:name={
+														chapter.data.title
+													}
+												>
+													{chapter.data.title}
+												</h2>
+												<p style="text-decoration: none;">
+													{chapter.data.description}
+												</p>
+											</div>
+										</a>
+									</li>
+								))
+							}
+						</ol>
+					</Accordion>
+				</li>
+				<li>
+					<Accordion id={"accordion_three"} startChecked={true}>
+						<h2 slot="top"><strong>Unit 3</strong></h2>
+						<ol class="chapter-list">
+							{
+								allChaptersUnit3.map((chapter) => (
+									<li>
+										<a href={`/unit-3/${chapter.slug}`}>
+											<div class="chapter-card-container">
+												<h2
+													class="title-line"
+													transition:name={
+														chapter.data.title
+													}
+												>
+													{chapter.data.title}
+												</h2>
+												<p style="text-decoration: none;">
+													{chapter.data.description}
+												</p>
+											</div>
+										</a>
+									</li>
+								))
+							}
+						</ol>
+					</Accordion>
 				</li>
 			</ol>
 		</div>
@@ -81,6 +132,9 @@ const allChaptersUnit2 = await (async () =>
 			display: inline-block;
 		}
 	}
+	.chapter-list {
+		margin-bottom: var(--space-l);
+	}
 	.chapter-list li {
 		width: 100%;
 	}
@@ -88,12 +142,12 @@ const allChaptersUnit2 = await (async () =>
 		color: var(--color-side-1);
 		text-decoration: none;
 	}
-	.chapter-list {
-		margin-bottom: var(--space-l);
-	}
 	.unit-overview-container {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		& > ol > li {
+			width: 100%;
+		}
 	}
 </style>
