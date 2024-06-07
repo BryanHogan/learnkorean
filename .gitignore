@@ -20,4 +20,4 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
-src/content/.obsidian
+.obsidian-vault
