@@ -13,7 +13,7 @@ export async function GET(context) {
             pubDate: post.data.pubDate,
             description: post.data.description,
             // rendered as `/uint-1/[slug]` routes, this will have to get changed in the future!
-            link: `/unit-1/${post.slug}/`,
+            link: `/unit-1/${post.slug}`,
         })),
     });
 }
