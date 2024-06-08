@@ -75,12 +75,12 @@ The official Anki Manual has a [page explaining how to setup syncing](https://do
 ## What is Anki bad at?
 Flashcards are great for low-order learning, but not for high-order learning. Low-order learning involves memorization and recall, whereas high-order learning requires deeper understanding, critical thinking, and application.
 
-Cards can also get overwhelming quickly. Don't spend the majority of your time just repeating flashcards, use other learning methods as well.  
+Don't spend the majority of your time just repeating flashcards, use other learning methods as well.  
 Also don't feel like you are forced to use Anki if you don't enjoy it. Give Anki a chance, but after trying multiple times it's okay to not use it or to take breaks from it. There are many polyglots (a person who speaks multiple languages) that successfully learned without using a tool such as Anki.
 
 There are a few common traps you can fall into when using Anki.
 
-Using Anki is not the long-term goal of a language study. People really skilled in certain fields don't use Anki or flashcards in their daily to improve that skill. The goal is to reach a certain level to not use Anki anymore.
+Using Anki is not the long-term goal of a language study. People really skilled in a field don't use Anki or flashcards in their daily life to improve that skill. The goal is to reach a certain level to not use Anki anymore.
 
 Another common mistake is memorising the flashcards themselves instead of the underlying information. That is one of the reasons why Anki should never be the only way you learn and practice your target language. You want to be able to use the information you have repeat on the cards in other contexts.
 
