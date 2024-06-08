@@ -3,7 +3,7 @@ title: How To Use Anki And Flashcards
 author: Bryan Hogan
 description: How to use Anki and flashcards to learn a language like Korean.
 cover: ../../assets/images/blog-covers/ToLearnKorean.com-How-To-Use-Anki-Korean-Language.png
-coverAlt: Alt Text
+coverAlt: Simple illustration with a gradient background, the title icon which is a simplified version of the Anki logo is placed prominently in the center.
 pubDate: 2024-06-08T08:46:33Z
 lastUpdate: 2024-06-08T08:46:33Z
 tags:
