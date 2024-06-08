@@ -30,7 +30,7 @@ const allChaptersUnit3 = await (async () =>
 			<ol class="decimal-list">
 				<li>
 					<Accordion id={"accordion_one"} startChecked={true}>
-						<h2 slot="top"><strong>Unit 1</strong></h2>
+						<h2 slot="top" id="unit-1"><strong>Unit 1</strong></h2>
 						<ol class="chapter-list">
 							{
 								allChaptersUnit1.map((chapter) => (
@@ -58,7 +58,7 @@ const allChaptersUnit3 = await (async () =>
 				</li>
 				<li>
 					<Accordion id={"accordion_two"} startChecked={true}>
-						<h2 slot="top"><strong>Unit 2</strong></h2>
+						<h2 slot="top" id="unit-2"><strong>Unit 2</strong></h2>
 						<ol class="chapter-list">
 							{
 								allChaptersUnit2.map((chapter) => (
@@ -86,7 +86,7 @@ const allChaptersUnit3 = await (async () =>
 				</li>
 				<li>
 					<Accordion id={"accordion_three"} startChecked={true}>
-						<h2 slot="top"><strong>Unit 3</strong></h2>
+						<h2 slot="top" id="unit-3"><strong>Unit 3</strong></h2>
 						<ol class="chapter-list">
 							{
 								allChaptersUnit3.map((chapter) => (

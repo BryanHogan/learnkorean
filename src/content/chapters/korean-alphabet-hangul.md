@@ -82,7 +82,7 @@ To make a sound in Korean you need at least 1 consonant and 1 vowel.
 
 There are two ways blocks that contain 1 consonant and 1 vowel are built, either horizontally or vertically.
 
-![How to build syllable blocks simple](../../assets/images/BlockBuilding-ToLearnKorean.com.png)
+![How to build syllable blocks simple](../../assets/images/chapters/BlockBuilding-ToLearnKorean.com.png)
 
 (C: consonant; V: vowel)
 
@@ -98,7 +98,7 @@ Words in Korean can look like this:
 
 As you can see there are more ways to build blocks, like when you have 2 consonants.
 
-![How to build syllable blocks with 2 vowels](../../assets/images/BlockBuilding2-ToLearnKorean.com.png)
+![How to build syllable blocks with 2 vowels](../../assets/images/chapters/BlockBuilding2-ToLearnKorean.com.png)
 
 The numbers in the corner indicate in which order you read them. You read them left to right and then top to bottom, as would feel natural for the English language as well, so there shouldn't be any surprises.
 
