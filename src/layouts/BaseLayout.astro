@@ -53,6 +53,10 @@ const { title, metaDescription } = Astro.props;
 		/>
 		<meta property="og:site_name" content="ToLearnKorean" />
 		<meta property="og:url" content={canonicalURL} />
+		<link rel="alternate"
+        type="application/rss+xml"
+        href="https://tolearnkorean.com/rss.xmll"
+        title="Articles on ToLearnKorean">
 		<script is:inline defer src="https://cloud.umami.is/script.js" data-website-id="8fb2a6d0-008a-457c-8883-26e8391807b5"></script>
 		<ViewTransitions />
 		<slot name="head" />
