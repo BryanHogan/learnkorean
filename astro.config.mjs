@@ -17,7 +17,7 @@ export default defineConfig({
 			],
 			lastUpdated: true,
 			editLink: {
-				baseUrl: 'https://github.com/bryanhogan/loreankorean/edit/master/',
+				baseUrl: 'https://github.com/bryanhogan/learnkorean/edit/master/',
 			},
 			social: {
 				github: 'https://github.com/BryanHogan/learnkorean',
