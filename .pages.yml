@@ -1,97 +1,80 @@
-# Pages CMS config for https://github.com/BryanHogan/learnkorean (Astro Starlight)
+# .pages.yml — PagesCMS config for learnkorean-content
 
-# Where uploaded images/files live in your repo (and how they are referenced on the site)
 media:
-  input: public/images
-  output: /images
-  # Optionally show only image types in the picker:
-  categories: [ image ]
+  - name: images
+    label: Images
+    input: public/media
+    output: /media
+    categories: [image]
+  - name: files
+    label: Files
+    input: public/files
+    output: /files
+    categories: [document, audio, video, compressed]
 
-# Content models
 content:
-  - name: docs
-    label: Docs
+  - name: chapter
+    label: Chapters
     type: collection
-    path: src/content/docs
-    subfolders: true
-
-    # How created files are named; {primary} = first field in `view.fields` (title here)
+    path: chapter
     filename: "{primary}.md"
-
-    # Collection listing UI defaults in PagesCMS
+    subfolders: true
+    format: yaml-frontmatter
     view:
-      # Show a tree view using index.md as folder nodes (great for Starlight)
       layout: tree
       node:
         filename: index.md
-        hideDirs: none
-      # Fields to display in the table/list
-      fields: [ title, draft, lastUpdated ]
-      # Sort options and defaults
-      sort: [ lastUpdated, title ]
+        hideDirs: all
+      fields: [title, "sidebar.label", "sidebar.order", lastUpdated, draft]
+      primary: title
+      sort: [ "sidebar.order", title ]
+      search: [ title, description ]
       default:
-        sort: lastUpdated
-        order: desc
-
-    # Schema mapping to Starlight frontmatter + the Markdown body
-    format: yaml-frontmatter
+        sort: "sidebar.order"
+        order: asc
     fields:
       - name: title
         label: Title
         type: string
         required: true
-
       - name: description
         label: Description
         type: text
-        description: Short summary used for SEO and previews.
-
-      - name: slug
-        label: Custom slug
-        type: string
-        description: Optional. Overrides the page route if needed.
-
-      - name: draft
-        label: Draft
-        type: boolean
-        default: false
-        description: If true, the page won’t be published.
-
+      - name: sidebar
+        label: Sidebar (Starlight)
+        type: object
+        fields:
+          - name: label
+            label: Link label
+            type: string
+          - name: order
+            label: Order (lower shows higher)
+            type: number
+          - name: badge
+            label: Badge
+            type: object
+            fields:
+              - name: text
+                label: Text
+                type: string
+              - name: variant
+                label: Variant
+                type: select
+                options:
+                  values:
+                    - { label: Tip,     value: tip }
+                    - { label: Note,    value: note }
+                    - { label: Caution, value: caution }
+                    - { label: Danger,  value: danger }
       - name: lastUpdated
         label: Last updated
         type: date
-        description: Optional. Shown in the Starlight UI if configured.
-
-      - name: template
-        label: Template
-        type: select
-        options:
-          - label: Doc (default)
-            value: doc
-          - label: Splash (landing)
-            value: splash
-        default: doc
-        description: Starlight layout for this page.
-
-      - name: tableOfContents
-        label: Table of contents
-        type: object
-        required: false
-        description: Set to false to hide ToC, or specify heading levels.
-        fields:
-          - name: minHeadingLevel
-            label: Min heading level
-            type: number
-            default: 2
-          - name: maxHeadingLevel
-            label: Max heading level
-            type: number
-            default: 4
-
+      - name: draft
+        label: Draft (don’t publish yet)
+        type: boolean
       - name: hero
-        label: Hero (Splash only)
+        label: Hero (optional)
         type: object
-        required: false
         fields:
           - name: title
             label: Hero title
@@ -100,15 +83,9 @@ content:
             label: Tagline
             type: text
           - name: image
-            label: Hero image
-            type: object
-            fields:
-              - name: alt
-                label: Alt text
-                type: string
-              - name: file
-                label: File
-                type: image
+            label: Image
+            type: image
+            media: images
           - name: actions
             label: Actions
             type: object
@@ -120,75 +97,38 @@ content:
               - name: link
                 label: Link
                 type: string
-              - name: icon
-                label: Icon (Starlight icon name)
-                type: string
               - name: variant
                 label: Variant
                 type: select
                 options:
-                  - minimal
-                  - primary
-                  - secondary
-
-      - name: banner
-        label: Banner
-        type: object
-        required: false
-        fields:
-          - name: content
-            label: Content
-            type: text
-          - name: dismissible
-            label: Dismissible
-            type: boolean
-            default: true
-          - name: variant
-            label: Variant
-            type: select
-            options:
-              - info
-              - warning
-              - danger
-              - success
-
-      - name: sidebar
-        label: Sidebar options
-        type: object
-        required: false
-        fields:
-          - name: label
-            label: Sidebar label
-            type: string
-            description: Override the text shown in the sidebar.
-          - name: order
-            label: Order
-            type: number
-            description: Controls ordering within a folder.
-
-      - name: editUrl
-        label: Edit URL
-        type: string
-        description: Override global edit link or disable with false.
-
-      - name: pagefind
-        label: Pagefind options
-        type: object
-        required: false
-        fields:
-          - name: exclude
-            label: Exclude from search
-            type: boolean
-            default: false
-
+                  values:
+                    - { label: Primary,   value: primary }
+                    - { label: Secondary, value: secondary }
+                    - { label: Minimal,   value: minimal }
       - name: body
         label: Content
         type: rich-text
-        description: Markdown content of the page.
+        media: images
 
-# Optional: global repo/branch settings
+components:
+  sidebarBadge:
+    label: Sidebar Badge
+    type: object
+    fields:
+      - name: text
+        label: Text
+        type: string
+      - name: variant
+        label: Variant
+        type: select
+        options:
+          values:
+            - { label: Tip,     value: tip }
+            - { label: Note,    value: note }
+            - { label: Caution, value: caution }
+            - { label: Danger,  value: danger }
+
 settings:
+  hide: false
   content:
-    # Merge updates into existing frontmatter instead of overwriting the file,
-    # handy when you have custom keys not exposed in the form.
     merge: true
