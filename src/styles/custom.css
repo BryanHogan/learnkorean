@@ -38,7 +38,7 @@
 	--sl-text-2xl: 1.5rem; /* 24px */
 }
 p, .sl-markdown-content li {
-    font-size: 1.125rem;
+    font-size: 1.0625rem;
 }
 .sl-markdown-content img {
     border-radius: 4px;
