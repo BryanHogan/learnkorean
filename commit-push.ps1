@@ -10,7 +10,7 @@ if (-not $submodulePath) {
 }
 
 ###########################################################################
-function ACP-All {
+function ACP {
   param([string]$message)
 
   git diff --cached --quiet
@@ -27,12 +27,12 @@ function ACP-All {
 Write-Host "Processing submodule '$submodulePath'..."
 Push-Location $submodulePath
 git add -A
-ACP-All $msg
+ACP $msg
 Pop-Location
 
 # 3. MAIN REPO
 Write-Host "Processing main repo..."
 git add -A
-ACP-All "Update submodule + misc: $msg"
+ACP "Update submodule + misc: $msg"
 
 Write-Host "All done!"
