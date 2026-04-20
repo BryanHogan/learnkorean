@@ -1,0 +1,39 @@
+---
+title: Start Learning Korean
+description: Learn Korean now with ToLearnKorean.
+hero:
+  title: Learn Korean now with ToLearnKorean
+  tagline: How to read, write, understand and speak Korean.
+  image:
+    file: ../../assets/TLK-Landing-Image-Gradient.png
+  actions:
+    - text: Unit Introduction
+      link: /chapter/introduction
+      icon: right-arrow
+    - text: Read blog
+      link: /blog/overview
+      variant: minimal
+      icon: right-arrow
+head:
+  - tag: style
+    content: ".right-sidebar-container { display: none !important; }"
+  - tag: style
+    content: ".main-pane {width: 100% !important;}"
+  - tag: style
+    content: ".sl-container { margin-inline: auto !important;}"
+  - tag: style
+    content: "h1 { font-size: clamp(var(--sl-text-3xl),calc(0.25rem + 5vw),var(--sl-text-5xl)) !important;}"
+lastUpdated: false
+editUrl: false
+---
+
+import { Card, CardGrid, Aside, LinkCard } from '@astrojs/starlight/components';
+
+---
+
+## Navigation
+
+<LinkCard title="Unit 0" href="/chapter/korean-alphabet-hangul" description="Start by learning the Korean alphabet, Hangul."/>
+<LinkCard title="Unit 1" href="/chapter/unit-1-introduction" description="Create your first basic sentences."/>
+<LinkCard title="Blog" href="/" description="Check out all blog posts."/>
+

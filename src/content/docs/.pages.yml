@@ -1,0 +1,134 @@
+# .pages.yml — PagesCMS config for learnkorean-content
+
+media:
+  - name: images
+    label: Images
+    input: public/media
+    output: /media
+    categories: [image]
+  - name: files
+    label: Files
+    input: public/files
+    output: /files
+    categories: [document, audio, video, compressed]
+
+content:
+  - name: chapter
+    label: Chapters
+    type: collection
+    path: chapter
+    filename: "{primary}.md"
+    subfolders: true
+    format: yaml-frontmatter
+    view:
+      layout: tree
+      node:
+        filename: index.md
+        hideDirs: all
+      fields: [title, "sidebar.label", "sidebar.order", lastUpdated, draft]
+      primary: title
+      sort: [ "sidebar.order", title ]
+      search: [ title, description ]
+      default:
+        sort: "sidebar.order"
+        order: asc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+      - name: sidebar
+        label: Sidebar (Starlight)
+        type: object
+        fields:
+          - name: label
+            label: Link label
+            type: string
+          - name: order
+            label: Order (lower shows higher)
+            type: number
+          - name: badge
+            label: Badge
+            type: object
+            fields:
+              - name: text
+                label: Text
+                type: string
+              - name: variant
+                label: Variant
+                type: select
+                options:
+                  values:
+                    - { label: Tip,     value: tip }
+                    - { label: Note,    value: note }
+                    - { label: Caution, value: caution }
+                    - { label: Danger,  value: danger }
+      - name: lastUpdated
+        label: Last updated
+        type: date
+      - name: draft
+        label: Draft (don’t publish yet)
+        type: boolean
+      - name: hero
+        label: Hero (optional)
+        type: object
+        fields:
+          - name: title
+            label: Hero title
+            type: string
+          - name: tagline
+            label: Tagline
+            type: text
+          - name: image
+            label: Image
+            type: image
+            media: images
+          - name: actions
+            label: Actions
+            type: object
+            list: true
+            fields:
+              - name: text
+                label: Button text
+                type: string
+              - name: link
+                label: Link
+                type: string
+              - name: variant
+                label: Variant
+                type: select
+                options:
+                  values:
+                    - { label: Primary,   value: primary }
+                    - { label: Secondary, value: secondary }
+                    - { label: Minimal,   value: minimal }
+      - name: body
+        label: Content
+        type: rich-text
+        media: images
+
+components:
+  sidebarBadge:
+    label: Sidebar Badge
+    type: object
+    fields:
+      - name: text
+        label: Text
+        type: string
+      - name: variant
+        label: Variant
+        type: select
+        options:
+          values:
+            - { label: Tip,     value: tip }
+            - { label: Note,    value: note }
+            - { label: Caution, value: caution }
+            - { label: Danger,  value: danger }
+
+settings:
+  hide: false
+  content:
+    merge: true
