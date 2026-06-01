@@ -1,4 +1,4 @@
-// @ts-check
+﻿// @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
@@ -19,11 +19,11 @@ export default defineConfig({
 			editLink: {
 				baseUrl: 'https://github.com/bryanhogan/learnkorean/edit/master/',
 			},
-			social: {
-				github: 'https://github.com/BryanHogan/learnkorean',
-				email: 'https://bryanhogan.com/socials',
-				rss: 'https://tolearnkorean.com/rss.xml'
-			},
+			social: [
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/BryanHogan/learnkorean' },
+				{ icon: 'email', label: 'Email', href: 'https://bryanhogan.com/socials' },
+				{ icon: 'rss', label: 'RSS', href: 'https://tolearnkorean.com/rss.xml' },
+			],
 			sidebar: [
 				{ label: 'Introduction', link: 'chapter/introduction' },
 				{
