@@ -1,0 +1,54 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+
+const docs = await getCollection('docs');
+const docsById = new Map(docs.map((doc) => [doc.id, doc]));
+const units = Astro.locals.starlightRoute.sidebar.filter(
+	(entry) => entry.type === 'group' && entry.label.startsWith('Unit ')
+);
+
+function getChapter(href: string, sidebarLabel: string): CollectionEntry<'docs'> {
+	const pathname = new URL(href, Astro.url).pathname;
+	const id = decodeURIComponent(pathname)
+		.replace(/^\/+|\/+$/g, '')
+		.replace(/\/index$/, '');
+	const chapter = docsById.get(id);
+
+	if (!chapter) {
+		throw new Error(
+			`Could not find a docs collection entry for sidebar chapter "${sidebarLabel}" (${href}).`
+		);
+	}
+
+	if (!chapter.data.description) {
+		throw new Error(`Sidebar chapter "${sidebarLabel}" (${href}) is missing a description.`);
+	}
+
+	return chapter;
+}
+---
+
+<details>
+	<summary>Detailed Chapter Overview</summary>
+
+	{
+		units.map((unit) => (
+			<section>
+				<h3>{unit.label}</h3>
+				<ol>
+					{unit.entries
+						.filter((entry) => entry.type === 'link')
+						.map((chapterLink) => {
+							const chapter = getChapter(chapterLink.href, chapterLink.label);
+
+							return (
+								<li>
+									<a href={chapterLink.href}>{chapter.data.title}</a>: {chapter.data.description}
+								</li>
+							);
+						})}
+				</ol>
+			</section>
+		))
+	}
+</details>

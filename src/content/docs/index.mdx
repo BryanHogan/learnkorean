@@ -7,8 +7,8 @@ hero:
   image:
     file: ../../assets/Book-Logo-TLK-Gradient.png
   actions:
-    - text: Unit Introduction
-      link: /chapter/introduction
+    - text: Start with Unit 0
+      link: /chapter/korean-alphabet-hangul
       icon: right-arrow
     - text: Read blog
       link: /blog/overview
@@ -30,6 +30,7 @@ next: false
 ---
 
 import { Card, CardGrid, Aside, LinkCard } from '@astrojs/starlight/components';
+import ChapterOverview from '../../components/ChapterOverview.astro';
 
 Welcome to **ToLearnKorean.com**! On this website I want to teach you the Korean language.
 
@@ -44,3 +45,6 @@ Each unit is divided into multiple chapters. Each chapter focuses on one topic. 
 
 <LinkCard title="Blog" href="/" description="Check out all blog posts."/>
 
+---
+
+<ChapterOverview />
