@@ -10,10 +10,17 @@ Introduction on reading Hangul, understand the letters of the Korean alphabet.
 
 Being able to read Hangul doesn't take long. There's only about as many different basic "letters" as in the English language. Modern Hangul uses around 24 basic letters.
 
-Hangul is made out of consonants, like ㄱ(g) or ㅁ(m) and vowels like ㅏ(a) or ㅜ(u). To make a sound you need to combine at least 1 consonant and 1 vowel. Each combination is one block.  
-To make the sound "ga" you combine them into this block: 가  
-Or for "ma": 마  
-Or for "mu": 무  
+Hangul is made out of consonants, like ㄱ(g) or ㅁ(m), and vowels like ㅏ(a) or ㅜ(u). To make a sound you need to combine at least 1 consonant and 1 vowel. Each combination is one block.
+
+Let's combine ㅇ (no sound) and ㅏ("a") to create this block: 아 ("a")
+
+Now we can also add consonants that do make a sound, which produces the following sounds:
+
+|  | ㅏ | ㅜ | 
+| --- | --- | --- | 
+| ㅇ | 아 (a) | 우 (u) | 
+| ㄱ | 가 (ga) |  구 (gu) | 
+| ㅁ | 마 (ma) | 무 (mu) | 
 
 Don't try to represent Korean words in romanized letters (the English alphabet). It is not possible to accurately represent Korean words with letters this way. Understanding Hangul is the fundamental first step to mastering Korean.
 
