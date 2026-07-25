@@ -25,7 +25,7 @@ export default defineConfig({
 				{ icon: 'rss', label: 'RSS', href: 'https://tolearnkorean.com/rss.xml' },
 			],
 			sidebar: [
-				{ label: 'Introduction', link: 'chapter/introduction' },
+				{ label: 'Welcome', link: '/' },
 				{
 					label: 'Unit 0',
 					items: [
