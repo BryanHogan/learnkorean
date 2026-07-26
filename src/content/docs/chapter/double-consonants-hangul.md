@@ -1,6 +1,6 @@
 ---
 title: Double Consonants
-description: "The double consonants Hangul guide: ㄲ, ㄸ, ㅃ, ㅆ, ㅉ explanation and pronunciation"
+description: "The double consonants Hangul guide: ㄲ, ㄸ, ㅃ, ㅆ, ㅉ explanation and pronunciation."
 unit: 0
 ---
 

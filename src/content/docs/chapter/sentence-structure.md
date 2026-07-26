@@ -1,6 +1,6 @@
 ---
 title: Sentence Structure
-description: How sentences in Korean are structured. Subject > Object > Verb
+description: How sentences in Korean are structured. Subject > Object > Verb.
 unit: 1
 ---
 

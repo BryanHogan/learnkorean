@@ -1,6 +1,6 @@
 ---
 title: Strong Consonants
-description: "The strong consonants of Hangul guide: ㅊ, ㅋ, ㅌ, ㅍ explanation and pronunciation"
+description: "The strong consonants of Hangul guide: ㅊ, ㅋ, ㅌ, ㅍ explanation and pronunciation."
 unit: 0
 ---
 
