@@ -25,7 +25,7 @@ export default defineConfig({
 				{ icon: 'rss', label: 'RSS', href: 'https://tolearnkorean.com/rss.xml' },
 			],
 			sidebar: [
-				{ label: 'Course Contents', link: '/course/' },
+				{ label: 'Course Contents', link: '/course' },
 				{
 					label: 'Unit 0',
 					items: [
@@ -47,7 +47,7 @@ export default defineConfig({
 				{
 					label: 'Blog',
 					items: [
-						{ label: 'Overview', slug: 'blog/overview' },
+						{ label: 'Overview', slug: 'blog' },
 						{ label: 'How to Anki', slug: 'blog/how-to-anki' },
 						{ label: 'Launch', slug: 'blog/launch' },
 					],
