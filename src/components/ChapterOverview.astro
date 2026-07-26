@@ -6,11 +6,17 @@ const docsById = new Map(docs.map((doc) => [doc.id, doc]));
 const units = Astro.locals.starlightRoute.sidebar.filter(
 	(entry) => entry.type === 'group' && entry.label.startsWith('Unit ')
 );
-const unitDescriptions: Record<string, string> = {
-	'Unit 0':
+const unitDescriptions = new Map([
+	[
+		'Unit 0',
 		'Unit 0 focuses on teaching Hangul, the Korean alphabet. Start here if you are a beginner.',
-	'Unit 1': 'Unit 1 teaches you the basics of creating your first Korean sentences.',
-};
+	],
+	['Unit 1', 'Unit 1 teaches you the basics of creating your first Korean sentences.'],
+]);
+const unitsWithDescriptions = units.map((unit) => ({
+	unit,
+	description: unitDescriptions.get(unit.label),
+}));
 
 function getChapter(href: string, sidebarLabel: string): CollectionEntry<'docs'> {
 	const pathname = new URL(href, Astro.url).pathname;
@@ -35,10 +41,10 @@ function getChapter(href: string, sidebarLabel: string): CollectionEntry<'docs'>
 
 <div>
 	{
-		units.map((unit) => (
+		unitsWithDescriptions.map(({ unit, description }) => (
 			<section>
 				<h2>{unit.label}</h2>
-				{unitDescriptions[unit.label] && <p>{unitDescriptions[unit.label]}</p>}
+				{description && <p>{description}</p>}
 				<ol>
 					{unit.entries
 						.filter((entry) => entry.type === 'link')
