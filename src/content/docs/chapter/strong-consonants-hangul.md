@@ -1,32 +1,35 @@
 ---
-title: Strong Consonants
-description: "The strong consonants of Hangul guide: ㅊ, ㅋ, ㅌ, ㅍ explanation and pronunciation."
+title: Strong Aspirated Consonants
+description: "Learn the strong aspirated Hangul consonants ㅋ, ㅌ, ㅍ, and ㅊ and how they differ from plain and tense consonants."
 unit: 0
 ---
 
-About the four strong consonants of Hangul.
+Korean has four strong consonants: `ㅋ`, `ㅌ`, `ㅍ`, and `ㅊ`.
 
-## Strong consonants
+## Plain, aspirated, and tense consonants
 
-There are more consonants in Hangul. Luckily they are similar to characters we have already learned. Korean has the following strong consonants: ㅊ, ㅋ, ㅌ, ㅍ
+These strong consonants might seem familiar to you. They are all made by adding one stroke to their plain version (except for `ㅂ/ㅍ`):
 
-These strong consonants might seem familiar to you. They are all made by adding one stroke to their plain version, except for ㅂ/ㅍ.
-- ㅈ: ㅊ
-- ㄱ: ㅋ
-- ㄷ: ㅌ
-- ㅂ: ㅍ
+- ㄱ → ㅋ
+- ㄷ → ㅌ
+- ㅈ → ㅊ
+- ㅂ → ㅍ
 
-These strong consonants are pronounced with more force and a higher pitch. They are also often called aspirated consonants, since more air leaves your mouth when you pronounce them.
+## Pronunciation
 
-- ㅊ = "ch"
-- ㅋ = "k"
-- ㅌ = "t"
-- ㅍ = "p"
+They are also called **aspirated consonants** because you pronounce them with a strong burst or puff of air and a higher pitch than plain consonants.
 
-ㅊ has a strong and higher pitched "ch" sound, compared to the plain "ㅈ" which is less strong and lower in pitch.  
-ㅋ sounds more like a "k", compared to "ㄱ" which is more of a mix of between "k/g".  
-ㅌ sounds more like a "t", compared to "ㄷ" which is more of a mix of between "d/t".  
-ㅍ sounds more like a "p", compared to "ㅂ" which is more of a mix of between "b/p".  
+Do not try to make the sound louder or tighten your throat. The important cue
+is the burst of air:
+
+| Letter | Romanization | Rough English comparison |
+| --- | --- | --- |
+| ㅋ | k | the `k` at the start of *key* |
+| ㅌ | t | the `t` at the start of *top* |
+| ㅍ | p | the `p` at the start of *pie* |
+| ㅊ | ch | the `ch` at the start of *chair* |
+
+*These English comparisons are only approximations.*
 
 |     | ㅈ   | ㅊ   | ㄱ   | ㅋ   | ㄷ   | ㅌ   | ㅂ   | ㅍ   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -37,16 +40,19 @@ These strong consonants are pronounced with more force and a higher pitch. They 
 
 ### Word Examples
 
- For example these words use strong consonants:  
- 차 = car, tea  
- 코 = nose  
- 팔 = arm  
- 타다 = to ride
+These words begin with an aspirated consonant:
+
+- 차 = car; tea
+- 코 = nose
+- 팔 = arm
+- 타다 = to ride
 
 ---
 
- <details><summary>Sources & References</summary>
+<details><summary>Sources & References</summary>
 
-- [Korean Consonants – Letters of the Alphabet (Hangul 한글) by 90daykorean](https://www.90daykorean.com/korean-consonants/)
+- [How Hangul consonants are classified and formed — National Institute of Korean Language](https://www.korean.go.kr/eng_hangeul/principle/002.html)
+- [거센소리 (aspirated sound) — Basic Korean Dictionary, National Institute of Korean Language](https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=27331)
+- [Romanization of Korean — National Institute of Korean Language](https://www.korean.go.kr/front_eng/roman/roman_01.do)
 
 </details>

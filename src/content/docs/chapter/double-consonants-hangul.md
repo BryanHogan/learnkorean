@@ -26,11 +26,13 @@ Double consonants are made with the same sound as regular consonants but by slig
 - ㅉ is harder to describe in romanized sounds. The official romanization for ㅈ is "j" and for ㅉ it is "jj". Like described earlier, for ㅉ pronounce ㅈ but with more force at the beginning of the pronunciation.
 
 For a Korean learner these letters might be hard to differentiate in the beginning:
-- ㄱ, ㄲ, ㅋ
-- ㄷ, ㄸ, ㅌ
-- ㅂ, ㅃ, ㅍ
-- ㅅ, ㅆ
-- ㅈ, ㅉ, ㅊ
+
+| Plain | Aspirated | Tense |
+| --- | --- | --- |
+| ㄱ | ㅋ | ㄲ |
+| ㄷ | ㅌ | ㄸ |
+| ㅂ | ㅍ | ㅃ |
+| ㅈ | ㅊ | ㅉ |
 
 (*Audio example of how these sound will be added in the future!*)
 
