@@ -6,7 +6,7 @@ unit: 0
 
 Korean has four strong consonants: `ㅋ`, `ㅌ`, `ㅍ`, and `ㅊ`.
 
-## Plain, aspirated, and tense consonants
+## Writing aspirated consonants
 
 These strong consonants might seem familiar to you. They are all made by adding one stroke to their plain version (except for `ㅂ/ㅍ`):
 
@@ -38,7 +38,7 @@ is the burst of air:
 | ㅗ   | 조   | 초   | 고   | 코   | 도   | 토   | 보   | 포   |
 | ㅜ   | 주   | 추   | 구   | 쿠   | 두   | 투   | 부   | 푸   |
 
-### Word Examples
+## Word Examples
 
 These words begin with an aspirated consonant:
 
