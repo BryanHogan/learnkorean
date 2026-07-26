@@ -24,19 +24,10 @@ The goal of Unit 0 is to teach learners to decode Hangul without relying on
 romanisation and to recognise the most important pronunciation changes. Sound
 changes are introduced here, then reinforced throughout the course.
 
-1. **The Korean Alphabet and Syllable Blocks** — **Existing — light revision.**
-   Keep the introduction to basic letters, initial `ㅇ`, and syllable-block
-   construction. Make it clear that decoding blocks is not the same as pronouncing
-   every word naturally, and link forward to the dedicated 받침 chapter.
-2. **Aspirated Consonants** — **Existing — revise.** Rename the current “Strong
-   Consonants” chapter and replace imprecise descriptions based on “more force” with
-   clearer plain-versus-aspirated comparisons.
-3. **Tense (Double) Consonants** — **Existing — revise.** Correct misleading English
-   sound comparisons and teach `ㄲ`, `ㄸ`, `ㅃ`, `ㅆ`, and `ㅉ` as tense consonants,
-   while retaining “double consonants” as a familiar secondary term.
-4. **Compound Vowels** — **Existing — revise.** Rename the diphthongs chapter,
-   distinguish compound vowels from true diphthongs, and soften overly absolute
-   pronunciation claims.
+1. **The Korean Alphabet and Syllable Blocks**.
+2. **Aspirated Consonants**
+3. **Tense (Double) Consonants** (tense consonants)
+4. **Compound Vowels** — distinguish compound vowels from true diphthongs
 5. **Batchim and Final Sounds** — **New.** Cover final-consonant placement, the seven
    realised final sounds, final-sound neutralisation, and basic recognition of
    double 받침.
@@ -55,60 +46,37 @@ changes are introduced here, then reinforced throughout the course.
 The goal of Unit 1 is to let learners exchange greetings, identify people and
 things, and produce a short polite self-introduction.
 
-1. **Korean Sentence Structure** — Explain verb-final order and the omission of
-   obvious subjects and objects.
-2. **Greetings and Social Basics** — Introduce essential fixed expressions, why
-   the course begins with `-요` forms, and the basic `존댓말`/`반말` distinction.
-3. **Saying What Something Is or Is Not** — Teach `이에요/예요`, `아니에요`,
-   and yes-or-no questions formed through intonation.
-4. **This, That, and Over There** — Teach `이/그/저`, `이것/그것/저것`, and
-   their common spoken forms.
-5. **The Topic Particle 은/는** — Introduce basic topic marking and simple
-   contrast without trying to cover every discourse use.
-6. **The Subject Particle 이/가** — Introduce subject marking and new information,
-   with the distinction revisited in later units.
-7. **Personal Questions and Self-Introduction** — Cover names, countries,
-   nationalities, languages, occupations, and a short self-introduction.
+1. Korean sentence structure
+2. Greetings and goodbye (Brief mention of 요, `존댓말`/`반말` distinction)
+3. Is and is not (+ self-introduction, maybe separate chapter)
+4. Verb introduction
+5. Present tense conjugation
+6. Object marker
+7. Topic marker
+8. This and that
+9. questions, why, what, how, where
+10. Self-introduction
+11. Action verbs
+12. Descriptive verbs
+13. Adverbs
 
 Do not create separate unit-introduction pages. The first substantive chapter in
 each unit should briefly introduce that unit’s goals.
 
-## Unit 2 — Present-Tense Actions and Descriptions
+## Unit 2
 
-The goal of Unit 2 is to let learners discuss daily activities, hobbies, likes,
-and simple descriptions in the polite present tense.
+1. Formal and informal, base form
+2. Past tense  
+3. Future tense
+4. 하다
+5. 있다/없다
+6. Likes and dislikes
+7. Location 에, 에서
 
-1. **Dictionary Forms, Stems, and Verb Types** — Introduce dictionary forms, verb
-   stems, and action versus descriptive verbs.
-2. **The Polite Present Tense: -아/어요** — Teach regular conjugation and vowel
-   selection.
-3. **하다 Verbs and Common Contractions** — Cover `하다` verbs, `-해요`, and
-   common contractions.
-4. **Descriptive Verbs and Basic Adverbs** — Describe people and things using
-   regular descriptive verbs and common adverbs.
-5. **Existence and Possession with 있다/없다** — Teach existence and possession,
-   previewing `에` only where needed for simple location examples.
-6. **Likes and Dislikes: 좋다 and 좋아하다** — Contrast something being good
-   with someone liking it.
-7. **Daily Activities and Hobbies** — Practise present-tense forms and frequency
-   expressions.
 
-## Unit 3 — Past, Future, Progress, and Negation
+## Unit 3
 
-The goal of Unit 3 is to let learners discuss yesterday, current activities, and
-future plans, including things they do not or cannot do.
 
-1. **The Polite Past Tense** — Teach `-았/었어요`, `하다` forms, and common
-   contractions.
-2. **Future Plans and Decisions: -(으)ㄹ 거예요 and -(으)ㄹ게요** — Contrast
-   plans or predictions with decisions and promises.
-3. **Actions in Progress: -고 있어요** — Contrast actions happening now with
-   habitual actions.
-4. **Negation with 안 and -지 않아요** — Introduce short and long negation.
-5. **Inability with 못 and -지 못해요** — Distinguish inability from choosing
-   not to act.
-6. **Yesterday, Today, and Tomorrow** — Combine time words and tenses in a short
-   chronological narrative, including a review of the past form of `아니다`.
 
 ## Unit 4 — Particles and Places
 

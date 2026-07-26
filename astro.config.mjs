@@ -40,7 +40,6 @@ export default defineConfig({
 				{
 					label: 'Unit 1',
 					items: [
-						{ label: 'Unit 1 Introduction', slug: 'chapter/unit-1-introduction' },
 						{ label: 'Sentence Structure', slug: 'chapter/sentence-structure' },
 					],
 				},
