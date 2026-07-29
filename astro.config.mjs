@@ -15,6 +15,57 @@ export default defineConfig({
 			customCss: [
 				'./src/styles/custom.css',
 			],
+			head: [
+				{
+					tag: 'meta',
+					attrs: {
+						property: 'og:image',
+						content: 'https://tolearnkorean.com/ToLearnKorean.com-Cover.png',
+					},
+				},
+				{
+					tag: 'meta',
+					attrs: {
+						property: 'og:image:alt',
+						content: 'ToLearnKorean.com wordmark and book illustration on a dark panel framed by a teal, purple and pink gradient.',
+					},
+				},
+				{
+					tag: 'meta',
+					attrs: {
+						property: 'og:image:type',
+						content: 'image/png',
+					},
+				},
+				{
+					tag: 'meta',
+					attrs: {
+						property: 'og:image:width',
+						content: '1600',
+					},
+				},
+				{
+					tag: 'meta',
+					attrs: {
+						property: 'og:image:height',
+						content: '900',
+					},
+				},
+				{
+					tag: 'meta',
+					attrs: {
+						name: 'twitter:image',
+						content: 'https://tolearnkorean.com/ToLearnKorean.com-Cover.png',
+					},
+				},
+				{
+					tag: 'meta',
+					attrs: {
+						name: 'twitter:image:alt',
+						content: 'ToLearnKorean.com wordmark and book illustration on a dark panel framed by a teal, purple and pink gradient.',
+					},
+				},
+			],
 			lastUpdated: true,
 			editLink: {
 				baseUrl: 'https://github.com/bryanhogan/learnkorean/edit/master/',
