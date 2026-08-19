@@ -93,6 +93,7 @@ export default defineConfig({
 					items: [
 						{ label: 'Sentence Structure', slug: 'chapter/sentence-structure' },
 						{ label: 'Hello and goodbye', slug: 'chapter/basic-greetings-and-goodbye' },
+						{ label: 'Is and is not', slug: 'chapter/is-and-is-not' },
 					],
 				},
 				{

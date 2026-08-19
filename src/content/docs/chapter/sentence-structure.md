@@ -19,6 +19,8 @@ While English has this structure: **Subject Verb Object**
 
 "I eat pizza" In Korean would be "저는 피자 먹어요.".
 
+---
+
 <details>
 <summary>Sources & References</summary>
 
