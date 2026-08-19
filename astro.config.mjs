@@ -92,6 +92,7 @@ export default defineConfig({
 					label: 'Unit 1',
 					items: [
 						{ label: 'Sentence Structure', slug: 'chapter/sentence-structure' },
+						{ label: 'Hello and goodbye', slug: 'chapter/basic-greetings-and-goodbye' },
 					],
 				},
 				{
