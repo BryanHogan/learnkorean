@@ -47,18 +47,19 @@ The goal of Unit 1 is to let learners exchange greetings, identify people and
 things, and produce a short polite self-introduction.
 
 1. Korean sentence structure
-2. Greetings and goodbye (Brief mention of 요, `존댓말`/`반말` distinction)
-3. Is and is not (+ self-introduction, maybe separate chapter)
-4. Verb introduction
-5. Present tense conjugation
-6. Object marker
-7. Topic marker
-8. This and that
-9. questions, why, what, how, where
-10. Self-introduction
-11. Action verbs
-12. Descriptive verbs
-13. Adverbs
+2. Hello and goodbye 
+3. Something is
+4. Starting conversation (네, 반가워요, 감사합니다) (Examples combining past chapters)
+5. Verb introduction (Brief mention of 요, `존댓말`/`반말` distinction)
+6. Present tense conjugation
+7. Object marker
+8. Topic marker
+9. This and that
+10. questions, why, what, how, where
+11. Self-introduction
+12. Action verbs
+13. Descriptive verbs
+14. Adverbs
 
 Do not create separate unit-introduction pages. The first substantive chapter in
 each unit should briefly introduce that unit’s goals.
