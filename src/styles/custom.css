@@ -1,4 +1,3 @@
-/* Dark mode colors. */
 :root {
     --sl-color-accent-low: #291847;
     --sl-color-accent: #7e2ce4;
@@ -76,4 +75,16 @@ h1 {
 
 .sidebar-content .top-level > li > a[aria-current="page"] {
     font-weight: 600;
+}
+
+code {
+    font-size: 1rem;
+    font-family:
+        ui-monospace,
+        "SFMono-Regular",
+        Consolas,
+        "Apple SD Gothic Neo",
+        "Malgun Gothic",
+        "Noto Sans CJK KR",
+        sans-serif;
 }

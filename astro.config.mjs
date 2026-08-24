@@ -76,7 +76,7 @@ export default defineConfig({
 				{ icon: 'rss', label: 'RSS', href: 'https://tolearnkorean.com/rss.xml' },
 			],
 			sidebar: [
-				{ label: 'Course Contents', link: '/course' },
+				{ label: 'Course Contents', link: '/chapters' },
 				{
 					label: 'Unit 0',
 					items: [
@@ -93,7 +93,7 @@ export default defineConfig({
 					items: [
 						{ label: 'Sentence Structure', slug: 'chapter/sentence-structure' },
 						{ label: 'Hello and goodbye', slug: 'chapter/basic-greetings-and-goodbye' },
-						{ label: 'Is and is not', slug: 'chapter/is-and-is-not' },
+						{ label: 'Something is', slug: 'chapter/something-is' },
 					],
 				},
 				{
