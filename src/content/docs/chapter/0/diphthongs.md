@@ -1,7 +1,6 @@
 ---
 title: "Diphthongs: Complex Vowels"
 description: Covering diphthongs. Diphthongs are complex vowels that look like a combination of two vowels.
-unit: 0
 ---
 
 There are only a few vowels remaining to know all characters of the Korean alphabet.

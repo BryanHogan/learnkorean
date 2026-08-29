@@ -1,7 +1,6 @@
 ---
 title: Sentence Structure
 description: How sentences in Korean are structured. Subject -> Object -> Verb.
-unit: 1
 ---
 
 Korean sentence structure is different from English, so how does the sentence order in Korean look like?

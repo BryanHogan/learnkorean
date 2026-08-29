@@ -1,7 +1,6 @@
 ---
 title: Aspirated (Strong) Consonants
 description: "Learn the strong aspirated Hangul consonants ㅋ, ㅌ, ㅍ, and ㅊ and how they differ from plain and tense consonants."
-unit: 0
 ---
 
 Korean has four strong consonants: `ㅋ`, `ㅌ`, `ㅍ`, and `ㅊ`.

@@ -1,7 +1,6 @@
 ---
 title: Tense (Double) Consonants
 description: "Learn the tense Hangul consonants ㄲ, ㄸ, ㅃ, ㅆ, and ㅉ and how they differ from plain and aspirated consonants."
-unit: 0
 ---
 
 Korean has five double consonants: `ㄲ`, `ㄸ`, `ㅃ`, `ㅆ`, and `ㅉ`.

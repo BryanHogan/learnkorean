@@ -1,7 +1,6 @@
 ---
 title: "Basic Korean Words"
 description: Covering the most important words to know in Korean.
-unit: 0
 ---
 
 Congratulation! You can now read Hangul!
