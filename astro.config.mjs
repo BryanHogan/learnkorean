@@ -103,6 +103,8 @@ export default defineConfig({
 					items: [
 						{ label: 'Quoting', slug: 'chapter/quotes' },
 						{ label: 'Only', slug: 'chapter/only' },
+						{ label: '되다: Becoming something', slug: 'chapter/becoming-something' },
+						{ label: 'Being this or that way', slug: 'chapter/being-this-way-or-that-way' },
 					],
 				},
 				{
