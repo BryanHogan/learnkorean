@@ -31,14 +31,23 @@
 :root {
     --sl-content-width: 48rem;
     --sl-color-text: var(--sl-color-gray-2);
-    --sl-text-base: 1.125rem; /* 16px */
+    --sl-text-base: 1.0625rem; /* 17px */
     --sl-text-lg: 1.125rem; /* 18px */
-	--sl-text-xl: 1.25rem; /* 20px */
-	--sl-text-2xl: 1.5rem; /* 24px */
-	--sl-text-code-sm: 1rem;
+    --sl-text-xl: 1.25rem; /* 20px */
+    --sl-text-2xl: 1.5rem; /* 24px */
+    --sl-text-code-sm: 1em;
+    --sl-font-mono:
+        ui-monospace,
+        "SFMono-Regular",
+        Consolas,
+        "Apple SD Gothic Neo",
+        "Malgun Gothic",
+        "Noto Sans CJK KR",
+        sans-serif;
 }
-p, .sl-markdown-content li {
-    font-size: 1.0625rem;
+
+.sl-markdown-content {
+    font-size: var(--sl-text-body);
 }
 .sl-markdown-content img {
     border-radius: 4px;
@@ -76,15 +85,4 @@ h1 {
 
 .sidebar-content .top-level > li > a[aria-current="page"] {
     font-weight: 600;
-}
-
-code {
-    font-family:
-        ui-monospace,
-        "SFMono-Regular",
-        Consolas,
-        "Apple SD Gothic Neo",
-        "Malgun Gothic",
-        "Noto Sans CJK KR",
-        sans-serif;
 }
