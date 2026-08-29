@@ -101,7 +101,7 @@ export default defineConfig({
 					badge: { text: 'Work in progress', variant: 'caution' },
 					collapsed: true,
 					items: [
-						{ label: 'Qouting', slug: 'chapter/quotes' },
+						{ label: 'Quoting', slug: 'chapter/quotes' },
 						{ label: 'Only', slug: 'chapter/only' },
 					],
 				},
