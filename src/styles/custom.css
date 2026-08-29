@@ -32,9 +32,10 @@
     --sl-content-width: 48rem;
     --sl-color-text: var(--sl-color-gray-2);
     --sl-text-base: 1.125rem; /* 16px */
-	--sl-text-lg: 1.125rem; /* 18px */
+    --sl-text-lg: 1.125rem; /* 18px */
 	--sl-text-xl: 1.25rem; /* 20px */
 	--sl-text-2xl: 1.5rem; /* 24px */
+	--sl-text-code-sm: 1rem;
 }
 p, .sl-markdown-content li {
     font-size: 1.0625rem;
@@ -78,7 +79,6 @@ h1 {
 }
 
 code {
-    font-size: 1rem;
     font-family:
         ui-monospace,
         "SFMono-Regular",
