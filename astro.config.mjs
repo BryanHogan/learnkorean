@@ -97,9 +97,15 @@ export default defineConfig({
 					],
 				},
 				{
-					label: 'Unit 3',
+					label: 'Unit 2',
 					badge: { text: 'Work in progress', variant: 'caution' },
 					collapsed: true,
+					items: [
+						{ label: 'Work in progress', slug: 'chapter/temporary' }
+					],
+				},
+				{
+					label: 'Unit 3',
 					items: [
 						{ label: 'Quoting', slug: 'chapter/quotes' },
 						{ label: 'Only', slug: 'chapter/only' },
