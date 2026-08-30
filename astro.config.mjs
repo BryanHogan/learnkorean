@@ -105,6 +105,8 @@ export default defineConfig({
 						{ label: 'Only', slug: 'chapter/only' },
 						{ label: '되다: Becoming something', slug: 'chapter/becoming-something' },
 						{ label: 'Being this or that way', slug: 'chapter/being-this-way-or-that-way' },
+						{ label: '(으)로: Toward', slug: 'chapter/toward' },
+						{ label: '(으)로: Using', slug: 'chapter/using-things' },
 					],
 				},
 				{
