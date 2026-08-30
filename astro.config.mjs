@@ -107,6 +107,7 @@ export default defineConfig({
 						{ label: 'Being this or that way', slug: 'chapter/being-this-way-or-that-way' },
 						{ label: '(으)로: Toward', slug: 'chapter/toward' },
 						{ label: '(으)로: Using', slug: 'chapter/using-things' },
+						{ label: 'Describing Verbs', slug: 'chapter/describing-verbs' },
 					],
 				},
 				{
