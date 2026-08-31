@@ -114,6 +114,7 @@ export default defineConfig({
 						{ label: '(으)로: Toward', slug: 'chapter/toward' },
 						{ label: '(으)로: Using', slug: 'chapter/using-things' },
 						{ label: 'Describing Verbs', slug: 'chapter/describing-verbs' },
+						{ label: 'Giving a reason', slug: 'chapter/giving-a-reason' },
 					],
 				},
 				{
