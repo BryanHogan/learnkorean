@@ -1,5 +1,5 @@
 ---
-import { createMarkdownProcessor } from '@astrojs/markdown-remark';
+import { markdownProcessor } from '../utils/markdown';
 
 interface Props {
   ko: string;
@@ -8,7 +8,7 @@ interface Props {
 
 // In MDX: <Sentence ko="비가 오고 **있는데** 우산이 없어요." en="It's raining, but I don't have an umbrella." />
 const { ko, en } = Astro.props;
-const markdown = await createMarkdownProcessor({ smartypants: false, syntaxHighlight: false });
+const markdown = await markdownProcessor;
 const [korean, english] = await Promise.all([markdown.render(ko), markdown.render(en)]);
 ---
 
@@ -55,7 +55,7 @@ const [korean, english] = await Promise.all([markdown.render(ko), markdown.rende
   .sentence :global(p) { margin: 0; }
   .sentence :global(p + p) { margin-block-start: 0.25rem; }
   .sentence :global(strong) {
-    color: var(--sl-color-text-accent);
+    color: var(--sl-color-accent-high);
     font-weight: 700;
   }
   .sentence :global(em) { font-style: italic; }
