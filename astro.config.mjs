@@ -106,7 +106,7 @@ export default defineConfig({
 					badge: { text: 'Work in progress', variant: 'caution' },
 					collapsed: true,
 					items: [
-						{ label: 'Work in progress', slug: 'chapter/temporary' }
+						{ label: 'Making suggestions', slug: 'chapter/making-suggestions' },
 					],
 				},
 				{
@@ -122,6 +122,7 @@ export default defineConfig({
 						{ label: 'Giving a reason', slug: 'chapter/giving-a-reason' },
 						{ label: 'Contrast with 데', slug: 'chapter/showing-contrast' },
 						{ label: 'If and when', slug: 'chapter/if-and-when' },
+						{ label: 'Could it be', slug: 'chapter/could-it-be' },
 					],
 				},
 				{
