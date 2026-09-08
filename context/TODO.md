@@ -12,3 +12,7 @@ Make sure the following is uniform:
 ---
 
 Make the code selection, `code`, for Korean words behave differently. Make it span the text instead and mark it as Korean text and apply the adjusted styling, do not make it semantic code.
+
+---
+
+Sentence component could have a play audio and copy text button?
