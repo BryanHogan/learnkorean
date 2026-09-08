@@ -1,10 +1,15 @@
 ﻿// @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import { satteri } from '@astrojs/markdown-satteri';
+import sentencePlugin from './src/plugins/satteri-sentence.mjs';
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://tolearnkorean.com',
+	markdown: {
+		processor: satteri({ mdastPlugins: [sentencePlugin] }),
+	},
 	integrations: [
 		starlight({
 			title: 'To Learn Korean',
