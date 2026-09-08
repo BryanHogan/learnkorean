@@ -121,6 +121,7 @@ export default defineConfig({
 						{ label: 'Describing Verbs', slug: 'chapter/describing-verbs' },
 						{ label: 'Giving a reason', slug: 'chapter/giving-a-reason' },
 						{ label: 'Contrast with 데', slug: 'chapter/showing-contrast' },
+						{ label: 'If and when', slug: 'chapter/if-and-when' },
 					],
 				},
 				{
