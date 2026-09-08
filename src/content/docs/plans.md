@@ -18,7 +18,7 @@ short and focused, at roughly the same size as the existing Unit 0 chapters.
 - **Existing — revise:** The chapter needs a meaningful correction or expansion.
 - **New:** The chapter still needs to be written.
 
-## Unit 0 — Read Hangul
+## Unit 0 - Read Hangul
 
 The goal of Unit 0 is to teach learners to decode Hangul without relying on
 romanisation and to recognise the most important pronunciation changes. Sound
@@ -41,7 +41,7 @@ changes are introduced here, then reinforced throughout the course.
    page with internal links to the new pronunciation chapters, handwriting and
    keyboard practice, unfamiliar-word reading, and a romanisation exit check.
 
-## Unit 1 — Build First Sentences
+## Unit 1 - Build First Sentences
 
 The goal of Unit 1 is to let learners exchange greetings, identify people and
 things, and produce a short polite self-introduction.
@@ -52,8 +52,8 @@ things, and produce a short polite self-introduction.
 4. Starting conversation (네, 반가워요, 감사합니다) (Examples combining past chapters)
 5. Verb introduction (Brief mention of 요, `존댓말`/`반말` distinction)
 6. Present tense conjugation
-7. Object marker
-8. Topic marker
+7. Topic marker
+8. Object marker
 9. This and that
 10. questions, why, what, how, where
 11. Self-introduction
@@ -73,6 +73,8 @@ each unit should briefly introduce that unit’s goals.
 5. 있다/없다
 6. Likes and dislikes
 7. Location 에, 에서
+8. Connecting sentences with `and` / 그리고
+9. Connecting sentences with `but` / 하지만
 
 
 ## Unit 3
