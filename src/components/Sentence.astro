@@ -1,0 +1,49 @@
+---
+import { createMarkdownProcessor } from '@astrojs/markdown-remark';
+
+interface Props {
+  ko: string;
+  en: string;
+}
+
+// In MDX: <Sentence ko="비가 오고 **있는데** 우산이 없어요." en="It's raining, but I don't have an umbrella." />
+const { ko, en } = Astro.props;
+const markdown = await createMarkdownProcessor({ smartypants: false, syntaxHighlight: false });
+const [korean, english] = await Promise.all([markdown.render(ko), markdown.render(en)]);
+---
+
+<div class="sentence not-content">
+  <div class="korean" lang="ko" set:html={korean.code} />
+  <div class="english" lang="en" set:html={english.code} />
+</div>
+
+<style>
+  .sentence {
+    margin-block: 1.25rem;
+    border-inline-start: 2px solid var(--sl-color-gray-5);
+    padding-inline-start: 1rem;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+  }
+
+  .korean {
+    color: var(--sl-color-white);
+    font-size: 1.125rem;
+  }
+
+  .english {
+    margin-block-start: 0.25rem;
+    color: var(--sl-color-gray-2);
+    font-size: 1rem;
+  }
+
+  .sentence :global(p) { margin: 0; }
+  .sentence :global(p + p) { margin-block-start: 0.25rem; }
+  .sentence :global(strong) { font-weight: 700; }
+  .sentence :global(em) { font-style: italic; }
+  .sentence :global(a) {
+    color: var(--sl-color-text-accent);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+</style>
