@@ -16,3 +16,7 @@ Make the code selection, `code`, for Korean words behave differently. Make it sp
 ---
 
 Sentence component could have a play audio and copy text button?
+
+---
+
+Sentence component / components should be control able from one place to hide / show either Korean or English sentence. (So can be used for practice)

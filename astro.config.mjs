@@ -123,6 +123,7 @@ export default defineConfig({
 						{ label: 'Contrast with 데', slug: 'chapter/showing-contrast' },
 						{ label: 'If and when', slug: 'chapter/if-and-when' },
 						{ label: 'Could it be', slug: 'chapter/could-it-be' },
+						{ label: 'Before and after', slug: 'chapter/before-and-after' },
 					],
 				},
 				{
