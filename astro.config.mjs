@@ -106,6 +106,7 @@ export default defineConfig({
 					badge: { text: 'Work in progress', variant: 'caution' },
 					collapsed: true,
 					items: [
+						{ label: 'Casual speech: 반말', slug: 'chapter/casual-speech' },
 						{ label: 'Making suggestions', slug: 'chapter/making-suggestions' },
 					],
 				},

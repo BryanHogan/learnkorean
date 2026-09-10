@@ -155,3 +155,9 @@ simple appointments.
 Only create a separate milestone or review page when it teaches or assesses enough
 material to justify a full chapter. Otherwise, include the checkpoint in the last
 substantive chapter of the unit.
+
+---
+
+Also add:
+
+- Sentence starters, e.g. 그냥
