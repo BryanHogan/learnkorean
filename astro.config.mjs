@@ -107,6 +107,7 @@ export default defineConfig({
 					collapsed: true,
 					items: [
 						{ label: 'Casual speech: 반말', slug: 'chapter/casual-speech' },
+						{ label: 'Formal polite speech', slug: 'chapter/formal-polite-speech' },
 						{ label: 'Making suggestions', slug: 'chapter/making-suggestions' },
 					],
 				},

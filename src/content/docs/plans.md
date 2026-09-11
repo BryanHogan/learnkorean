@@ -161,3 +161,19 @@ substantive chapter of the unit.
 Also add:
 
 - Sentence starters, e.g. 그냥
+- Explain 알겠습니다 / 알겠어요
+
+---
+
+Notes:
+
+- **Formal polite** (하십시오체/합쇼체): politely addresses the listener in formal situations: `줍니다`.
+- **Informal polite** (해요체): politely addresses the listener in everyday conversation: `줘요`.
+- Semiformal (하오체): shows moderate respect but is uncommon in modern conversation: `주오`.
+- Familiar (하게체): traditionally addresses an adult of equal or somewhat lower status and is somewhat uncommon in modern conversation: `주네`.
+- **Plain** (해라체): used in writing, narration, and impersonal statements: `준다`.
+- **Casual** (해체/반말): addresses someone without polite endings: `줘`.
+
+Separate from speech levels:
+- Honorific (주체 높임법): raises the person who gives: `선생님께서 주십니다`.
+- Humble (겸양 표현/겸양어): lowers the giver’s action to respect the recipient: `제가 선생님께 드립니다`.
