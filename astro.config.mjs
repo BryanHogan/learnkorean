@@ -128,6 +128,7 @@ export default defineConfig({
 						{ label: 'Before and after', slug: 'chapter/before-and-after' },
 						{ label: 'Or', slug: 'chapter/or' },
 						{ label: 'Negative commands', slug: 'chapter/negative-commands' },
+						{ label: 'To hope or wish for', slug: 'chapter/hope-and-wish-for' },
 					],
 				},
 				{
