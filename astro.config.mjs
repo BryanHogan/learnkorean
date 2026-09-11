@@ -126,6 +126,7 @@ export default defineConfig({
 						{ label: 'Could it be', slug: 'chapter/could-it-be' },
 						{ label: 'Before and after', slug: 'chapter/before-and-after' },
 						{ label: 'Or', slug: 'chapter/or' },
+						{ label: 'Negative commands', slug: 'chapter/negative-commands' },
 					],
 				},
 				{
