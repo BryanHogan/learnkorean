@@ -103,18 +103,16 @@ export default defineConfig({
 				},
 				{
 					label: 'Unit 2',
-					badge: { text: 'Work in progress', variant: 'caution' },
-					collapsed: true,
 					items: [
 						{ label: 'Casual speech: 반말', slug: 'chapter/casual-speech' },
 						{ label: 'Formal polite speech', slug: 'chapter/formal-polite-speech' },
 						{ label: 'Making suggestions', slug: 'chapter/making-suggestions' },
+						{ label: 'Adverbs', slug: '', badge: { text: 'w.i.p.', variant: 'caution' }, },
 					],
 				},
 				{
 					label: 'Unit 3',
 					items: [
-						{ label: 'Quoting', slug: 'chapter/quotes' },
 						{ label: 'Only', slug: 'chapter/only' },
 						{ label: '되다: Becoming something', slug: 'chapter/becoming-something' },
 						{ label: 'Being this or that way', slug: 'chapter/being-this-way-or-that-way' },
@@ -129,6 +127,23 @@ export default defineConfig({
 						{ label: 'Or', slug: 'chapter/or' },
 						{ label: 'Negative commands', slug: 'chapter/negative-commands' },
 						{ label: 'To hope or wish for', slug: 'chapter/hope-and-wish-for' },
+						{ label: 'Cannot', slug: '', badge: { text: 'w.i.p.', variant: 'caution' }, },
+						{ label: 'To try', slug: '', badge: { text: 'w.i.p.', variant: 'caution' }, },
+						{ label: 'Verb ending 네요', slug: '', badge: { text: 'w.i.p.', variant: 'caution' }, },
+						{ label: 'Verb ending 죠', slug: '', badge: { text: 'w.i.p.', variant: 'caution' }, },
+						{ label: 'Verb ending 나요 and 가요', slug: '', badge: { text: 'w.i.p.', variant: 'caution' }, },
+						{ label: 'Verb ending 군요', slug: '', badge: { text: 'w.i.p.', variant: 'caution' }, },
+						{ label: 'Plain form', slug: '', badge: { text: 'w.i.p.', variant: 'caution' }, },
+						{ label: 'Quoting', slug: 'chapter/quotes' },
+						{ label: 'Doing a favor', slug: '', badge: { text: 'w.i.p.', variant: 'caution' }, },
+						
+						{ label: 'I think', slug: '', badge: { text: 'w.i.p.', variant: 'caution' }, },
+						{ label: 'Have to do', slug: '', badge: { text: 'w.i.p.', variant: 'caution' }, },
+						{ label: 'In order to and for someone', slug: '', badge: { text: 'w.i.p.', variant: 'caution' }, },
+						{ label: 'While', slug: '', badge: { text: 'w.i.p.', variant: 'caution' }, },
+						{ label: 'Making a phone call', slug: '', badge: { text: 'w.i.p.', variant: 'caution' }, },
+						{ label: 'At the restaurant', slug: '', badge: { text: 'w.i.p.', variant: 'caution' }, },
+						{ label: 'Going shopping', slug: '', badge: { text: 'w.i.p.', variant: 'caution' }, },
 					],
 				},
 				{
