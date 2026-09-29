@@ -136,7 +136,6 @@ export default defineConfig({
 						{ label: 'Plain form', slug: '', badge: { text: 'w.i.p.', variant: 'caution' }, },
 						{ label: 'Quoting', slug: 'chapter/quotes' },
 						{ label: 'Doing a favor', slug: '', badge: { text: 'w.i.p.', variant: 'caution' }, },
-						
 						{ label: 'I think', slug: '', badge: { text: 'w.i.p.', variant: 'caution' }, },
 						{ label: 'Have to do', slug: '', badge: { text: 'w.i.p.', variant: 'caution' }, },
 						{ label: 'In order to and for someone', slug: '', badge: { text: 'w.i.p.', variant: 'caution' }, },
