@@ -107,7 +107,7 @@ export default defineConfig({
 						{ label: 'Casual speech: 반말', slug: 'chapter/casual-speech' },
 						{ label: 'Formal polite speech', slug: 'chapter/formal-polite-speech' },
 						{ label: 'Making suggestions', slug: 'chapter/making-suggestions' },
-						{ label: 'Adverbs', slug: 'chapters', badge: { text: 'w.i.p.', variant: 'caution' }, },
+						{ label: 'Adverbs', slug: 'chapter/adverbs'},
 					],
 				},
 				{
