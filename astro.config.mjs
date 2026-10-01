@@ -129,7 +129,7 @@ export default defineConfig({
 						{ label: 'To hope or wish for', slug: 'chapter/hope-and-wish-for' },
 						{ label: 'Cannot', slug: 'chapter/cannot'},
 						{ label: 'To try', slug: 'chapters', badge: { text: 'w.i.p.', variant: 'caution' }, },
-						{ label: 'Verb ending 네요', slug: 'chapters', badge: { text: 'w.i.p.', variant: 'caution' }, },
+						{ label: 'Verb ending 네요', slug: 'chapter/expressing-surprise' },
 						{ label: 'Verb ending 죠', slug: 'chapters', badge: { text: 'w.i.p.', variant: 'caution' }, },
 						{ label: 'Verb ending 나요 and 가요', slug: 'chapters', badge: { text: 'w.i.p.', variant: 'caution' }, },
 						{ label: 'Verb ending 군요', slug: 'chapters', badge: { text: 'w.i.p.', variant: 'caution' }, },
