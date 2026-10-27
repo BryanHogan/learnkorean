@@ -55,7 +55,7 @@ things, and produce a short polite self-introduction.
 7. Topic marker
 8. Object marker
 9. This and that
-10. questions, why, what, how, where
+10. questions, why, what, how, where (+ second meanings: https://youtu.be/NqyXB7dOgWk)
 11. Self-introduction
 12. Action verbs
 13. Descriptive verbs
@@ -76,10 +76,13 @@ each unit should briefly introduce that unit’s goals.
 8. Connecting sentences with `and` / 그리고
 9. Connecting sentences with `but` / 하지만
 
-
 ## Unit 3
 
+After the to try chapter add a chapter about using `정도` (approximately) and 만큼: https://youtu.be/1jLv8fzvKDY
 
+---
+
+Based on old AI recommendations, many of which should probably be integrated into earlier chapters:
 
 ## Unit 4 — Particles and Places
 
