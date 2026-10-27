@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" shape-rendering="crispEdges" role="img" aria-labelledby="tiger-title">
-  <title id="tiger-title">Seated tiger cub ? 16 by 16 pixel art</title>
-  <desc>A tiger cub with an oversized face, rounded ears, stripes, a curled tail on the left, and a raised paw on the right.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" shape-rendering="crispEdges" role="img" aria-labelledby="tiger-a-title">
+  <title id="tiger-a-title">Seated tiger cub - 16 by 16 pixel art, version A</title>
+  <desc>A tiger cub sitting with both paws down, an oversized face, stripes, and a curled tail on the left.</desc>
   <!-- One foreground color and transparent negative space. Each rectangle is one pixel. -->
   <g fill="#E9A45B">
     <rect x="4" y="1" width="1" height="1"/>
@@ -10,6 +10,9 @@
     <rect x="3" y="2" width="1" height="1"/>
     <rect x="5" y="2" width="1" height="1"/>
     <rect x="6" y="2" width="1" height="1"/>
+    <rect x="7" y="2" width="1" height="1"/>
+    <rect x="8" y="2" width="1" height="1"/>
+    <rect x="9" y="2" width="1" height="1"/>
     <rect x="10" y="2" width="1" height="1"/>
     <rect x="11" y="2" width="1" height="1"/>
     <rect x="13" y="2" width="1" height="1"/>
@@ -62,14 +65,10 @@
     <rect x="9" y="8" width="1" height="1"/>
     <rect x="10" y="8" width="1" height="1"/>
     <rect x="12" y="8" width="1" height="1"/>
-    <rect x="14" y="8" width="1" height="1"/>
-    <rect x="15" y="8" width="1" height="1"/>
     <rect x="0" y="9" width="1" height="1"/>
     <rect x="1" y="9" width="1" height="1"/>
     <rect x="6" y="9" width="1" height="1"/>
     <rect x="11" y="9" width="1" height="1"/>
-    <rect x="13" y="9" width="1" height="1"/>
-    <rect x="15" y="9" width="1" height="1"/>
     <rect x="0" y="10" width="1" height="1"/>
     <rect x="2" y="10" width="1" height="1"/>
     <rect x="5" y="10" width="1" height="1"/>
@@ -80,9 +79,6 @@
     <rect x="10" y="10" width="1" height="1"/>
     <rect x="11" y="10" width="1" height="1"/>
     <rect x="12" y="10" width="1" height="1"/>
-    <rect x="13" y="10" width="1" height="1"/>
-    <rect x="14" y="10" width="1" height="1"/>
-    <rect x="15" y="10" width="1" height="1"/>
     <rect x="0" y="11" width="1" height="1"/>
     <rect x="1" y="11" width="1" height="1"/>
     <rect x="2" y="11" width="1" height="1"/>
@@ -92,7 +88,6 @@
     <rect x="10" y="11" width="1" height="1"/>
     <rect x="11" y="11" width="1" height="1"/>
     <rect x="12" y="11" width="1" height="1"/>
-    <rect x="14" y="11" width="1" height="1"/>
     <rect x="1" y="12" width="1" height="1"/>
     <rect x="2" y="12" width="1" height="1"/>
     <rect x="4" y="12" width="1" height="1"/>
@@ -122,8 +117,5 @@
     <rect x="12" y="14" width="1" height="1"/>
     <rect x="13" y="14" width="1" height="1"/>
     <rect x="14" y="14" width="1" height="1"/>
-    <rect x="7" y="2" width="1" height="1"/>
-    <rect x="8" y="2" width="1" height="1"/>
-    <rect x="9" y="2" width="1" height="1"/>
   </g>
 </svg>
