@@ -167,6 +167,7 @@ Also add:
 - Explain 알겠습니다 / 알겠어요
 - Chapter cannot will need to reference negative sentence chapter (lesson 46 of BillyGo)
 - https://youtu.be/Vbnxs_sKHQE?list=PLbFrQnW0BNMUkAFj4MjYauXBPtO3I9O_k&t=687 notes section about two / four words not added yet
+- Usage of 고 at the end of a sentence, e.g. "...고요." (To indicate that you are not finished talking, sounding softer)
 
 ---
 
