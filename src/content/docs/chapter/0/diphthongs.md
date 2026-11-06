@@ -1,5 +1,8 @@
 ---
 title: "Diphthongs and complex vowels"
+head:
+  - tag: title
+    content: 'Korean diphthongs and complex vowels | To Learn Korean'
 description: 'Learn the remaining Korean vowels, including vowels with a "y" sound and combinations of familiar vowels.'
 ---
 

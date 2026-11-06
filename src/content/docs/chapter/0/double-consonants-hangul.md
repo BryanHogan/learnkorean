@@ -1,5 +1,8 @@
 ---
 title: "Tense (double) consonants"
+head:
+  - tag: title
+    content: 'Korean tense consonants: ㄲ, ㄸ, ㅃ, ㅆ, ㅉ | To Learn Korean'
 description: "Learn the tense Hangul consonants ㄲ, ㄸ, ㅃ, ㅆ, and ㅉ and how they differ from plain and aspirated consonants."
 ---
 

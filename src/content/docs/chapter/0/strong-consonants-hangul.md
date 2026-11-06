@@ -1,5 +1,8 @@
 ---
 title: "Aspirated (strong) consonants"
+head:
+  - tag: title
+    content: 'Korean aspirated consonants: ㅋ, ㅌ, ㅍ, ㅊ | To Learn Korean'
 description: "Learn the strong aspirated Hangul consonants ㅋ, ㅌ, ㅍ, and ㅊ and how they differ from plain and tense consonants."
 ---
 

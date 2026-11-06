@@ -1,7 +1,5 @@
 # Content follow-ups
 
-Published chapter presentation follows [the editorial guide](editorial-guide.md).
-
 - Make inline Korean markup uniform across chapters (backticks vs. plain text,
   formula notation, transformation arrows). Not covered by the editorial cleanup.
 - Make Sentence highlighting uniform. Chapters currently mix whole-word bold
