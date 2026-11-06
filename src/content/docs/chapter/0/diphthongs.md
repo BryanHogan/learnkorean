@@ -1,11 +1,11 @@
 ---
-title: "Diphthongs: Complex Vowels"
-description: Covering diphthongs. Diphthongs are complex vowels that look like a combination of two vowels.
+title: "Diphthongs and complex vowels"
+description: 'Learn the remaining Korean vowels, including vowels with a "y" sound and combinations of familiar vowels.'
 ---
 
 There are only a few vowels remaining to know all characters of the Korean alphabet.
 
-## Diphthongs Vowels
+## Vowels with a "y" sound
 
 Diphthongs are two vowels in one. They are just a combination of the vowels we already know.
 
@@ -50,10 +50,11 @@ These vowels are all a combination of vowels we already know:
 - ㅝ: ㅜ + ㅓ = "wo"
 - ㅞ: ㅜ + ㅔ = "weh" (very uncommon)
 - ㅟ: ㅜ + ㅣ = "wi"
-- ㅢ: ㅡ + ㅣ = "ui"*
+- ㅢ: ㅡ + ㅣ = "ui"
 
 Aside from 외 and 의 they all sound mostly like you would expect from combining them.  
-의 has some special pronunciation rules I will go into in a later chapter.  
+For the special pronunciation rules of 의, see the resources in [Further reading, pronunciation, and practice](/chapter/unit-0-completed).
+
 외 is pronounced just like 왜 and 웨, yes they are all pronounced the same.
 
 So these are all vowels in Hangul: ㅏ, ㅐ, ㅑ, ㅒ, ㅓ, ㅔ, ㅕ, ㅖ, ㅗ, ㅘ, ㅙ, ㅚ, ㅛ, ㅜ, ㅝ, ㅞ, ㅟ, ㅠ, ㅡ, ㅢ, ㅣ

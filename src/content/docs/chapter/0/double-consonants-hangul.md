@@ -1,5 +1,5 @@
 ---
-title: Tense (Double) Consonants
+title: "Tense (double) consonants"
 description: "Learn the tense Hangul consonants ㄲ, ㄸ, ㅃ, ㅆ, and ㅉ and how they differ from plain and aspirated consonants."
 ---
 
@@ -19,7 +19,7 @@ Each double consonant fits inside one syllable block, written twice but still wi
 
 Double consonants use the same general mouth position as their plain counterparts, but they begin more abruptly, slightly tensing your mouth before pronouncing them. Briefly hold back the airflow and release the sound with very little puff of air.
 
-They are also commonly called **tense consonants** hence.
+They are also commonly called **tense consonants**.
 
 - ㄲ (Tense K): Sounds close to a hard, clipped “g” to English speakers, whereas ㄱ is a softer, breathier mix of “g/k.” To pronounce ㄲ correctly, mimic the crisp, airless “k” in the English word sky.
 - ㄸ (Tense T): Sounds close to a hard, clipped “d,” whereas ㄷ is a softer mix of “d/t.” To pronounce ㄸ correctly, mimic the sharp, airless “t” in the English word stop.
@@ -65,7 +65,7 @@ These common words begin with tense consonants:
 - 쓰다 = to write; to use
 - 짜다 = to be salty
 
-Try practising these with actual words in which they come up, that should feel easier and more natural than listening to these sounds in isolation. I recommend studying with an Anki deck that has audio included, like this [first 500 words one](https://ankiweb.net/shared/info/1551455917). This [pronunciation example by BillyGo](https://youtu.be/J36m4cSl2W4?t=417) also might be helpful to you.
+Try practicing these sounds in words. This should feel easier and more natural than listening to them in isolation. I recommend studying with an Anki deck that has audio included, like this [first 500 words one](https://ankiweb.net/shared/info/1551455917). This [pronunciation example by BillyGo](https://youtu.be/J36m4cSl2W4?t=417) also might be helpful to you.
 
 You now know all 19 consonant letters used at the beginning of Korean syllables:  
 `ㄱ`, `ㄲ`, `ㄴ`, `ㄷ`, `ㄸ`, `ㄹ`, `ㅁ`, `ㅂ`, `ㅃ`, `ㅅ`, `ㅆ`, `ㅇ`, `ㅈ`, `ㅉ`, `ㅊ`, `ㅋ`, `ㅌ`, `ㅍ`, and `ㅎ`.

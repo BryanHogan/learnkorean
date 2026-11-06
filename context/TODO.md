@@ -1,13 +1,20 @@
-Clean up between different chapters.
+# Content follow-ups
 
-Make sure the following is uniform:
-- Headings
-  - Do headings use a similar word choice / style
-  - Is capitalization across headings consistent
-- Highlighting for Korean words (currently using the `code` thing)
-- How sentences and their translation are represented (Use sentence component)
-- How meanings, conjugation and other explanations are represented. Including what icons / characters they use.
-- 
+Published chapter presentation follows [the editorial guide](editorial-guide.md).
+
+- Make inline Korean markup uniform across chapters (backticks vs. plain text,
+  formula notation, transformation arrows). Not covered by the editorial cleanup.
+- Make Sentence highlighting uniform. Chapters currently mix whole-word bold
+  (`**먹었어요**`) and ending-only bold (`먹**었어요**`); pick one rule.
+- Add the missing lessons on topic markers, subject markers, descriptive verbs,
+  descriptive verbs as adjectives, and the plain form. Restore relevant links
+  when those lessons exist.
+- Consider dedicated lessons on `고`, `수 있다` / `수 없다`, and `고 싶다` so
+  later chapters have explicit prerequisites.
+- Improve the Hangul introduction with memory aids (images, stories, or other
+  associations) and audio. These tasks were moved out of the published lesson.
+- Review grammar accuracy separately from editorial cleanup, including the
+  limitations described for `(으)려고`, `(으)니까`, and `(이)나`.
 
 ---
 

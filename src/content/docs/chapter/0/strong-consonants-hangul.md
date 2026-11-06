@@ -1,5 +1,5 @@
 ---
-title: Aspirated (Strong) Consonants
+title: "Aspirated (strong) consonants"
 description: "Learn the strong aspirated Hangul consonants ㅋ, ㅌ, ㅍ, and ㅊ and how they differ from plain and tense consonants."
 ---
 
@@ -28,7 +28,9 @@ is the burst of air:
 | ㅍ | p | the `p` at the start of *pie* |
 | ㅊ | ch | the `ch` at the start of *chair* |
 
-*These English comparisons are only approximations.*
+:::note
+These English comparisons are only approximations.
+:::
 
 |     | ㅈ   | ㅊ   | ㄱ   | ㅋ   | ㄷ   | ㅌ   | ㅂ   | ㅍ   |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -37,7 +39,7 @@ is the burst of air:
 | ㅗ   | 조   | 초   | 고   | 코   | 도   | 토   | 보   | 포   |
 | ㅜ   | 주   | 추   | 구   | 쿠   | 두   | 투   | 부   | 푸   |
 
-## Word Examples
+## Word examples
 
 These words begin with an aspirated consonant:
 
@@ -48,7 +50,8 @@ These words begin with an aspirated consonant:
 
 ---
 
-<details><summary>Sources & References</summary>
+<details>
+<summary>Sources and references</summary>
 
 - [How Hangul consonants are classified and formed — National Institute of Korean Language](https://www.korean.go.kr/eng_hangeul/principle/002.html)
 - [거센소리 (aspirated sound) — Basic Korean Dictionary, National Institute of Korean Language](https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=27331)
