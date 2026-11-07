@@ -3,29 +3,10 @@ title: "Diphthongs and complex vowels"
 head:
   - tag: title
     content: 'Korean diphthongs and complex vowels | To Learn Korean'
-description: 'Learn the remaining Korean vowels, including vowels with a "y" sound and combinations of familiar vowels.'
+description: 'Learn the remaining Korean vowels and combinations of familiar vowels.'
 ---
 
 There are only a few vowels remaining to know all characters of the Korean alphabet.
-
-## Vowels with a "y" sound
-
-Diphthongs are two vowels in one. They are just a combination of the vowels we already know.
-
-You should remember these simpler vowels from our [earlier lesson](/chapter/korean-alphabet-hangul):
-- ㅏ = a
-- ㅓ = eo
-- ㅗ = o
-- ㅜ = u
-
-By adding an extra line we can add a "y" sound like this:
-- ㅑ = ya
-- ㅕ = yeo
-- ㅛ = yo
-- ㅠ = yu
-
-Combined with the consonant "ㄱ" they sound like this: 갸("gya"), 겨("gyeo"), 교("gyo"), 규("gyu").  
-Combined with the consonant "ㄷ" they sound like this: 댜("dya"), 뎌("dyeo"), 됴("dyo"), 듀("dyu").
 
 ## The common vowels "ㅐ" and "ㅔ"
 - ㅐ = ae (sounds like "eh")
@@ -45,7 +26,6 @@ With these vowels you can build words like these:
 
 ## The more complex diphthongs
 
-There are only a few vowels remaining until you know **all** characters in Hangul.  
 These vowels are all a combination of vowels we already know:
 - ㅘ: ㅗ + ㅏ = "woa"
 - ㅙ: ㅗ + ㅐ = "weh"
@@ -61,3 +41,5 @@ For the special pronunciation rules of 의, see the resources in [Further readin
 외 is pronounced just like 왜 and 웨, yes they are all pronounced the same.
 
 So these are all vowels in Hangul: ㅏ, ㅐ, ㅑ, ㅒ, ㅓ, ㅔ, ㅕ, ㅖ, ㅗ, ㅘ, ㅙ, ㅚ, ㅛ, ㅜ, ㅝ, ㅞ, ㅟ, ㅠ, ㅡ, ㅢ, ㅣ
+
+You have now learned all the consonants and vowels.

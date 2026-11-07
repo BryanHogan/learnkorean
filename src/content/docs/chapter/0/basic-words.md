@@ -12,7 +12,7 @@ These are all the letters of the Korean alphabet in order:
 
 I made a [Hangul Anki deck for you](/files/ToLearnKoreanHangul.apkg) with which you can practice and memorize all letters of Hangul.
 
-With this knowledge you can now read any word in Korean. So let's cover some basic words.
+With this knowledge you can now try to read any word in Korean. So let's cover some basic words.
 
 | Korean | English                   |
 | ------ | ------------------------- |

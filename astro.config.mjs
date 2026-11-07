@@ -90,6 +90,7 @@ export default defineConfig({
 						{ label: 'Korean alphabet: Hangul', slug: 'chapter/korean-alphabet-hangul' },
 						{ label: 'Strong consonants', slug: 'chapter/strong-consonants-hangul' },
 						{ label: 'Double consonants', slug: 'chapter/double-consonants-hangul' },
+						{ label: 'Y vowels', slug: 'chapter/y-vowels' },
 						{ label: 'Diphthongs', slug: 'chapter/diphthongs' },
 						{ label: 'Basic words', slug: 'chapter/basic-words' },
 						{ label: 'Further reading and practice', slug: 'chapter/unit-0-completed' },
