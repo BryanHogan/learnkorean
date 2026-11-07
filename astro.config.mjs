@@ -3,12 +3,14 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import { satteri } from '@astrojs/markdown-satteri';
 import sentencePlugin from './src/plugins/satteri-sentence.mjs';
+import pelePlugin from './src/plugins/satteri-pele.mjs';
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://tolearnkorean.com',
 	markdown: {
-		processor: satteri({ mdastPlugins: [sentencePlugin] }),
+		// Sätteri 0.9 requires raw HTML replacements before MDX import insertion.
+		processor: satteri({ mdastPlugins: [pelePlugin, sentencePlugin] }),
 	},
 	integrations: [
 		starlight({

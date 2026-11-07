@@ -86,3 +86,31 @@ h1 {
 .sidebar-content .top-level > li > a[aria-current="page"] {
     font-weight: 600;
 }
+
+/* Keep diagram text readable on small screens and follow Starlight's theme. */
+.pele-diagram {
+    overflow-x: auto;
+}
+
+.pele-diagram:focus-visible {
+    outline: 2px solid var(--sl-color-accent-high);
+    outline-offset: 2px;
+}
+
+.pele-diagram > .pele {
+    --pele-bg: var(--sl-color-bg);
+    --pele-fg: var(--sl-color-text);
+    --pele-muted: var(--sl-color-gray-3);
+    --pele-line: var(--sl-color-gray-2);
+    --pele-surface: var(--sl-color-gray-6);
+    --pele-surface-alt: var(--sl-color-gray-5);
+    --pele-border: var(--sl-color-gray-3);
+    --pele-accent: var(--sl-color-accent);
+    --pele-critical: var(--sl-color-red);
+    --pele-error: var(--sl-color-red);
+    --pele-font: var(--sl-font, var(--sl-font-system));
+    --pele-font-mono: var(--sl-font-mono, var(--sl-font-system-mono));
+    display: block;
+    max-width: none;
+    margin-inline: auto;
+}
