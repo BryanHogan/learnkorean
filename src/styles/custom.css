@@ -10,6 +10,8 @@
     --sl-color-gray-5: #39373c;
     --sl-color-gray-6: #27262b;
     --sl-color-black: #18181a;
+    /* Shared by inline code and Korean terms; softer than Starlight's default. */
+    --sl-color-bg-inline-code: var(--sl-color-gray-6);
 }
 
 /* Light mode colors. */
@@ -26,6 +28,7 @@
     --sl-color-gray-6: #eeedf0;
     --sl-color-gray-7: #f6f6f7;
     --sl-color-black: #ffffff;
+    --sl-color-bg-inline-code: color-mix(in srgb, var(--sl-color-gray-6) 65%, transparent);
 }
 
 :root {
@@ -113,4 +116,20 @@ h1 {
     display: block;
     max-width: none;
     margin-inline: auto;
+}
+
+/* Korean terms written with backticks (see src/plugins/satteri-korean.mjs).
+   Same highlight as inline code, in the reading font. */
+.sl-markdown-content .ko-term {
+    background-color: var(--sl-color-bg-inline-code);
+    color: var(--sl-color-white);
+    border-radius: 0.25rem;
+    /* Break only at spaces so a word like 언니 is never split across lines. */
+    word-break: keep-all;
+    margin-block: -0.0625rem;
+    padding: 0.0625rem 0.3125rem;
+}
+.sl-markdown-content .starlight-aside .ko-term {
+    /* Neutral overlay that works on every aside color, in both themes. */
+    background-color: color-mix(in srgb, var(--sl-color-white) 14%, transparent);
 }

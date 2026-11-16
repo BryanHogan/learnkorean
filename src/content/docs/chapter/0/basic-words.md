@@ -32,6 +32,6 @@ With this knowledge you can now try to read any word in Korean. So let's cover s
 
 These are words you can encounter frequently in Korea.
 
-Verbs like "이다" are conjugated when used in sentences, the form shown here is the base form. Their conjugation changes depending on formality and tense. More on this in Unit 1.
+Verbs like `이다` are conjugated when used in sentences, the form shown here is the base form. Their conjugation changes depending on formality and tense. More on this in Unit 1.
 
 Once you feel somewhat comfortable with reading Korean letters I recommend studying vocabulary with this <a href="https://ankiweb.net/shared/info/1551455917" target="_blank">first 500 words pre-made deck by TTMIK</a>. Each word here has audio included, this is not only great for learning the word but also understanding the pronunciation.

@@ -8,11 +8,11 @@ description: 'Learn the remaining Korean vowels and combinations of familiar vow
 
 There are only a few vowels remaining to know all characters of the Korean alphabet.
 
-## The common vowels "ㅐ" and "ㅔ"
+## The common vowels ㅐ and ㅔ
 - ㅐ = ae (sounds like "eh")
 - ㅔ = e (sounds like "eh")
 
-Both 애 and 에 sound like "eh".  
+Both `애` and `에` sound like "eh".  
 In modern Korean they actually have the same sound. Officially and historically there is/was a difference but nowadays they sound the same. (*By the way, they are not diphthongs*)
 
 By adding an extra line we can add a "y" sound like this:
@@ -35,10 +35,10 @@ These vowels are all a combination of vowels we already know:
 - ㅟ: ㅜ + ㅣ = "wi"
 - ㅢ: ㅡ + ㅣ = "ui"
 
-Aside from 외 and 의 they all sound mostly like you would expect from combining them.  
-For the special pronunciation rules of 의, see the resources in [Further reading, pronunciation, and practice](/chapter/unit-0-completed).
+Aside from `외` and `의` they all sound mostly like you would expect from combining them.  
+For the special pronunciation rules of `의`, see the resources in [Further reading, pronunciation, and practice](/chapter/unit-0-completed).
 
-외 is pronounced just like 왜 and 웨, yes they are all pronounced the same.
+`외` is pronounced just like `왜` and `웨`, yes they are all pronounced the same.
 
 So these are all vowels in Hangul: ㅏ, ㅐ, ㅑ, ㅒ, ㅓ, ㅔ, ㅕ, ㅖ, ㅗ, ㅘ, ㅙ, ㅚ, ㅛ, ㅜ, ㅝ, ㅞ, ㅟ, ㅠ, ㅡ, ㅢ, ㅣ
 
