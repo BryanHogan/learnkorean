@@ -78,6 +78,11 @@ h1 {
     text-wrap-style: balance;
 }
 
+/* The logo is 16x16 pixel art: 32px is exactly 2x, so every pixel stays the same size. */
+.site-title img {
+    height: 2rem;
+}
+
 .right-sidebar-panel nav ul li a {
     transition: color 0.35s ease-in-out;
 }

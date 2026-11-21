@@ -17,8 +17,7 @@ export default defineConfig({
 		starlight({
 			title: 'To Learn Korean',
 			logo: {
-				light: './src/assets/ToLearnKorean-Logo-Dark.svg',
-				dark: './src/assets/ToLearnKorean-Logo.svg',
+				src: './src/assets/Tiger-16x-Sitting.svg',
 			},
 			customCss: [
 				'./src/styles/custom.css',
