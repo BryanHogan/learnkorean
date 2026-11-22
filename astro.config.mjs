@@ -24,6 +24,15 @@ export default defineConfig({
 			],
 			head: [
 				{
+					tag: 'script',
+					attrs: {
+						defer: true,
+						src: 'https://stats.bryanhogan.me/script.js',
+						'data-website-id': '1866d32c-1f5b-4eb4-90d7-8ef870e83149',
+						'data-domains': 'tolearnkorean.com',
+					},
+				},
+				{
 					tag: 'link',
 					attrs: {
 						rel: 'icon',
