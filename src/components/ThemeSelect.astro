@@ -1,9 +1,5 @@
 ---
-// Replaces Starlight's theme select with one that also picks the accent color:
-// Dark/Light × Purple/Orange. Purple is the default.
-// Starlight's ThemeProvider still applies the saved theme before first paint (same `starlight-theme`
-// storage key), and an inline script in astro.config.mjs does the same for the accent.
-// With no saved theme, the device's light/dark setting is followed, as in Starlight.
+// Replaces Starlight's theme select with one that also picks the accent color: Dark/Light × Purple/Orange. Purple is the default. Starlight's ThemeProvider still applies the saved theme before first paint (same `starlight-theme` storage key), and an inline script in astro.config.mjs does the same for the accent. With no saved theme, the device's light/dark setting is followed, as in Starlight.
 import Select from '@astrojs/starlight/components/Select.astro';
 ---
 
