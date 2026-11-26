@@ -1,0 +1,107 @@
+---
+// Replaces Starlight's theme select with one that also picks the accent color:
+// Dark/Light × Purple/Orange. Purple is the default.
+// Starlight's ThemeProvider still applies the saved theme before first paint (same `starlight-theme`
+// storage key), and an inline script in astro.config.mjs does the same for the accent.
+// With no saved theme, the device's light/dark setting is followed, as in Starlight.
+import Select from '@astrojs/starlight/components/Select.astro';
+---
+
+<theme-accent-select>
+	<Select
+		icon="moon"
+		label="Select theme and accent color"
+		options={[
+			{ label: 'Dark (purple)', value: 'dark-purple', selected: true },
+			{ label: 'Dark (orange)', value: 'dark-orange', selected: false },
+			{ label: 'Light (purple)', value: 'light-purple', selected: false },
+			{ label: 'Light (orange)', value: 'light-orange', selected: false },
+		]}
+		width="10em"
+	/>
+</theme-accent-select>
+
+{/* Show the saved choice before the bundled script loads, like Starlight's theme select. */}
+<script is:inline>
+	(() => {
+		const root = document.documentElement;
+		const theme = root.dataset.theme === 'light' ? 'light' : 'dark';
+		const accent = root.dataset.accent === 'orange' ? 'orange' : 'purple';
+		const icon = document.querySelector('#theme-icons')?.content.querySelector('.' + theme);
+		document.querySelectorAll('theme-accent-select').forEach((picker) => {
+			const select = picker.querySelector('select');
+			if (select) select.value = theme + '-' + accent;
+			const label = picker.querySelector('svg.label-icon');
+			if (icon && label) label.replaceChildren(...icon.cloneNode(true).childNodes);
+		});
+	})();
+</script>
+
+<script>
+	type Theme = 'dark' | 'light';
+	type Accent = 'purple' | 'orange';
+
+	/** Storage keys: Starlight's own theme key, and ours for the accent. */
+	const themeKey = 'starlight-theme';
+	const accentKey = 'accent';
+
+	const root = document.documentElement;
+
+	const storedTheme = (): string | null => {
+		try {
+			return localStorage.getItem(themeKey);
+		} catch {
+			return null;
+		}
+	};
+
+	const systemTheme = (): Theme =>
+		matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+
+	/** Sync every select on the page (header and mobile menu footer) with the current state. */
+	function updatePickers(): void {
+		const theme: Theme = root.dataset.theme === 'light' ? 'light' : 'dark';
+		const accent: Accent = root.dataset.accent === 'orange' ? 'orange' : 'purple';
+		// Starlight's ThemeProvider renders the sun and moon icons in this template.
+		const tmpl = document.querySelector<HTMLTemplateElement>('#theme-icons');
+		const icon = tmpl?.content.querySelector('.' + theme);
+		document.querySelectorAll('theme-accent-select').forEach((picker) => {
+			const select = picker.querySelector('select');
+			if (select) select.value = `${theme}-${accent}`;
+			const label = picker.querySelector('svg.label-icon');
+			if (icon && label) label.replaceChildren(...icon.cloneNode(true).childNodes);
+		});
+	}
+
+	function apply(theme: Theme, accent: Accent): void {
+		root.dataset.theme = theme;
+		if (accent === 'orange') root.dataset.accent = 'orange';
+		else delete root.dataset.accent;
+		try {
+			localStorage.setItem(themeKey, theme);
+			if (accent === 'orange') localStorage.setItem(accentKey, 'orange');
+			else localStorage.removeItem(accentKey);
+		} catch {}
+		updatePickers();
+	}
+
+	// Until a theme is chosen, follow changes to the device's light/dark setting.
+	matchMedia('(prefers-color-scheme: light)').addEventListener('change', () => {
+		if (!storedTheme()) {
+			root.dataset.theme = systemTheme();
+			updatePickers();
+		}
+	});
+
+	class ThemeAccentSelect extends HTMLElement {
+		connectedCallback() {
+			updatePickers();
+			this.querySelector('select')?.addEventListener('change', (e) => {
+				if (!(e.currentTarget instanceof HTMLSelectElement)) return;
+				const [theme, accent] = e.currentTarget.value.split('-');
+				apply(theme === 'light' ? 'light' : 'dark', accent === 'orange' ? 'orange' : 'purple');
+			});
+		}
+	}
+	customElements.define('theme-accent-select', ThemeAccentSelect);
+</script>

@@ -1,3 +1,4 @@
+/* Purple is the default accent; orange can be picked in the theme select. Grays stay cool neutrals. */
 :root {
     --sl-color-accent-low: #291847;
     --sl-color-accent: #7e2ce4;
@@ -29,6 +30,20 @@
     --sl-color-gray-7: #f6f6f7;
     --sl-color-black: #ffffff;
     --sl-color-bg-inline-code: color-mix(in srgb, var(--sl-color-gray-6) 65%, transparent);
+}
+
+/* Optional orange accent, built around the tiger favicon's orange (#E9A45B). */
+:root[data-accent='orange'] {
+    --sl-color-accent-low: #3f2610;
+    --sl-color-accent: #e9a45b;
+    --sl-color-accent-high: #f5c894;
+}
+/* The extra attribute beats both the light block and the dark orange block. */
+:root[data-accent='orange'][data-theme='light'] {
+    --sl-color-accent-low: #fbe3c6;
+    /* The favicon orange is too light for link text on white; this darker shade passes WCAG AA. */
+    --sl-color-accent: #a3520e;
+    --sl-color-accent-high: #4a2608;
 }
 
 :root {

@@ -22,7 +22,16 @@ export default defineConfig({
 			customCss: [
 				'./src/styles/custom.css',
 			],
+			components: {
+				// Theme select that also picks the accent color (purple or orange).
+				ThemeSelect: './src/components/ThemeSelect.astro',
+			},
 			head: [
+				{
+					// Apply the saved accent before first paint, like Starlight does for the theme.
+					tag: 'script',
+					content: "try{if(localStorage.getItem('accent')==='orange')document.documentElement.dataset.accent='orange'}catch{}",
+				},
 				{
 					tag: 'script',
 					attrs: {
